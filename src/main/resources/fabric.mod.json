@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "improvedfood",
+  "version": "${version}",
+  "name": "ImprovedFood",
+  "description": "A Fabric mod that makes food more realistic, adds new food, food-related blocks and structures",
+  "authors": [
+    "RedGrapefruit09"
+  ],
+  "contact": {
+    "repo": "https://www.github.com/RedGrapefruit09/ImprovedFood"
+  },
+  "license": "MIT",
+  "icon": "assets/improvedfood/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.redgrapefruit.improvedfood.client.ImprovedFoodClient"
+    ],
+    "main": [
+      "com.redgrapefruit.improvedfood.ImprovedFood"
+    ]
+  },
+  "mixins": [
+    "improvedfood.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
