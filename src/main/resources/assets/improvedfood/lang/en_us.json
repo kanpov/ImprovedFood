@@ -1,0 +1,10 @@
+{
+  "itemGroup.improvedfood.fresh_food": "Fresh Food",
+  "itemGroup.improvedfood.overdue_food": "Overdue Food",
+  "itemGroup.improvedfood.rotten_food": "Rotten Food",
+  "itemGroup.improvedfood.poisoned_food": "Poisoned Food",
+  "itemGroup.improvedfood.seeds": "Seeds",
+  "itemGroup.improvedfood.crops": "Crops",
+  "itemGroup.improvedfood.storage": "Storage",
+  "itemGroup.improvedfood.decorations": "Decorations"
+}

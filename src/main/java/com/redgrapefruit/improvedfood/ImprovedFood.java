@@ -1,17 +1,22 @@
 package com.redgrapefruit.improvedfood;
 
+import com.redgrapefruit.improvedfood.registry.BlockRegistry;
+import com.redgrapefruit.improvedfood.registry.ItemGroupRegistry;
+import com.redgrapefruit.improvedfood.registry.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class ImprovedFood implements ModInitializer {
-    // Statics
-    public static final Logger LOGGER = LogManager.getLogger();
+    /**
+     * Mod identifier for resources
+     */
     public static final String MOD_ID = "improvedfood";
 
     @Override
     public void onInitialize() {
-        LOGGER.log(Level.INFO, "ImprovedFood loaded on common side");
+        ItemGroupRegistry.run();
+        ItemRegistry.run();
+        BlockRegistry.run();
+
+        Logging.info("ImprovedFood loaded on common side");
     }
 }
