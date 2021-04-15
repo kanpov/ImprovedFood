@@ -1,6 +1,6 @@
 package com.redgrapefruit.improvedfood.client;
 
-import com.redgrapefruit.improvedfood.Logging;
+import com.redgrapefruit.improvedfood.util.Logging;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

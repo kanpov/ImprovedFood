@@ -1,4 +1,4 @@
-package com.redgrapefruit.improvedfood;
+package com.redgrapefruit.improvedfood.util;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
