@@ -4,7 +4,8 @@ import java.util.Set;
 import java.util.HashSet;
 
 /**
- * A food config contains all unique information about a type of food.
+ * A food config contains all unique information about a type of food.<br>
+ * TODO: Replace hard-coded configs using builders with a custom JSON resource
  */
 public class FoodConfig {
     // FoodComponent properties
