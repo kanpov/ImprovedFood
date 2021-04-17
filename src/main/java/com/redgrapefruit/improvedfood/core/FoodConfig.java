@@ -1,7 +1,5 @@
 package com.redgrapefruit.improvedfood.core;
 
-import com.redgrapefruit.improvedfood.util.BuilderProperty;
-
 import java.util.Set;
 import java.util.HashSet;
 
@@ -107,96 +105,73 @@ public class FoodConfig {
     }
 
     public static class Builder {
-        private static final String BUILDER_NAME = "FoodConfig.Builder";
-
-        private final BuilderProperty<Integer> hunger;
-        private final BuilderProperty<Integer> saturationModifier;
-        private final BuilderProperty<Integer> rotState;
-        private final BuilderProperty<Integer> rotSpeed;
-        private final BuilderProperty<Integer> overdueState;
-        private final BuilderProperty<Integer> overdueSpeed;
-        private final BuilderProperty<Integer> saltEfficiency;
-        private final BuilderProperty<Integer> fridgeEfficiency;
-        private final BuilderProperty<FoodCategory> category;
-        private final BuilderProperty<Set<FoodEffectConfig>> effects;
+        private int hunger;
+        private int saturationModifier;
+        private int rotState;
+        private int rotSpeed;
+        private int overdueState;
+        private int overdueSpeed;
+        private int saltEfficiency;
+        private int fridgeEfficiency;
+        private FoodCategory category;
+        private final Set<FoodEffectConfig> effects;
 
         public Builder() {
-            hunger = new BuilderProperty<>(BUILDER_NAME, "hunger");
-            saturationModifier = new BuilderProperty<>(BUILDER_NAME, "saturationModifier");
-            rotState = new BuilderProperty<>(BUILDER_NAME, "rotState");
-            rotSpeed = new BuilderProperty<>(BUILDER_NAME, "rotSpeed");
-            overdueState = new BuilderProperty<>(BUILDER_NAME, "overdueState");
-            overdueSpeed = new BuilderProperty<>(BUILDER_NAME, "overdueSpeed");
-            saltEfficiency = new BuilderProperty<>(BUILDER_NAME, "saltEfficiency");
-            fridgeEfficiency = new BuilderProperty<>(BUILDER_NAME, "fridgeEfficiency");
-            category = new BuilderProperty<>(BUILDER_NAME, "category");
-            effects = new BuilderProperty<>(BUILDER_NAME, "effects");
-            effects.set(new HashSet<>()); // Instantiate the effects set
+            effects = new HashSet<>();
         }
 
         public Builder hunger(int hunger) {
-            this.hunger.set(hunger);
+            this.hunger = hunger;
             return this;
         }
 
         public Builder saturationModifier(int saturationModifier) {
-            this.saturationModifier.set(saturationModifier);
+            this.saturationModifier = saturationModifier;
             return this;
         }
 
         public Builder rotState(int rotState) {
-            this.rotState.set(rotState);
+            this.rotState = rotState;
             return this;
         }
 
         public Builder rotSpeed(int rotSpeed) {
-            this.rotSpeed.set(rotSpeed);
+            this.rotSpeed = rotSpeed;
             return this;
         }
 
         public Builder overdueState(int overdueState) {
-            this.overdueState.set(overdueState);
+            this.overdueState = overdueState;
             return this;
         }
 
         public Builder overdueSpeed(int overdueSpeed) {
-            this.overdueSpeed.set(overdueSpeed);
+            this.overdueSpeed = overdueSpeed;
             return this;
         }
 
         public Builder saltEfficiency(int saltEfficiency) {
-            this.saltEfficiency.set(saltEfficiency);
+            this.saltEfficiency = saltEfficiency;
             return this;
         }
 
         public Builder fridgeEfficiency(int fridgeEfficiency) {
-            this.fridgeEfficiency.set(fridgeEfficiency);
+            this.fridgeEfficiency = fridgeEfficiency;
             return this;
         }
 
         public Builder category(FoodCategory category) {
-            this.category.set(category);
+            this.category = category;
             return this;
         }
 
         public Builder effect(FoodEffectConfig effect) {
-            this.effects.getUnchecked().add(effect);
+            this.effects.add(effect);
             return this;
         }
 
         public FoodConfig build() {
-            return new FoodConfig(
-                    hunger.get(),
-                    saturationModifier.get(),
-                    rotState.get(),
-                    rotSpeed.get(),
-                    overdueState.get(),
-                    overdueSpeed.get(),
-                    saltEfficiency.get(),
-                    fridgeEfficiency.get(),
-                    category.get(),
-                    effects.get()
-            );
+            return new FoodConfig(hunger, saturationModifier, rotState, rotSpeed, overdueState, overdueSpeed, saltEfficiency, fridgeEfficiency, category, effects);
         }
     }
 }

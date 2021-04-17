@@ -1,6 +1,5 @@
 package com.redgrapefruit.improvedfood.core;
 
-import com.redgrapefruit.improvedfood.util.BuilderProperty;
 import net.minecraft.entity.effect.StatusEffect;
 
 /**
@@ -72,63 +71,45 @@ public class FoodEffectConfig {
     }
 
     public static class Builder {
-        private static final String BUILDER_NAME = "FoodEffectConfig.Builder";
-
-        private final BuilderProperty<StatusEffect> statusEffect;
-        private final BuilderProperty<Integer> duration;
-        private final BuilderProperty<Integer> amplifier;
-        private final BuilderProperty<Boolean> isPermanent;
-        private final BuilderProperty<Boolean> isAlwaysApplied;
-        private final BuilderProperty<Integer> chance;
-
-        public Builder() {
-            statusEffect = new BuilderProperty<>(BUILDER_NAME, "statusEffect");
-            duration = new BuilderProperty<>(BUILDER_NAME, "duration");
-            amplifier = new BuilderProperty<>(BUILDER_NAME, "amplifier");
-            isPermanent = new BuilderProperty<>(BUILDER_NAME, "isPermanent");
-            isAlwaysApplied = new BuilderProperty<>(BUILDER_NAME, "isAlwaysApplied");
-            chance = new BuilderProperty<>(BUILDER_NAME, "chance");
-        }
+        private StatusEffect statusEffect;
+        private int duration;
+        private int amplifier;
+        private boolean isPermanent;
+        private boolean isAlwaysApplied;
+        private int chance;
 
         public Builder statusEffect(StatusEffect statusEffect) {
-            this.statusEffect.set(statusEffect);
+            this.statusEffect = statusEffect;
             return this;
         }
 
         public Builder duration(int duration) {
-            this.duration.set(duration);
+            this.duration = duration;
             return this;
         }
 
         public Builder amplifier(int amplifier) {
-            this.amplifier.set(amplifier);
+            this.amplifier = amplifier;
             return this;
         }
 
         public Builder isPermanent(boolean isPermanent) {
-            this.isPermanent.set(isPermanent);
+            this.isPermanent = isPermanent;
             return this;
         }
 
         public Builder isAlwaysApplied(boolean isAlwaysApplied) {
-            this.isAlwaysApplied.set(isAlwaysApplied);
+            this.isAlwaysApplied = isAlwaysApplied;
             return this;
         }
 
         public Builder chance(int chance) {
-            this.chance.set(chance);
+            this.chance = chance;
             return this;
         }
 
         public FoodEffectConfig build() {
-            return new FoodEffectConfig(
-                    statusEffect.get(),
-                    duration.get(),
-                    amplifier.get(),
-                    isPermanent.get(),
-                    isAlwaysApplied.get(),
-                    chance.get()
-            );
+            return new FoodEffectConfig(statusEffect, duration, amplifier, isPermanent, isAlwaysApplied, chance);
         }
     }
 }
