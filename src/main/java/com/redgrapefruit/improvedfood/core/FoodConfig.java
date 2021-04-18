@@ -15,7 +15,7 @@ public class FoodConfig {
      */
     private final int hunger;
     /**
-     * How long will hunger bars acquired from eating this food last
+     * How long will hunger bars acquired from eating this food last.<br>
      * Not used in the mixin implementation since we don't want to override vanilla values, but expand with our own
      */
     private final float saturationModifier;
