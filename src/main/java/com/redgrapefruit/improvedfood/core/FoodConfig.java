@@ -10,11 +10,13 @@ import java.util.HashSet;
 public class FoodConfig {
     // FoodComponent properties
     /**
-     * How many hunger bars this food will fill
+     * How many hunger bars this food will fill.<br>
+     * Not used in the mixin implementation since we don't want to override vanilla values, but expand with our own
      */
     private final int hunger;
     /**
      * How long will hunger bars acquired from eating this food last
+     * Not used in the mixin implementation since we don't want to override vanilla values, but expand with our own
      */
     private final float saturationModifier;
 
