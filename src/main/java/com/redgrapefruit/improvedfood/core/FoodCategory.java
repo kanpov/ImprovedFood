@@ -39,25 +39,7 @@ public enum FoodCategory {
 			true,
 			false,
 			false,
-			"Small and tasty berries. Very cheap but not very nutritious"),
-	
-    CURSED(0,
-	       0.1f,
-  		   "Cursed",
-		   true,
-		   true,
-		   false,
-		   false,
-		   "Do not eat this under any circumstances. It is indeed cursed!"),
-		   
-    BLESSED(7,
-			3.5f,
-			"Blessed",
-			false,
-			false,
-			true,
-			true,
-			"Food literally blessed by God. You're very lucky to own this!");
+			"Small and tasty berries. Very cheap but not very nutritious");
 
     /**
      * Base hunger of this food type.<br>

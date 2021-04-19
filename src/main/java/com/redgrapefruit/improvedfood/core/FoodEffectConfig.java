@@ -32,12 +32,12 @@ public class FoodEffectConfig {
     private final boolean isAlwaysApplied;
 
     /**
-     * The chance of the food being applied.<br>
+     * The chance of the food being applied on a scale from 0.0f to 1.0f<br>
      * Only used when {@link #isAlwaysApplied}=false
      */
-    private final int chance;
+    private final float chance;
 
-    private FoodEffectConfig(StatusEffect statusEffect, int duration, int amplifier, boolean isPermanent, boolean isAlwaysApplied, int chance) {
+    private FoodEffectConfig(StatusEffect statusEffect, int duration, int amplifier, boolean isPermanent, boolean isAlwaysApplied, float chance) {
         this.statusEffect = statusEffect;
         this.duration = duration;
         this.amplifier = amplifier;
@@ -66,7 +66,7 @@ public class FoodEffectConfig {
         return isAlwaysApplied;
     }
 
-    public int getChance() {
+    public float getChance() {
         return chance;
     }
 
@@ -76,7 +76,7 @@ public class FoodEffectConfig {
         private int amplifier;
         private boolean isPermanent;
         private boolean isAlwaysApplied;
-        private int chance;
+        private float chance;
 
         public Builder statusEffect(StatusEffect statusEffect) {
             this.statusEffect = statusEffect;
@@ -95,6 +95,9 @@ public class FoodEffectConfig {
 
         public Builder isPermanent(boolean isPermanent) {
             this.isPermanent = isPermanent;
+            // Also set the duration to the absolute maximum to ensure that the effect stays permanent
+            this.duration = Integer.MAX_VALUE;
+
             return this;
         }
 
@@ -103,7 +106,7 @@ public class FoodEffectConfig {
             return this;
         }
 
-        public Builder chance(int chance) {
+        public Builder chance(float chance) {
             this.chance = chance;
             return this;
         }
