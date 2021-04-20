@@ -32,7 +32,7 @@ public class ItemMixin implements ItemMixinAccess {
     private void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context, CallbackInfo info) {
         if (!isActivated) return;
 
-        FoodSystem.appendTooltip(tooltip, config, profile);
+        FoodSystem.appendTooltip(tooltip, config, profile, "Fresh");
     }
 
     // Duck interface implementations

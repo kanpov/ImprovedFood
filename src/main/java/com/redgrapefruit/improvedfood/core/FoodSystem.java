@@ -16,10 +16,14 @@ public class FoodSystem {
      * @param tooltip Tooltip
      * @param config {@link FoodConfig}
      * @param profile {@link FoodProfile}
+     * @param state Food state
      */
-    public static void appendTooltip(List<Text> tooltip, FoodConfig config, FoodProfile profile) {
+    public static void appendTooltip(List<Text> tooltip, FoodConfig config, FoodProfile profile, String state) {
         // TODO: Make labels language-independent using TranslatableText instead of LiteralText
 
+        // State
+        newLine(tooltip);
+        tooltip.add(new LiteralText(Formatting.AQUA + "State: " + state));
         // Hunger
         newLine(tooltip);
         tooltip.add(new LiteralText(Formatting.GREEN + "Hunger: " + (config.getHunger() + config.getCategory().getBaseHunger())));

@@ -23,6 +23,9 @@ public class FoodItem extends Item {
     private final FoodConfig config;
     private final FoodProfile profile;
 
+    // A custom state displayed in tooltips. Overridden by variants
+    private String state;
+
     /**
      * Internal constructor allowing to use different {@link ItemGroup}'s and {@link FoodComponent}'s (used by food variants)
      * @param config Food config
@@ -34,6 +37,7 @@ public class FoodItem extends Item {
 
         this.config = config;
         this.profile = new FoodProfile(config); // TODO: Replace with deserialized profile instead of creating a new profile every launch of the game
+        this.state = "Fresh";
     }
 
     public FoodItem(FoodConfig config) {
@@ -52,6 +56,7 @@ public class FoodItem extends Item {
             }
             // Saturation modifier property
             builder.saturationModifier(config.getCategory().getBaseSaturation() + config.getSaturationModifier());
+
             // Effects
             for (FoodEffectConfig effectConfig : config.getEffects()) {
                 builder.statusEffect(
@@ -64,10 +69,14 @@ public class FoodItem extends Item {
         });
     }
 
+    protected void setState(String state) {
+        this.state = state;
+    }
+
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
 
-        FoodSystem.appendTooltip(tooltip, config, profile);
+        FoodSystem.appendTooltip(tooltip, config, profile, state);
     }
 }
