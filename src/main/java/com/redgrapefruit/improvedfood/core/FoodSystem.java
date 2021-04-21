@@ -1,8 +1,13 @@
 package com.redgrapefruit.improvedfood.core;
 
+import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
+import com.redgrapefruit.improvedfood.item.RottenFoodItem;
 import com.redgrapefruit.improvedfood.util.Formatting;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
+import net.minecraft.world.World;
 
 import java.util.List;
 
@@ -11,6 +16,35 @@ import java.util.List;
  * Most important logic and events are here
  */
 public class FoodSystem {
+    /**
+     * Main update event. Called every tick when the food item is contained in the player's inventory
+     * @param config {@link FoodConfig}
+     * @param profile {@link FoodProfile}
+     * @param player Player entity casted from regular entity
+     * @param slot Item slot
+     * @param world World instance
+     * @param rottenVariant Rotten food variant
+     * @param overdueVariant Overdue food variant
+     */
+    public static void inventoryTick(FoodConfig config, FoodProfile profile, PlayerEntity player, int slot, World world, RottenFoodItem rottenVariant, OverdueFoodItem overdueVariant) {
+        profile.update();
+
+        // Rot
+        if (profile.getRotProgress() > config.getRotState()) {
+            // Decrement stack, offer/drop the variant, reset progress
+            player.inventory.getStack(slot).decrement(1);
+            player.inventory.offerOrDrop(world, new ItemStack(rottenVariant));
+            profile.resetRotProgress();
+        }
+        // Overdue
+        if (profile.getOverdueProgress() > config.getOverdueState()) {
+            // Decrement stack, offer/drop the variant, reset progress
+            player.inventory.getStack(slot).decrement(1);
+            player.inventory.offerOrDrop(world, new ItemStack(overdueVariant));
+            profile.resetOverdueProgress();
+        }
+    }
+
     /**
      * Appends the item's tooltip to display custom values in detail
      * @param tooltip Tooltip

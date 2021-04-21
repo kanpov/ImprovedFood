@@ -77,6 +77,14 @@ public class FoodProfile {
         this.isInFridge = isInFridge;
     }
 
+    public void resetRotProgress() {
+        rotProgress = 0;
+    }
+
+    public void resetOverdueProgress() {
+        overdueProgress = 0;
+    }
+
     public int getRotProgress() {
         return rotProgress;
     }

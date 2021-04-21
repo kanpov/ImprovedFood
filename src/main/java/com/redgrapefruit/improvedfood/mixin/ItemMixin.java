@@ -3,8 +3,12 @@ package com.redgrapefruit.improvedfood.mixin;
 import com.redgrapefruit.improvedfood.core.FoodConfig;
 import com.redgrapefruit.improvedfood.core.FoodProfile;
 import com.redgrapefruit.improvedfood.core.FoodSystem;
+import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
+import com.redgrapefruit.improvedfood.item.RottenFoodItem;
 import com.redgrapefruit.improvedfood.util.ItemMixinAccess;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
@@ -27,12 +31,22 @@ public class ItemMixin implements ItemMixinAccess {
     @Unique private FoodConfig config = null;
     @Unique private FoodProfile profile = null;
     @Unique private boolean isActivated = false;
+    @Unique private RottenFoodItem rottenVariant = null;
+    @Unique private OverdueFoodItem overdueVariant = null;
 
     @Inject(method = "appendTooltip", at = @At("TAIL"))
     private void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context, CallbackInfo info) {
         if (!isActivated) return;
 
         FoodSystem.appendTooltip(tooltip, config, profile, "Fresh");
+    }
+
+    @Inject(method = "inventoryTick", at = @At("TAIL"))
+    private void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected, CallbackInfo callbackInfo) {
+        if (!isActivated) return;
+        if (!(entity instanceof PlayerEntity)) return;
+
+        FoodSystem.inventoryTick(config, profile, (PlayerEntity) entity, slot, world, rottenVariant, overdueVariant);
     }
 
     // Duck interface implementations
@@ -49,5 +63,15 @@ public class ItemMixin implements ItemMixinAccess {
     @Override
     public void setConfig(FoodConfig config) {
         this.config = config;
+    }
+
+    @Override
+    public void setRottenVariant(RottenFoodItem rottenVariant) {
+        this.rottenVariant = rottenVariant;
+    }
+
+    @Override
+    public void setOverdueVariant(OverdueFoodItem overdueVariant) {
+        this.overdueVariant = overdueVariant;
     }
 }

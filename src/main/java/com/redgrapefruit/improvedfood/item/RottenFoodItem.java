@@ -12,7 +12,7 @@ import net.minecraft.item.FoodComponent;
  * A rotten variant of a food item
  */
 public class RottenFoodItem extends FoodItem {
-    protected RottenFoodItem(FoodConfig config) {
+    public RottenFoodItem(FoodConfig config) {
         super(config, ItemGroupRegistry.ROTTEN_FOOD, () -> {
             FoodComponent.Builder builder = new FoodComponent.Builder();
 
