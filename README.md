@@ -59,6 +59,12 @@ To compile this mod, you'll need to:
 <li>Copy improvedfood-1.0-SNAPSHOT.jar to your mods folder (you can follow Install instructions from point 2 from now on)</li>
 </ul>
 
+# Code
+This project is written in Java 8 using Minecraft's and Fabric's APIs.  
+I put a lot of effort into comments and javadocs, so I hope the code is readable.  
+Do keep in mind that I only have 1 or 2 hours a day to work on this project, so the progress is kind of slow.  
+It's planned to update to Java 11 later, but right now Java 8 is good enough.
+
 # Contribute
 This project is currently not open for contributions, and I'm working solo on it right now.  
-Although things might change later.
+Although things might change when I feel more confident.
