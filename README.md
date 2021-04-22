@@ -30,7 +30,7 @@ Requirements:
 <ul>
 <li><a href="https://www.minecraft.net/en-us/">Minecraft (1.16.5 Java Edition)</a></li>
 <li><a href="https://fabricmc.net/use/">Fabric Loader (0.11.3 and above)</a></li>
-<li><a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files">Fabric API (0.32.9 and above)</a></li>
+<li><a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files">Fabric API (0.33.0 and above)</a></li>
 </ul>
 To install this mod, you'll need to:
 <ul>
