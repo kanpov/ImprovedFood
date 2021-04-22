@@ -65,6 +65,15 @@ I put a lot of effort into comments and javadocs, so I hope the code is readable
 Do keep in mind that I only have 1 or 2 hours a day to work on this project, so the progress is kind of slow.  
 It's planned to update to Java 11 later, but right now Java 8 is good enough.
 
+# Tools
+Here's a set of tools I use for this project if someone's interested:
+<ul>
+<li>Coding - <a href="https://www.jetbrains.com/idea/">JetBrains IntelliJ IDEA (Community)</a></li>
+<li>Art - <a href="https://www.aseprite.org/">Aseprite</a></li>
+<li>Modeling - <a href="https://blockbench.net/">Blockbench</a></li>
+<li>Task Management - <a href="https://trello.com/">Trello</a></li>
+</ul>
+
 # Contribute
 This project is currently not open for contributions, and I'm working solo on it right now.  
 Although things might change when I feel more confident.
