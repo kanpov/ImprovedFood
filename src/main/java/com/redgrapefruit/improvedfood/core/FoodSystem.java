@@ -27,6 +27,25 @@ public class FoodSystem {
      * @param overdueVariant Overdue food variant
      */
     public static void inventoryTick(FoodConfig config, FoodProfile profile, PlayerEntity player, int slot, World world, RottenFoodItem rottenVariant, OverdueFoodItem overdueVariant) {
+        if (!profile.isInitialized()) {
+            profile.setPreviousTick(world.getTime());
+            profile.markInitialized();
+        }
+
+        // Compensate ticks when the item isn't stored in the player's inventory through a counter
+        long currentTick = world.getTime();
+        int difference = (int) ((int) currentTick - profile.getPreviousTick());
+
+        if (difference > FoodProfile.MIN_TICK_LOSS) {
+            if (config.getCategory().canRot()) {
+                profile.incrementRotProgress(difference * config.getRotSpeed());
+            }
+            if (config.getCategory().canOverdue()) {
+                profile.incrementOverdueProgress(difference * config.getOverdueSpeed());
+            }
+        }
+        profile.updatePreviousTick(world);
+
         profile.update();
 
         // Rot
