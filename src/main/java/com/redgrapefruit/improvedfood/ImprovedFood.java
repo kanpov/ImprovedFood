@@ -3,7 +3,7 @@ package com.redgrapefruit.improvedfood;
 import com.redgrapefruit.improvedfood.registry.BlockRegistry;
 import com.redgrapefruit.improvedfood.registry.ItemGroupRegistry;
 import com.redgrapefruit.improvedfood.registry.ItemRegistry;
-import com.redgrapefruit.improvedfood.util.Logging;
+import com.redgrapefruit.redcore.util.Logging;
 import net.fabricmc.api.ModInitializer;
 
 import java.util.Random;

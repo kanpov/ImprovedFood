@@ -2,7 +2,7 @@ package com.redgrapefruit.improvedfood.core;
 
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
-import com.redgrapefruit.improvedfood.util.Formatting;
+import com.redgrapefruit.redcore.util.Formatting;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.LiteralText;

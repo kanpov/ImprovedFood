@@ -1,7 +1,8 @@
-package com.redgrapefruit.improvedfood.util;
+package com.redgrapefruit.redcore.util;
 
 /**
- * Constants for Minecraft color codes and formatting codes
+ * Constants for Minecraft color codes and formatting codes.<br><br>
+ * A part of RedCore.Util library bundled with this mod.
  */
 public class Formatting {
     // Color codes

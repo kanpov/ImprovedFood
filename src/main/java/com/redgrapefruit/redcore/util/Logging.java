@@ -1,11 +1,12 @@
-package com.redgrapefruit.improvedfood.util;
+package com.redgrapefruit.redcore.util;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * Utilities for logging
+ * Utilities for logging.<br><br>
+ * A part of RedCore.Util library bundled with this mod.
  */
 public class Logging {
     /**
