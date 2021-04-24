@@ -74,8 +74,9 @@ Here's a set of tools I use for this project if someone's interested:
 </ul>
 
 # Contribute
-This project is currently not open for contributions, and I'm working solo on it right now.  
-Although things might change when I feel more confident.
+I'll be grateful to receive issues and pull requests from the community of this project,  
+<b>but</b> I don't have a lot of time to review them, so you'll probably have to wait  
+for up to 2 days, so I can respond.
 
 # Credits
 <ul>
@@ -85,3 +86,7 @@ Although things might change when I feel more confident.
 <li>To JetBrains team and contributors for creating an astonishing JVM IDE - IntelliJ IDEA</li>
 <li>To Aseprite team and contributors for creating a productive sprite editor</li>
 </ul>
+
+# Contact
+You can email me to suggest some changes:  
+karpovanton729@gmail.com
