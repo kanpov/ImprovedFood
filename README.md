@@ -27,29 +27,29 @@ Alpha and beta releases will be also available, but they're not nearly as stable
 # Install
 (Beware that this instruction only applies to Windows 10)  
 Requirements:
-<ul>
+<ol>
 <li><a href="https://www.minecraft.net/en-us/">Minecraft (1.16.5 Java Edition)</a></li>
 <li><a href="https://fabricmc.net/use/">Fabric Loader (0.11.3 and above)</a></li>
 <li><a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files">Fabric API (0.33.0 and above)</a></li>
-</ul>
+</ol>
 To install this mod, you'll need to:
-<ul>
+<ol>
 <li>Setup the requirements from above</li>
 <li>Create a modded 1.16.5 Minecraft instance on your computer</li>
 <li>Navigate to C:/Users/$PUT_YOUR_USERNAME_HERE$/AppData/Local/.minecraft/mods</li>
 <li>Paste the downloaded mod JAR file (get it <a href="https://github.com/RedGrapefruit09/ImprovedFood/releases">here</a>) in the folder you opened</li>
 <li>Launch Minecraft and enjoy your modded experience!</li>
-</ul>
+</ol>
 
 # Compile
 To get the <span style="color: green">latest</span> and <span style="color: red">probably broken</span> version of the mod, you need to compile it  
 Requirements:
-<ul>
+<ol>
 <li><a href="https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot">AdoptOpenJDK 8 HotSpot VM</a></li>
 <li>JAVA_PATH variable set up and working (you can test it by typing 'java -version' in the command line)</li>
-</ul>
+</ol>
 To compile this mod, you'll need to:
-<ul>
+<ol>
 <li>Download the ZIP archive of this repository's master branch if you want stability or dev branch if you want latest untested changes</li>
 <li>Unpack the ZIP somewhere on your computer</li>
 <li>Navigate to the unpacked folder</li>
@@ -57,7 +57,7 @@ To compile this mod, you'll need to:
 <li>Type 'gradlew build'</li>
 <li>Close your command line tool and navigate to build/libs inside of your unpacked folder</li>
 <li>Copy improvedfood-1.0-SNAPSHOT.jar to your mods folder (you can follow Install instructions from point 2 from now on)</li>
-</ul>
+</ol>
 
 # Code
 This project is written in Java 8 using Minecraft's and Fabric's APIs.  
@@ -70,10 +70,18 @@ Here's a set of tools I use for this project if someone's interested:
 <ul>
 <li>Coding - <a href="https://www.jetbrains.com/idea/">JetBrains IntelliJ IDEA (Community)</a></li>
 <li>Art - <a href="https://www.aseprite.org/">Aseprite</a></li>
-<li>Modeling - <a href="https://blockbench.net/">Blockbench</a></li>
 <li>Task Management - <a href="https://trello.com/">Trello</a></li>
 </ul>
 
 # Contribute
 This project is currently not open for contributions, and I'm working solo on it right now.  
 Although things might change when I feel more confident.
+
+# Credits
+<ul>
+<li>To Mojang Studios for creating this awesome game and inspiring me</li>
+<li>To FabricMC team and contributors for creating a truly amazing modding environment</li>
+<li>To GitHub team for creating this great service</li>
+<li>To JetBrains team and contributors for creating an astonishing JVM IDE - IntelliJ IDEA</li>
+<li>To Aseprite team and contributors for creating a productive sprite editor</li>
+</ul>
