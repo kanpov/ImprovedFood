@@ -43,8 +43,7 @@ public class ItemMixin implements ItemMixinAccess {
 
     @Inject(method = "inventoryTick", at = @At("TAIL"))
     private void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected, CallbackInfo callbackInfo) {
-        if (!isActivated) return;
-        if (!(entity instanceof PlayerEntity)) return;
+        if (!isActivated || !(entity instanceof PlayerEntity)) return;
 
         FoodSystem.inventoryTick(config, profile, (PlayerEntity) entity, slot, world, rottenVariant, overdueVariant);
     }

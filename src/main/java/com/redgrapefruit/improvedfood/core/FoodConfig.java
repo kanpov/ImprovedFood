@@ -107,6 +107,9 @@ public class FoodConfig {
         return effects;
     }
 
+    /**
+     * A builder for food configs
+     */
     public static class Builder {
         private int hunger;
         private int saturationModifier;

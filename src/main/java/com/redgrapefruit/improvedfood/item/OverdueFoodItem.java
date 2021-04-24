@@ -12,6 +12,10 @@ import net.minecraft.item.FoodComponent;
  * An overdue variant of a food item
  */
 public class OverdueFoodItem extends FoodItem {
+    /**
+     * Creates an overdue variant of a food item
+     * @param config Food config
+     */
     public OverdueFoodItem(FoodConfig config) {
         super(config, ItemGroupRegistry.OVERDUE_FOOD, () -> {
             FoodComponent.Builder builder = new FoodComponent.Builder();

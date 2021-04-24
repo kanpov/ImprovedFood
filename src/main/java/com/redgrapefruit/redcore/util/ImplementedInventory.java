@@ -13,7 +13,7 @@ import net.minecraft.util.collection.DefaultedList;
  */
 public interface ImplementedInventory extends Inventory {
     /**
-     * Retrieves the item list of this inventory.
+     * Retrieves the item list of this inventory.<br>
      * Must return the same instance every time it's called.
      */
     DefaultedList<ItemStack> getItems();
@@ -41,7 +41,7 @@ public interface ImplementedInventory extends Inventory {
     }
 
     /**
-     * Checks if the inventory is empty.
+     * Checks if the inventory is empty.<br>
      * @return true if this inventory has only empty stacks, false otherwise.
      */
     @Override
@@ -52,6 +52,7 @@ public interface ImplementedInventory extends Inventory {
                 return false;
             }
         }
+
         return true;
     }
 
@@ -97,6 +98,7 @@ public interface ImplementedInventory extends Inventory {
     @Override
     default void setStack(int slot, ItemStack stack) {
         getItems().set(slot, stack);
+
         if (stack.getCount() > getMaxCountPerStack()) {
             stack.setCount(getMaxCountPerStack());
         }
@@ -111,17 +113,18 @@ public interface ImplementedInventory extends Inventory {
     }
 
     /**
-     * Marks the state as dirty.
-     * Must be called after changes in the inventory, so that the game can properly save
+     * Marks the state as dirty.<br>
+     * Must be called after changes in the inventory, so that the game can properly save.<br>
      * the inventory contents and notify neighboring blocks of inventory changes.
      */
     @Override
     default void markDirty() {
-        // Override if you want behavior.
+        // Override if you want custom behavior.
     }
 
     /**
-     * @return true if the player can use the inventory, false otherwise.
+     * Returns whether or not the player can use this inventory
+     * @return True/false
      */
     @Override
     default boolean canPlayerUse(PlayerEntity player) {

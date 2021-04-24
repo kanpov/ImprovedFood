@@ -27,7 +27,11 @@ public abstract class ContainerBlockEntity extends BlockEntity implements Implem
      */
     protected abstract int getContainerSize();
 
-    public ContainerBlockEntity(BlockEntityType<?> type) {
+    /**
+     * Child constructor creating a container block entity
+     * @param type Registered block entity type
+     */
+    protected ContainerBlockEntity(BlockEntityType<?> type) {
         super(type);
     }
 

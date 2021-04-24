@@ -37,7 +37,7 @@ public abstract class ContainerScreenHandler extends ScreenHandler {
      * @param size Container size
      * @param type Registered screen handler type. Unique for each instance
      */
-    public ContainerScreenHandler(int syncId, PlayerInventory playerInventory, int size, ScreenHandlerType<?> type) {
+    protected ContainerScreenHandler(int syncId, PlayerInventory playerInventory, int size, ScreenHandlerType<?> type) {
         this(syncId, playerInventory, new SimpleInventory(size), size, type);
     }
 
@@ -49,7 +49,7 @@ public abstract class ContainerScreenHandler extends ScreenHandler {
      * @param size Container size
      * @param type Registered screen handler type. Unique for each instance
      */
-    public ContainerScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, int size, ScreenHandlerType<?> type) {
+    protected ContainerScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, int size, ScreenHandlerType<?> type) {
         super(type, syncId);
 
         // Setup inventory

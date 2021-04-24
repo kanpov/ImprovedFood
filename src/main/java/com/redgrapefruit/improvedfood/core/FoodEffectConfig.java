@@ -70,6 +70,9 @@ public class FoodEffectConfig {
         return chance;
     }
 
+    /**
+     * A builder for food effect configs
+     */
     public static class Builder {
         private StatusEffect statusEffect;
         private int duration;

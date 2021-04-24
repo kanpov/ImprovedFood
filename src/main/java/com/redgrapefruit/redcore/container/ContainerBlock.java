@@ -45,6 +45,10 @@ public abstract class ContainerBlock extends BlockWithEntity {
      */
     protected abstract Inventory castToInventory(BlockEntity blockEntity);
 
+    /**
+     * Child constructor initializing the container block
+     * @param settings Block settings
+     */
     protected ContainerBlock(Settings settings) {
         super(settings);
         // Defaults facing property

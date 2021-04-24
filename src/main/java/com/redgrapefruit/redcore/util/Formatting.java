@@ -22,6 +22,7 @@ public class Formatting {
     public static final String LIGHT_PURPLE = "§d";
     public static final String YELLOW = "§e";
     public static final String WHITE = "§f";
+
     // Formatting codes
     public static final String OBFUSCATED = "§k";
     public static final String BOLD = "§l";

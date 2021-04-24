@@ -85,26 +85,48 @@ public class FoodProfile {
         if (isInFridge) overdueProgress -= config.getFridgeEfficiency();
     }
 
+    /**
+     * Toggles the isSalted flag on/off
+     * @param isSalted New value
+     */
     public void toggleSalted(boolean isSalted) {
         this.isSalted = isSalted;
     }
 
+    /**
+     * Toggles the isInFridge flag on/off
+     * @param isInFridge New value
+     */
     public void toggleInFridge(boolean isInFridge) {
         this.isInFridge = isInFridge;
     }
 
+    /**
+     * Resets the rot progress to 0
+     */
     public void resetRotProgress() {
         rotProgress = 0;
     }
 
+    /**
+     * Increments rot progress by given value
+     * @param increment Incremented value
+     */
     public void incrementRotProgress(int increment) {
         rotProgress += increment;
     }
 
+    /**
+     * Resets the overdue progress to 0
+     */
     public void resetOverdueProgress() {
         overdueProgress = 0;
     }
 
+    /**
+     * Increments overdue progress by given value
+     * @param increment Incremented value
+     */
     public void incrementOverdueProgress(int increment) {
         overdueProgress += increment;
     }
@@ -113,10 +135,17 @@ public class FoodProfile {
         this.previousTick = previousTick;
     }
 
+    /**
+     * Updates the previousTick according to the world time
+     * @param world World instance
+     */
     public void updatePreviousTick(World world) {
         previousTick = world.getTime();
     }
 
+    /**
+     * Marks the profile as initialized to stop doing any further setup
+     */
     public void markInitialized() {
         isInitialized = true;
     }
