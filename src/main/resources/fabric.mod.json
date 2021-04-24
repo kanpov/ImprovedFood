@@ -15,7 +15,7 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.redgrapefruit.improvedfood.client.ImprovedFoodClient"
+      "com.redgrapefruit.improvedfood.ImprovedFoodClient"
     ],
     "main": [
       "com.redgrapefruit.improvedfood.ImprovedFood"

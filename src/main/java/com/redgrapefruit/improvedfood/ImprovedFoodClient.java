@@ -1,4 +1,4 @@
-package com.redgrapefruit.improvedfood.client;
+package com.redgrapefruit.improvedfood;
 
 import com.redgrapefruit.redcore.util.Logging;
 import net.fabricmc.api.ClientModInitializer;
