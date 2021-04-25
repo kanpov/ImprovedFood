@@ -1,7 +1,7 @@
 package com.redgrapefruit.improvedfood.core;
 
-import java.util.Set;
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * A food config contains all unique information about a type of food.<br>
@@ -111,6 +111,7 @@ public class FoodConfig {
      * A builder for food configs
      */
     public static class Builder {
+        private final Set<FoodEffectConfig> effects;
         private int hunger;
         private int saturationModifier;
         private int rotState;
@@ -120,7 +121,6 @@ public class FoodConfig {
         private int saltEfficiency;
         private int fridgeEfficiency;
         private FoodCategory category;
-        private final Set<FoodEffectConfig> effects;
 
         public Builder() {
             effects = new HashSet<>();

@@ -33,7 +33,8 @@ public class ItemGroupRegistry {
 
     /**
      * Creates (registers?) a new item group (creative tab)
-     * @param id Resource identifier
+     *
+     * @param id   Resource identifier
      * @param icon Icon item
      * @return Built item group
      */

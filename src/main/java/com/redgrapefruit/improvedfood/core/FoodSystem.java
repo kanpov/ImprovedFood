@@ -18,12 +18,13 @@ import java.util.List;
 public class FoodSystem {
     /**
      * Main update event. Called every tick when the food item is contained in the player's inventory
-     * @param config {@link FoodConfig}
-     * @param profile {@link FoodProfile}
-     * @param player Player entity casted from regular entity
-     * @param slot Item slot
-     * @param world World instance
-     * @param rottenVariant Rotten food variant
+     *
+     * @param config         {@link FoodConfig}
+     * @param profile        {@link FoodProfile}
+     * @param player         Player entity casted from regular entity
+     * @param slot           Item slot
+     * @param world          World instance
+     * @param rottenVariant  Rotten food variant
      * @param overdueVariant Overdue food variant
      */
     public static void inventoryTick(FoodConfig config, FoodProfile profile, PlayerEntity player, int slot, World world, RottenFoodItem rottenVariant, OverdueFoodItem overdueVariant) {
@@ -75,10 +76,11 @@ public class FoodSystem {
 
     /**
      * Appends the item's tooltip to display custom values in detail
+     *
      * @param tooltip Tooltip
-     * @param config {@link FoodConfig}
+     * @param config  {@link FoodConfig}
      * @param profile {@link FoodProfile}
-     * @param state Food state
+     * @param state   Food state
      */
     public static void appendTooltip(List<Text> tooltip, FoodConfig config, FoodProfile profile, String state) {
         // TODO: Make labels language-independent using TranslatableText instead of LiteralText

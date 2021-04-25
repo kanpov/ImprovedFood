@@ -18,24 +18,13 @@ public abstract class ContainerScreenHandler extends ScreenHandler {
     protected final Inventory inventory;
 
     /**
-     * An event reserved for putting slots on the screen handler
-     * @param inventory Embedded inventory
-     * @param playerInventory Player inventory
-     */
-    protected abstract void onSlotInit(Inventory inventory, PlayerInventory playerInventory);
-
-    /**
-     * An event reserved for adding screen handler listeners onto the screen handler
-     */
-    protected abstract void onListenerInit();
-
-    /**
      * Server-side screen handler constructor
-     * @param syncId Synchronization ID
+     *
+     * @param syncId          Synchronization ID
      * @param playerInventory Player's inventory
-     * @param inventory Embedded inventory
-     * @param size Container size
-     * @param type Registered screen handler type. Unique for each instance
+     * @param inventory       Embedded inventory
+     * @param size            Container size
+     * @param type            Registered screen handler type. Unique for each instance
      */
     protected ContainerScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, int size, ScreenHandlerType<?> type) {
         super(type, syncId);
@@ -49,6 +38,19 @@ public abstract class ContainerScreenHandler extends ScreenHandler {
         onSlotInit(inventory, playerInventory);
         onListenerInit();
     }
+
+    /**
+     * An event reserved for putting slots on the screen handler
+     *
+     * @param inventory       Embedded inventory
+     * @param playerInventory Player inventory
+     */
+    protected abstract void onSlotInit(Inventory inventory, PlayerInventory playerInventory);
+
+    /**
+     * An event reserved for adding screen handler listeners onto the screen handler
+     */
+    protected abstract void onListenerInit();
 
     @Override
     public boolean canUse(PlayerEntity player) {
@@ -88,10 +90,11 @@ public abstract class ContainerScreenHandler extends ScreenHandler {
 
     /**
      * Places a slot according to the <b>exact</b> grid (see <code>textures/gui/container/dispenser</code>)
+     *
      * @param inventory Embedded inventory
-     * @param index Slot index
-     * @param x Grid X
-     * @param y Grid Y
+     * @param index     Slot index
+     * @param x         Grid X
+     * @param y         Grid Y
      */
     protected void addGridSlot(Inventory inventory, int index, int x, int y) {
         addSlot(new Slot(inventory, index, 62 + x * 18, 17 + y * 18));
@@ -99,6 +102,7 @@ public abstract class ContainerScreenHandler extends ScreenHandler {
 
     /**
      * Adds all the slots from the player's inventory to the screen handler
+     *
      * @param playerInventory Player's inventory
      */
     protected void addPlayerInventorySlots(PlayerInventory playerInventory) {
@@ -111,6 +115,7 @@ public abstract class ContainerScreenHandler extends ScreenHandler {
 
     /**
      * Adds all the slots from the player's hotbar to the screen handler
+     *
      * @param playerInventory Player's inventory
      */
     protected void addPlayerHotbarSlots(PlayerInventory playerInventory) {

@@ -31,7 +31,8 @@ public class BlockRegistry {
 
     /**
      * Registers a block and a block item
-     * @param id Resource identifier
+     *
+     * @param id    Resource identifier
      * @param block Block
      * @param group Item group for the block item
      */
@@ -42,11 +43,12 @@ public class BlockRegistry {
 
     /**
      * Registers a block, a block item and a block entity
-     * @param id Resource identifier
+     *
+     * @param id    Resource identifier
      * @param block Block
-     * @param type {@link BlockEntityType<T>}
+     * @param type  {@link BlockEntityType<T>}
      * @param group Block item group
-     * @param <T> Block entity
+     * @param <T>   Block entity
      */
     private static <T extends BlockEntity> void register(String id, Block block, BlockEntityType<T> type, ItemGroup group) {
         register(id, block, group);

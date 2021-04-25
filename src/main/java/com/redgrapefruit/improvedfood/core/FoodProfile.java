@@ -11,7 +11,14 @@ public class FoodProfile {
      * Minimum loss of ticks to recalculate the rot and/or overdue progress
      */
     public static final int MIN_TICK_LOSS = 20;
-
+    /**
+     * Config of this food item
+     */
+    private final FoodConfig config;
+    /**
+     * Category of this food item obtained through {@link FoodConfig#getCategory()}
+     */
+    private final FoodCategory category;
     /**
      * Current rot progress
      */
@@ -28,14 +35,6 @@ public class FoodProfile {
      * Is stored in a fridge
      */
     private boolean isInFridge;
-    /**
-     * Config of this food item
-     */
-    private final FoodConfig config;
-    /**
-     * Category of this food item obtained through {@link FoodConfig#getCategory()}
-     */
-    private final FoodCategory category;
     /**
      * Previous world tick
      */
@@ -57,6 +56,7 @@ public class FoodProfile {
 
     /**
      * Toggles the isSalted flag on/off
+     *
      * @param isSalted New value
      */
     public void toggleSalted(boolean isSalted) {
@@ -65,6 +65,7 @@ public class FoodProfile {
 
     /**
      * Toggles the isInFridge flag on/off
+     *
      * @param isInFridge New value
      */
     public void toggleInFridge(boolean isInFridge) {
@@ -80,6 +81,7 @@ public class FoodProfile {
 
     /**
      * Increments rot progress by given value
+     *
      * @param increment Incremented value
      */
     public void incrementRotProgress(int increment) {
@@ -95,18 +97,16 @@ public class FoodProfile {
 
     /**
      * Increments overdue progress by given value
+     *
      * @param increment Incremented value
      */
     public void incrementOverdueProgress(int increment) {
         overdueProgress += increment;
     }
 
-    public void setPreviousTick(long previousTick) {
-        this.previousTick = previousTick;
-    }
-
     /**
      * Updates the previousTick according to the world time
+     *
      * @param world World instance
      */
     public void updatePreviousTick(World world) {
@@ -138,6 +138,10 @@ public class FoodProfile {
 
     public long getPreviousTick() {
         return previousTick;
+    }
+
+    public void setPreviousTick(long previousTick) {
+        this.previousTick = previousTick;
     }
 
     public boolean isInitialized() {

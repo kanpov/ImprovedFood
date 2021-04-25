@@ -17,11 +17,15 @@ public interface ItemMixinAccess {
 
     // Setters
     void setProfile(FoodProfile profile);
+
     void setConfig(FoodConfig config);
+
     void setRottenVariant(RottenFoodItem rottenVariant);
+
     void setOverdueVariant(OverdueFoodItem overdueVariant);
 
     // Getters
     FoodProfile getFoodProfile();
+
     boolean isActivated();
 }

@@ -26,11 +26,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  *     <li>{@link ItemMixin} will execute {@link FoodSystem} events</li>
  * </ol>
  */
-@SuppressWarnings("UnresolvedMixinReference") // Somehow MCDev doesn't recognize <clinit> keyword (used for injection to static constructor)
+@SuppressWarnings("UnresolvedMixinReference")
+// Somehow MCDev doesn't recognize <clinit> keyword (used for injection to static constructor)
 @Mixin(Items.class)
 public class ItemsMixin {
     // Shadowed
-    @Shadow @Final public static Item PORKCHOP;
+    @Shadow
+    @Final
+    public static Item PORKCHOP;
 
     @Inject(method = "<clinit>", at = @At("TAIL"))
     private static void clinit(CallbackInfo info) {
@@ -39,7 +42,8 @@ public class ItemsMixin {
 
     /**
      * "Registers" the base properties of an item (no variants) as explained in the class javadoc above (from point number 2 to 4)
-     * @param item Source item
+     *
+     * @param item   Source item
      * @param config {@link FoodConfig}
      */
     private static ItemMixinAccess register(Item item, FoodConfig config) {

@@ -22,18 +22,20 @@ public abstract class ContainerBlockEntity extends BlockEntity implements Implem
     protected final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(getContainerSize(), ItemStack.EMPTY);
 
     /**
-     * Returns the size of the container
-     * @return Container size
-     */
-    protected abstract int getContainerSize();
-
-    /**
      * Child constructor creating a container block entity
+     *
      * @param type Registered block entity type
      */
     protected ContainerBlockEntity(BlockEntityType<?> type) {
         super(type);
     }
+
+    /**
+     * Returns the size of the container
+     *
+     * @return Container size
+     */
+    protected abstract int getContainerSize();
 
     @Override
     public DefaultedList<ItemStack> getItems() {

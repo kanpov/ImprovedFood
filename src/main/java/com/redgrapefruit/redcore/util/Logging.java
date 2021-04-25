@@ -18,6 +18,7 @@ public class Logging {
 
     /**
      * Logs the message on debug level if this isn't a production build
+     *
      * @param text Debug text
      */
     public static void debug(String text) {
@@ -28,6 +29,7 @@ public class Logging {
 
     /**
      * Logs the message on info level
+     *
      * @param text Info text
      */
     public static void info(String text) {
@@ -36,6 +38,7 @@ public class Logging {
 
     /**
      * Logs the message on warning level
+     *
      * @param text Warning text
      */
     public static void warning(String text) {
@@ -44,6 +47,7 @@ public class Logging {
 
     /**
      * Logs the message on error level
+     *
      * @param text Error text
      */
     public static void error(String text) {
@@ -53,6 +57,7 @@ public class Logging {
 
     /**
      * Logs the message on fatal level
+     *
      * @param text Fatal error text
      */
     public static void fatal(String text) {

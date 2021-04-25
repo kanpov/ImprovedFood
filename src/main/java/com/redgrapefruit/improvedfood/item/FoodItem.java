@@ -34,8 +34,9 @@ public class FoodItem extends Item {
 
     /**
      * Internal constructor allowing to use different {@link ItemGroup}'s and {@link FoodComponent}'s (used by food variants)
-     * @param config Food config
-     * @param group Item group from {@link ItemGroupRegistry}
+     *
+     * @param config            Food config
+     * @param group             Item group from {@link ItemGroupRegistry}
      * @param componentSupplier A {@link FoodComponent} supplier because a supplier can be constructed using a lambda method which is useful in this case
      */
     protected FoodItem(FoodConfig config, ItemGroup group, Supplier<FoodComponent> componentSupplier) {
@@ -48,6 +49,7 @@ public class FoodItem extends Item {
 
     /**
      * Public constructor creating a standard non-variant food item
+     *
      * @param config Food config
      */
     public FoodItem(FoodConfig config) {
@@ -85,6 +87,7 @@ public class FoodItem extends Item {
 
     /**
      * A builder method setting a rotten variant of this food item
+     *
      * @param rottenVariant Rotten variant
      * @return Self
      */
@@ -95,6 +98,7 @@ public class FoodItem extends Item {
 
     /**
      * A builder method setting an overdue variant of this food item
+     *
      * @param overdueVariant Overdue variant
      * @return Self
      */
@@ -105,6 +109,7 @@ public class FoodItem extends Item {
 
     /**
      * Sets the custom tooltip state of this food item
+     *
      * @param state State text
      */
     protected void setState(String state) {

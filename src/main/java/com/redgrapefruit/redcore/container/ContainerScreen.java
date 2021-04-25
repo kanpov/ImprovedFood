@@ -18,7 +18,19 @@ public abstract class ContainerScreen extends HandledScreen<ScreenHandler> {
     private final Identifier texture = getTexture();
 
     /**
+     * Child constructor creating a container screen
+     *
+     * @param handler   Linked screen handler
+     * @param inventory Player's inventory
+     * @param title     Screen title defined by the block entity in this case
+     */
+    protected ContainerScreen(ScreenHandler handler, PlayerInventory inventory, Text title) {
+        super(handler, inventory, title);
+    }
+
+    /**
      * Returns the screen GUI texture
+     *
      * @return GUI texture resource ID
      */
     protected abstract Identifier getTexture();
@@ -27,16 +39,6 @@ public abstract class ContainerScreen extends HandledScreen<ScreenHandler> {
      * An event reserved for custom rendering and custom GUI elements
      */
     protected abstract void onRender(MatrixStack matrices);
-
-    /**
-     * Child constructor creating a container screen
-     * @param handler Linked screen handler
-     * @param inventory Player's inventory
-     * @param title Screen title defined by the block entity in this case
-     */
-    protected ContainerScreen(ScreenHandler handler, PlayerInventory inventory, Text title) {
-        super(handler, inventory, title);
-    }
 
     @Override
     protected void drawBackground(MatrixStack matrices, float delta, int mouseX, int mouseY) {

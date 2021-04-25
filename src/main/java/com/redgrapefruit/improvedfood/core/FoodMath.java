@@ -6,8 +6,9 @@ package com.redgrapefruit.improvedfood.core;
 public class FoodMath {
     /**
      * Calculates current rot
+     *
      * @param profile Food profile
-     * @param config Food config
+     * @param config  Food config
      * @return Rot value
      */
     public static int rot(FoodProfile profile, FoodConfig config) {
@@ -25,8 +26,9 @@ public class FoodMath {
 
     /**
      * Calculates current overdue
+     *
      * @param profile Food profile
-     * @param config Food config
+     * @param config  Food config
      * @return Overdue value
      */
     public static int overdue(FoodProfile profile, FoodConfig config) {

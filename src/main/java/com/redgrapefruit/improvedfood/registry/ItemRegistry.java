@@ -1,7 +1,6 @@
 package com.redgrapefruit.improvedfood.registry;
 
 import com.redgrapefruit.improvedfood.ImprovedFood;
-import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -25,7 +24,8 @@ public class ItemRegistry {
 
     /**
      * Registers an item to Minecraft.
-     * @param id Resource identifier
+     *
+     * @param id   Resource identifier
      * @param item Item
      */
     private static void register(String id, Item item) {

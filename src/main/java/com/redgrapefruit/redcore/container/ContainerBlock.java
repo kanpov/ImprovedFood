@@ -13,11 +13,7 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.BlockMirror;
-import net.minecraft.util.BlockRotation;
-import net.minecraft.util.Hand;
-import net.minecraft.util.ItemScatterer;
+import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -34,21 +30,8 @@ public abstract class ContainerBlock extends BlockWithEntity {
     protected DirectionProperty FACING; // Facing property
 
     /**
-     * Checks if given block entity is instanceof current block entity
-     * @param blockEntity Given block entity
-     * @return Yes/No
-     */
-    protected abstract boolean checkBlockEntity(BlockEntity blockEntity);
-
-    /**
-     * Casts current block entity to an inventory
-     * @param blockEntity Current block entity
-     * @return Casted to inventory
-     */
-    protected abstract Inventory castToInventory(BlockEntity blockEntity);
-
-    /**
      * Child constructor initializing the container block
+     *
      * @param settings Block settings
      */
     protected ContainerBlock(Settings settings) {
@@ -56,6 +39,22 @@ public abstract class ContainerBlock extends BlockWithEntity {
         // Defaults facing property
         setDefaultState(getStateManager().getDefaultState().with(FACING, Direction.NORTH));
     }
+
+    /**
+     * Checks if given block entity is instanceof current block entity
+     *
+     * @param blockEntity Given block entity
+     * @return Yes/No
+     */
+    protected abstract boolean checkBlockEntity(BlockEntity blockEntity);
+
+    /**
+     * Casts current block entity to an inventory
+     *
+     * @param blockEntity Current block entity
+     * @return Casted to inventory
+     */
+    protected abstract Inventory castToInventory(BlockEntity blockEntity);
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {

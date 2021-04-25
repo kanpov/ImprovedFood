@@ -28,11 +28,16 @@ import java.util.List;
  */
 @Mixin(Item.class)
 public class ItemMixin implements ItemMixinAccess {
-    @Unique private FoodConfig config = null;
-    @Unique private FoodProfile profile = null;
-    @Unique private boolean isActivated = false;
-    @Unique private RottenFoodItem rottenVariant = null;
-    @Unique private OverdueFoodItem overdueVariant = null;
+    @Unique
+    private FoodConfig config = null;
+    @Unique
+    private FoodProfile profile = null;
+    @Unique
+    private boolean isActivated = false;
+    @Unique
+    private RottenFoodItem rottenVariant = null;
+    @Unique
+    private OverdueFoodItem overdueVariant = null;
 
     @Inject(method = "appendTooltip", at = @At("TAIL"))
     private void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context, CallbackInfo info) {
