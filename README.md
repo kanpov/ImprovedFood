@@ -1,10 +1,12 @@
 [![build](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml/badge.svg)](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml)
 
 # About
+
 ImprovedFood is a Minecraft mod in early development.  
 The mod will gradually improve food in Minecraft and add new food.
 
 # Features
+
 <ul>
 <li>Food is divided into 4 groups: meat, fruit, vegetables, berries</li>
 <li>Food properties are displayed in a neat, colorful tooltip</li>
@@ -20,11 +22,13 @@ The mod will gradually improve food in Minecraft and add new food.
 And much more...
 
 # Future
+
 This mod's release date is currently July 15th, 2021 (could be delayed if something goes wrong).  
 I will continue to release updates and bugfixes at least until October 1st, 2021.  
 Alpha and beta releases will be also available, but they're not nearly as stable.
 
 # Install
+
 (Beware that this instruction only applies to Windows 10)  
 Requirements:
 <ol>
@@ -42,7 +46,9 @@ To install this mod, you'll need to:
 </ol>
 
 # Compile
-To get the <span style="color: green">latest</span> and <span style="color: red">probably broken</span> version of the mod, you need to compile it  
+
+To get the <span style="color: green">latest</span> and <span style="color: red">probably broken</span> version of the
+mod, you need to compile it  
 Requirements:
 <ol>
 <li><a href="https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot">AdoptOpenJDK 8 HotSpot VM</a></li>
@@ -60,21 +66,24 @@ To compile this mod, you'll need to:
 </ol>
 
 # Code
+
 This project is written in Java 8 using Minecraft's and Fabric's APIs.  
-I put a lot of effort into comments and javadocs, so I hope the code is readable.  
-  
-Do keep in mind that I only have 1 or 2 hours a day to work on this project, so the progress is kind of slow.  
-  
+I put a lot of effort into comments and javadocs, so I hope the code is readable.
+
+Do keep in mind that I only have 1 or 2 hours a day to work on this project, so the progress is kind of slow.
+
 It's planned to update to Java 11 later, but right now Java 8 is good enough.  
-There are also plans to port the mod from Java to Kotlin, but that will only be done after the Java version releases.  
-  
-Some sub-libraries of my core library RedCore are bundled with this mod (you can find them in package com.redgrapefruit.redcore):
+There are also plans to port the mod from Java to Kotlin, but that will only be done after the Java version releases.
+
+Some sub-libraries of my core library RedCore are bundled with this mod (you can find them in package
+com.redgrapefruit.redcore):
 <ol>
 <li>RedCore.Container - easy and customizable container blocks with GUI without boilerplate</li>
 <li>RedCore.Util - common utilities to make your life easier</li>
 </ol>
 
 # Tools
+
 Here's a set of tools I use for this project if someone's interested:
 <ul>
 <li>Coding - <a href="https://www.jetbrains.com/idea/">JetBrains IntelliJ IDEA (Community)</a></li>
@@ -83,11 +92,13 @@ Here's a set of tools I use for this project if someone's interested:
 </ul>
 
 # Contribute
+
 I'll be grateful to receive issues and pull requests from the community of this project,  
 <b>but</b> I don't have a lot of time to review them, so you'll probably have to wait  
 for up to 2 days, so I can respond.
 
 # Credits
+
 <ul>
 <li>To Mojang Studios for creating this awesome game and inspiring me</li>
 <li>To FabricMC team and contributors for creating a truly amazing modding environment</li>
@@ -97,5 +108,6 @@ for up to 2 days, so I can respond.
 </ul>
 
 # Contact
+
 You can email me to suggest some changes:  
 karpovanton729@gmail.com
