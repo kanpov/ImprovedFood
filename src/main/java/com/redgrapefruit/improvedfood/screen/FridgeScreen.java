@@ -2,6 +2,7 @@ package com.redgrapefruit.improvedfood.screen;
 
 import com.redgrapefruit.improvedfood.ImprovedFood;
 import com.redgrapefruit.redcore.container.ContainerScreen;
+import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
@@ -21,7 +22,7 @@ public class FridgeScreen extends ContainerScreen {
     }
 
     @Override
-    protected void onRender() {
+    protected void onRender(MatrixStack matrices) {
 
     }
 }

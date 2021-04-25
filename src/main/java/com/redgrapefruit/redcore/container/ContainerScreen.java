@@ -26,7 +26,7 @@ public abstract class ContainerScreen extends HandledScreen<ScreenHandler> {
     /**
      * An event reserved for custom rendering and custom GUI elements
      */
-    protected abstract void onRender();
+    protected abstract void onRender(MatrixStack matrices);
 
     /**
      * Child constructor creating a container screen
@@ -62,7 +62,7 @@ public abstract class ContainerScreen extends HandledScreen<ScreenHandler> {
         super.render(matrices, mouseX, mouseY, delta);
         drawMouseoverTooltip(matrices, mouseX, mouseY);
         // Fire event
-        onRender();
+        onRender(matrices);
     }
 
     @Override
