@@ -56,36 +56,6 @@ public class FoodProfile {
     }
 
     /**
-     * Updates rot or/and overdue progress depending on the food category
-     */
-    public void update() {
-        if (category.canRot()) applyRot();
-        if (category.canOverdue()) applyOverdue();
-    }
-
-    /**
-     * Applies rot effect and decreases it if the food is put in a fridge and/or salted
-     */
-    private void applyRot() {
-        // Base
-        rotProgress += config.getRotSpeed();
-        // Fridge
-        if (isInFridge) rotProgress -= config.getFridgeEfficiency();
-        // Salt
-        if (isSalted) rotProgress -= config.getSaltEfficiency();
-    }
-
-    /**
-     * Applies overdue effect and decreases it if the food is put in a fridge
-     */
-    private void applyOverdue() {
-        // Base
-        overdueProgress += config.getOverdueSpeed();
-        // Fridge
-        if (isInFridge) overdueProgress -= config.getFridgeEfficiency();
-    }
-
-    /**
      * Toggles the isSalted flag on/off
      * @param isSalted New value
      */

@@ -73,4 +73,14 @@ public class ItemMixin implements ItemMixinAccess {
     public void setOverdueVariant(OverdueFoodItem overdueVariant) {
         this.overdueVariant = overdueVariant;
     }
+
+    @Override
+    public FoodProfile getFoodProfile() {
+        return profile;
+    }
+
+    @Override
+    public boolean isActivated() {
+        return isActivated;
+    }
 }

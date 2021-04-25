@@ -20,4 +20,8 @@ public interface ItemMixinAccess {
     void setConfig(FoodConfig config);
     void setRottenVariant(RottenFoodItem rottenVariant);
     void setOverdueVariant(OverdueFoodItem overdueVariant);
+
+    // Getters
+    FoodProfile getFoodProfile();
+    boolean isActivated();
 }

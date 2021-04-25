@@ -3,7 +3,6 @@ package com.redgrapefruit.redcore.container;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
-import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerType;
@@ -16,7 +15,7 @@ import net.minecraft.screen.slot.Slot;
  */
 public abstract class ContainerScreenHandler extends ScreenHandler {
     // Embedded inventory
-    private final Inventory inventory;
+    protected final Inventory inventory;
 
     /**
      * An event reserved for putting slots on the screen handler

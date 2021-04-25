@@ -27,35 +27,44 @@ public class FoodSystem {
      * @param overdueVariant Overdue food variant
      */
     public static void inventoryTick(FoodConfig config, FoodProfile profile, PlayerEntity player, int slot, World world, RottenFoodItem rottenVariant, OverdueFoodItem overdueVariant) {
+        // Dirty initialization logic (it's really bad by the way)
         if (!profile.isInitialized()) {
             profile.setPreviousTick(world.getTime());
             profile.markInitialized();
         }
 
-        // Compensate ticks when the item isn't stored in the player's inventory through a counter
+        // Tick compensation rot and overdue logic
+        // Calculate current and previous tick time and subtract one from another to find out the difference
         long currentTick = world.getTime();
         int difference = (int) ((int) currentTick - profile.getPreviousTick());
-
+        // If the difference exceeds minimal tick loss -> the food item was put in a chest
         if (difference > FoodProfile.MIN_TICK_LOSS) {
+            // Now compensate the difference lost in rot and overdue progresses
             if (config.getCategory().canRot()) {
-                profile.incrementRotProgress(difference * config.getRotSpeed());
+                profile.incrementRotProgress(difference * FoodMath.rot(profile, config));
             }
             if (config.getCategory().canOverdue()) {
-                profile.incrementOverdueProgress(difference * config.getOverdueSpeed());
+                profile.incrementOverdueProgress(difference * FoodMath.overdue(profile, config));
             }
         }
+        // Save the tick time
         profile.updatePreviousTick(world);
 
-        profile.update();
+        // Standard rot and overdue logic
+        if (config.getCategory().canRot()) {
+            profile.incrementRotProgress(FoodMath.rot(profile, config));
+        }
+        if (config.getCategory().canOverdue()) {
+            profile.incrementOverdueProgress(FoodMath.overdue(profile, config));
+        }
 
-        // Rot
+        // Bound checking of rot and overdue to see if they exceeded the limit
         if (profile.getRotProgress() > config.getRotState()) {
             // Decrement stack, offer/drop the variant, reset progress
             player.inventory.getStack(slot).decrement(1);
             player.inventory.offerOrDrop(world, new ItemStack(rottenVariant));
             profile.resetRotProgress();
         }
-        // Overdue
         if (profile.getOverdueProgress() > config.getOverdueState()) {
             // Decrement stack, offer/drop the variant, reset progress
             player.inventory.getStack(slot).decrement(1);
