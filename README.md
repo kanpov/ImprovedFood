@@ -20,7 +20,7 @@ The mod will gradually improve food in Minecraft and add new food.
 And much more...
 
 # Future
-This mod's release date is currently June 1st, 2021 (could be delayed if something goes wrong).  
+This mod's release date is currently July 15th, 2021 (could be delayed if something goes wrong).  
 I will continue to release updates and bugfixes at least until October 1st, 2021.  
 Alpha and beta releases will be also available, but they're not nearly as stable.
 
@@ -63,7 +63,8 @@ To compile this mod, you'll need to:
 This project is written in Java 8 using Minecraft's and Fabric's APIs.  
 I put a lot of effort into comments and javadocs, so I hope the code is readable.  
 Do keep in mind that I only have 1 or 2 hours a day to work on this project, so the progress is kind of slow.  
-It's planned to update to Java 11 later, but right now Java 8 is good enough.
+It's planned to update to Java 11 later, but right now Java 8 is good enough.  
+There are also plans to port the mod from Java to Kotlin, but that will only be done after the Java version releases.
 
 # Tools
 Here's a set of tools I use for this project if someone's interested:
