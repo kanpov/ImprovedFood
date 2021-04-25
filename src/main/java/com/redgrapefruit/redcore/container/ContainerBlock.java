@@ -1,5 +1,6 @@
 package com.redgrapefruit.redcore.container;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.BlockWithEntity;
@@ -9,6 +10,7 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
@@ -29,7 +31,7 @@ import org.jetbrains.annotations.Nullable;
  * A part of RedCore.Container library bundled with this mod.
  */
 public abstract class ContainerBlock extends BlockWithEntity {
-    protected final DirectionProperty FACING = Properties.HORIZONTAL_FACING; // Facing property
+    protected DirectionProperty FACING; // Facing property
 
     /**
      * Checks if given block entity is instanceof current block entity
@@ -53,6 +55,12 @@ public abstract class ContainerBlock extends BlockWithEntity {
         super(settings);
         // Defaults facing property
         setDefaultState(getStateManager().getDefaultState().with(FACING, Direction.NORTH));
+    }
+
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        FACING = Properties.HORIZONTAL_FACING;
+        builder.add(FACING);
     }
 
     @Override

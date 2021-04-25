@@ -31,17 +31,6 @@ public abstract class ContainerScreenHandler extends ScreenHandler {
     protected abstract void onListenerInit();
 
     /**
-     * Client-side screen handler constructor
-     * @param syncId Synchronization ID
-     * @param playerInventory Player's inventory
-     * @param size Container size
-     * @param type Registered screen handler type. Unique for each instance
-     */
-    protected ContainerScreenHandler(int syncId, PlayerInventory playerInventory, int size, ScreenHandlerType<?> type) {
-        this(syncId, playerInventory, new SimpleInventory(size), size, type);
-    }
-
-    /**
      * Server-side screen handler constructor
      * @param syncId Synchronization ID
      * @param playerInventory Player's inventory
