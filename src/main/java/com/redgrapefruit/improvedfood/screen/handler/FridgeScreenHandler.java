@@ -21,9 +21,11 @@ public class FridgeScreenHandler extends ContainerScreenHandler {
     @Override
     protected void onSlotInit(Inventory inventory, PlayerInventory playerInventory) {
         // Custom 3x3 inventory
+        int index = 0;
         for (int y = 0; y < 3; y++) {
             for (int x = 0; x < 3; x++) {
-                addGridSlot(inventory, y + x, x, y);
+                addGridSlot(inventory, index, x, y);
+                index++;
             }
         }
         // Player inventory and hotbar
