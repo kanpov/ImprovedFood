@@ -62,9 +62,17 @@ To compile this mod, you'll need to:
 # Code
 This project is written in Java 8 using Minecraft's and Fabric's APIs.  
 I put a lot of effort into comments and javadocs, so I hope the code is readable.  
+  
 Do keep in mind that I only have 1 or 2 hours a day to work on this project, so the progress is kind of slow.  
+  
 It's planned to update to Java 11 later, but right now Java 8 is good enough.  
-There are also plans to port the mod from Java to Kotlin, but that will only be done after the Java version releases.
+There are also plans to port the mod from Java to Kotlin, but that will only be done after the Java version releases.  
+  
+Some sub-libraries of my core library RedCore are bundled with this mod (you can find them in package com.redgrapefruit.redcore):
+<ol>
+<li>RedCore.Container - easy and customizable container blocks with GUI without boilerplate</li>
+<li>RedCore.Util - common utilities to make your life easier</li>
+</ol>
 
 # Tools
 Here's a set of tools I use for this project if someone's interested:
