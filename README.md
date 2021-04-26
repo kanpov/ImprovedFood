@@ -29,7 +29,15 @@ Alpha and beta releases will be also available, but they're not nearly as stable
 
 # Install
 
-(Beware that this instruction only applies to Windows 10)  
+For this project, there are three types of builds:
+<ol>
+<li>Release builds. Stable and tested builds that will be published on a CurseForge page.</li>
+<li>Alpha and beta builds. Relatively unstable builds with some new features in comparison with release builds.</li>
+<li>Daily builds. Unstable builds published everyday with latest hot features</li>
+</ol>
+We <b>highly recommend</b> using <i>alpha and beta builds</i> because the mod is in development and there aren't any release builds just yet.
+
+(Beware that this instruction only applies to Windows 10. Linux Ubuntu guide coming soon)  
 Requirements:
 <ol>
 <li><a href="https://www.minecraft.net/en-us/">Minecraft (1.16.5 Java Edition)</a></li>
@@ -41,7 +49,7 @@ To install this mod, you'll need to:
 <li>Setup the requirements from above</li>
 <li>Create a modded 1.16.5 Minecraft instance on your computer</li>
 <li>Navigate to C:/Users/$PUT_YOUR_USERNAME_HERE$/AppData/Local/.minecraft/mods</li>
-<li>Paste the downloaded mod JAR file (get it <a href="https://github.com/RedGrapefruit09/ImprovedFood/releases">here</a>) in the folder you opened</li>
+<li>Paste the downloaded mod JAR file in the folder you opened</li>
 <li>Launch Minecraft and enjoy your modded experience!</li>
 </ol>
 
