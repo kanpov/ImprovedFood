@@ -6,40 +6,40 @@ package com.redgrapefruit.improvedfood.core;
  */
 public enum FoodCategory {
     MEAT(4,
-	     1.6f,
-		 "Meat",
-		 true,
-		 false,
-		 true,
-		 true,
-		 "Trusty old meat. Fills your belly really well"),
-		 
+            1.6f,
+            "Meat",
+            true,
+            false,
+            true,
+            true,
+            "Trusty old meat. Fills your belly really well"),
+
     FRUIT(2,
-	      1.2f,
-		  "Fruit",
-		  false,
-		  true,
-		  true,
-		  false,
-		  "Sweet, juicy fruit. Important for a good diet"),
-		  
+            1.2f,
+            "Fruit",
+            false,
+            true,
+            true,
+            false,
+            "Sweet, juicy fruit. Important for a good diet"),
+
     VEGETABLE(2,
-			  1.3f,
-			  "Vegetable",
-			  false,
-			  true,
-			  true,
-			  false,
-			  "Extremely healthy vegetable. Who doesn't like cucumbers and tomatoes?"),
-			  
+            1.3f,
+            "Vegetable",
+            false,
+            true,
+            true,
+            false,
+            "Extremely healthy vegetable. Who doesn't like cucumbers and tomatoes?"),
+
     BERRIES(1,
-        	0.6f,
-			"Berries",
-			false,
-			true,
-			false,
-			false,
-			"Small and tasty berries. Very cheap but not very nutritious");
+            0.6f,
+            "Berries",
+            false,
+            true,
+            false,
+            false,
+            "Small and tasty berries. Very cheap but not very nutritious");
 
     /**
      * Base hunger of this food type.<br>

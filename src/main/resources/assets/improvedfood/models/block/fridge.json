@@ -1,11 +1,11 @@
 {
   "parent": "block/cube_all",
   "textures": {
-      "north": "improvedfood:block/fridge_front",
-      "south": "improvedfood:block/fridge_side",
-      "east": "improvedfood:block/fridge_side",
-      "west": "improvedfood:block/fridge_side",
-      "up": "improvedfood:block/fridge_top",
-      "down": "improvedfood:block/fridge_bottom"
+    "north": "improvedfood:block/fridge_front",
+    "south": "improvedfood:block/fridge_side",
+    "east": "improvedfood:block/fridge_side",
+    "west": "improvedfood:block/fridge_side",
+    "up": "improvedfood:block/fridge_top",
+    "down": "improvedfood:block/fridge_bottom"
   }
 }
