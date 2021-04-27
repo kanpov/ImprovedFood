@@ -29,13 +29,14 @@ Alpha and beta releases will be also available, but they're not nearly as stable
 
 # Install
 
-For this project, there are three types of builds:
-<ol>
-<li>Release builds. Stable and tested builds that will be published on a CurseForge page.</li>
-<li>Alpha and beta builds. Relatively unstable builds with some new features in comparison with release builds.</li>
-<li>Daily builds. Unstable builds published everyday with latest hot features</li>
-</ol>
-We <b>highly recommend</b> using <i>alpha and beta builds</i> because the mod is in development and there aren't any release builds just yet.
+The latest release version: none  
+The latest beta version: none  
+The latest alpha version: none  
+The latest daily version: 0.1.0-daily1
+
+Get the builds from [here](https://github.com/RedGrapefruit09/ImprovedFood/releases)  
+For regular usage, pick the highest available version from the list.  
+For experimental usage, pick the lowest available version from the list.
 
 (Beware that this instruction only applies to Windows 10. Linux Ubuntu guide coming soon)  
 Requirements:
