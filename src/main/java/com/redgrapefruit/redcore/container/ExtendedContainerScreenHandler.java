@@ -6,7 +6,8 @@ import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandlerType;
 
 /**
- * A container screen handler with property delegate support
+ * A container screen handler with property delegate support.<br><br>
+ * A part of RedCore.Container library bundled with this mod.
  */
 public abstract class ExtendedContainerScreenHandler extends ContainerScreenHandler {
     protected PropertyDelegate propertyDelegate;
