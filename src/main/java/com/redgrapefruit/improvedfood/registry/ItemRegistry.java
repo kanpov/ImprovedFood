@@ -3,6 +3,7 @@ package com.redgrapefruit.improvedfood.registry;
 import com.redgrapefruit.improvedfood.ImprovedFood;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -15,11 +16,14 @@ public class ItemRegistry {
 
     // Overdue variants
 
+    // Miscellaneous
+    public static final Item SALT = new Item(new Item.Settings().group(ItemGroup.MISC));
+
     /**
      * Runs the registry code
      */
     public static void run() {
-
+        register("salt", SALT);
     }
 
     /**
