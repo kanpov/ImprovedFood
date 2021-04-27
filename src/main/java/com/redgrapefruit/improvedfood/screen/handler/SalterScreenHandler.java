@@ -1,21 +1,23 @@
 package com.redgrapefruit.improvedfood.screen.handler;
 
 import com.redgrapefruit.improvedfood.registry.GuiRegistry;
-import com.redgrapefruit.redcore.container.ContainerScreenHandler;
+import com.redgrapefruit.redcore.container.ExtendedContainerScreenHandler;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
+import net.minecraft.screen.ArrayPropertyDelegate;
+import net.minecraft.screen.PropertyDelegate;
 
 /**
  * A salter screen handler implemented using RedCore.Container library
  */
-public class SalterScreenHandler extends ContainerScreenHandler {
+public class SalterScreenHandler extends ExtendedContainerScreenHandler {
     public SalterScreenHandler(int syncId, PlayerInventory playerInventory) {
-        this(syncId, playerInventory, new SimpleInventory(3));
+        this(syncId, playerInventory, new SimpleInventory(3), new ArrayPropertyDelegate(1));
     }
 
-    public SalterScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory) {
-        super(syncId, playerInventory, inventory, 3, GuiRegistry.SALTER_SCREEN_HANDLER);
+    public SalterScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate propertyDelegate) {
+        super(syncId, playerInventory, inventory, propertyDelegate, 3, GuiRegistry.SALTER_SCREEN_HANDLER);
     }
 
     @Override
