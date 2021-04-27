@@ -32,7 +32,7 @@ Alpha and beta releases will be also available, but they're not nearly as stable
 The latest release version: none  
 The latest beta version: none  
 The latest alpha version: none  
-The latest daily version: 0.1.0-daily1
+The latest daily version: 0.1.0-daily2
 
 Get the builds from [here](https://github.com/RedGrapefruit09/ImprovedFood/releases)  
 For regular usage, pick the highest available version from the list.  
