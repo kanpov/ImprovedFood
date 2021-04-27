@@ -2,7 +2,9 @@ package com.redgrapefruit.improvedfood.registry;
 
 import com.redgrapefruit.improvedfood.ImprovedFood;
 import com.redgrapefruit.improvedfood.block.FridgeBlock;
+import com.redgrapefruit.improvedfood.block.SalterBlock;
 import com.redgrapefruit.improvedfood.block.entity.FridgeBlockEntity;
+import com.redgrapefruit.improvedfood.block.entity.SalterBlockEntity;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -21,12 +23,15 @@ public class BlockRegistry {
     // Storage blocks
     public static final FridgeBlock FRIDGE = new FridgeBlock(FabricBlockSettings.copyOf(Blocks.CHEST));
     public static final BlockEntityType<FridgeBlockEntity> FRIDGE_BLOCK_ENTITY = BlockEntityType.Builder.create(FridgeBlockEntity::new, FRIDGE).build(null);
+    public static final SalterBlock SALTER = new SalterBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE));
+    public static final BlockEntityType<SalterBlockEntity> SALTER_BLOCK_ENTITY = BlockEntityType.Builder.create(SalterBlockEntity::new, SALTER).build(null);
 
     /**
      * Runs the registry code
      */
     public static void run() {
         register("fridge", FRIDGE, FRIDGE_BLOCK_ENTITY, ItemGroupRegistry.STORAGE);
+        register("salter", SALTER, SALTER_BLOCK_ENTITY, ItemGroupRegistry.STORAGE);
     }
 
     /**
