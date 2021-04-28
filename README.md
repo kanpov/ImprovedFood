@@ -117,8 +117,10 @@ for up to 2 days, so I can respond.
 </ul>
 
 # Infrequently Asked Questions
+
 Q: Will you port this mod to Forge?  
-A: No. I don't mod with Forge because of many reasons, mainly because of the community (you can see Jelly's Gist for details on that). You can obviously fork the mod and make a port, but I won't provide any support.
+A: No. I don't mod with Forge because of many reasons, mainly because of the community (you can see Jelly's Gist for
+details on that). You can obviously fork the mod and make a port, but I won't provide any support.  
 Q: Will the mod work with 1.15 and lower?  
 A: No. I only support the latest MC versions, but I don't work with MC snapshots
 
