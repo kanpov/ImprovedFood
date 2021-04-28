@@ -28,6 +28,8 @@ public class ItemRegistry {
      */
     public static void run() {
         register("salt", SALT);
+        register("rotten_porkchop", PORKCHOP_ROTTEN);
+        register("salted_porkchop", PORKCHOP_SALTED);
     }
 
     /**

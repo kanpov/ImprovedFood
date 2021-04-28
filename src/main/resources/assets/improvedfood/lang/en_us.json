@@ -1,5 +1,7 @@
 {
     "item.improvedfood.salt": "Salt",
+    "item.improvedfood.salted_porkchop": "Salted Porkchop",
+    "item.improvedfood.rotten_porkchop": "Rotten Porkchop",
     "block.improvedfood.fridge": "Fridge",
     "block.improvedfood.salter": "Salter",
     "itemGroup.improvedfood.fresh_food": "Fresh Food",
