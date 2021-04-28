@@ -12,14 +12,6 @@ public class FoodProfile {
      */
     public static final int MIN_TICK_LOSS = 20;
     /**
-     * Config of this food item
-     */
-    private final FoodConfig config;
-    /**
-     * Category of this food item obtained through {@link FoodConfig#getCategory()}
-     */
-    private final FoodCategory category;
-    /**
      * Current rot progress
      */
     private int rotProgress;
@@ -44,8 +36,6 @@ public class FoodProfile {
         this.rotProgress = 0;
         this.overdueProgress = 0;
         this.isInFridge = false;
-        this.config = config;
-        this.category = config.getCategory();
         this.isInitialized = false;
     }
 
