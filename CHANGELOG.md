@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.0-daily3]
+
+### Added
+
+- A salt item in a separate class
+- Effect override-ability so rotten and overdue variants disable the effects
+- Separate salted variants instead of a boolean
+
+### Fixed
+
+- Unregistered variants leading to a complete mess
+- README formatting being incorrect in the Infrequently Asked Questions section
+- Unnecessary fields in the profile
+
 ## [0.1.0-daily2]
 
 ### Added
