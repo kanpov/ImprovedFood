@@ -27,6 +27,8 @@ public class FoodItem extends Item {
 
     // A custom state displayed in tooltips. Overridden by variants
     private String state;
+    // Will the food item override effects. Used by variants
+    private boolean overrideEffects = false;
 
     // Variants
     private RottenFoodItem rottenVariant;
@@ -127,6 +129,10 @@ public class FoodItem extends Item {
         this.state = state;
     }
 
+    public void overrideEffects() {
+        this.overrideEffects = true;
+    }
+
     public FoodProfile getProfile() {
         return profile;
     }
@@ -142,7 +148,7 @@ public class FoodItem extends Item {
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         super.inventoryTick(stack, world, entity, slot, selected);
 
-        if (!(entity instanceof PlayerEntity)) return;
+        if (!(entity instanceof PlayerEntity) || overrideEffects) return;
 
         FoodSystem.inventoryTick(config, profile, (PlayerEntity) entity, slot, world, rottenVariant, overdueVariant);
     }

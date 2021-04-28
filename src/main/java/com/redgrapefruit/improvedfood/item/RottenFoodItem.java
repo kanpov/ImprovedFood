@@ -46,5 +46,6 @@ public class RottenFoodItem extends FoodItem {
         });
 
         setState("Rotten");
+        overrideEffects();
     }
 }
