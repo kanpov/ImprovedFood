@@ -4,6 +4,7 @@ import com.redgrapefruit.improvedfood.core.FoodConfig;
 import com.redgrapefruit.improvedfood.core.FoodProfile;
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
+import com.redgrapefruit.improvedfood.item.SaltedFoodItem;
 import com.redgrapefruit.improvedfood.mixin.ItemMixin;
 
 /**
@@ -23,6 +24,7 @@ public interface ItemMixinAccess {
     void setRottenVariant(RottenFoodItem rottenVariant);
 
     void setOverdueVariant(OverdueFoodItem overdueVariant);
+    void setSaltedVariant(SaltedFoodItem saltedVariant);
 
     // Getters
     FoodProfile getFoodProfile();

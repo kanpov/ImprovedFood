@@ -17,9 +17,6 @@ public class FoodMath {
         if (config.getCategory().canBePutInFridge() && profile.isInFridge()) {
             out -= config.getFridgeEfficiency();
         }
-        if (config.getCategory().canBeSalted() && profile.isSalted()) {
-            out -= config.getSaltEfficiency();
-        }
 
         return out;
     }

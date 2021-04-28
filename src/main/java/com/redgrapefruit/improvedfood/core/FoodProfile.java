@@ -28,10 +28,6 @@ public class FoodProfile {
      */
     private int overdueProgress;
     /**
-     * Is salted
-     */
-    private boolean isSalted;
-    /**
      * Is stored in a fridge
      */
     private boolean isInFridge;
@@ -47,20 +43,10 @@ public class FoodProfile {
     public FoodProfile(FoodConfig config) {
         this.rotProgress = 0;
         this.overdueProgress = 0;
-        this.isSalted = false;
         this.isInFridge = false;
         this.config = config;
         this.category = config.getCategory();
         this.isInitialized = false;
-    }
-
-    /**
-     * Toggles the isSalted flag on/off
-     *
-     * @param isSalted New value
-     */
-    public void toggleSalted(boolean isSalted) {
-        this.isSalted = isSalted;
     }
 
     /**
@@ -126,10 +112,6 @@ public class FoodProfile {
 
     public int getOverdueProgress() {
         return overdueProgress;
-    }
-
-    public boolean isSalted() {
-        return isSalted;
     }
 
     public boolean isInFridge() {

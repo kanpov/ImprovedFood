@@ -11,7 +11,6 @@ public enum FoodCategory {
             true,
             false,
             true,
-            true,
             "Trusty old meat. Fills your belly really well"),
 
     FRUIT(2,
@@ -20,7 +19,6 @@ public enum FoodCategory {
             false,
             true,
             true,
-            false,
             "Sweet, juicy fruit. Important for a good diet"),
 
     VEGETABLE(2,
@@ -29,7 +27,6 @@ public enum FoodCategory {
             false,
             true,
             true,
-            false,
             "Extremely healthy vegetable. Who doesn't like cucumbers and tomatoes?"),
 
     BERRIES(1,
@@ -37,7 +34,6 @@ public enum FoodCategory {
             "Berries",
             false,
             true,
-            false,
             false,
             "Small and tasty berries. Very cheap but not very nutritious");
 
@@ -68,22 +64,17 @@ public enum FoodCategory {
      */
     private final boolean canBePutInFridge;
     /**
-     * Can this food type be salted
-     */
-    private final boolean canBeSalted;
-    /**
      * Visual description of this category
      */
     private final String description;
 
-    FoodCategory(int baseHunger, float baseSaturation, String displayName, boolean canRot, boolean canOverdue, boolean canBePutInFridge, boolean canBeSalted, String description) {
+    FoodCategory(int baseHunger, float baseSaturation, String displayName, boolean canRot, boolean canOverdue, boolean canBePutInFridge, String description) {
         this.baseHunger = baseHunger;
         this.baseSaturation = baseSaturation;
         this.displayName = displayName;
         this.canRot = canRot;
         this.canOverdue = canOverdue;
         this.canBePutInFridge = canBePutInFridge;
-        this.canBeSalted = canBeSalted;
         this.description = description;
     }
 
@@ -109,10 +100,6 @@ public enum FoodCategory {
 
     public boolean canBePutInFridge() {
         return canBePutInFridge;
-    }
-
-    public boolean canBeSalted() {
-        return canBeSalted;
     }
 
     public String getDescription() {

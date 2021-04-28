@@ -31,6 +31,7 @@ public class FoodItem extends Item {
     // Variants
     private RottenFoodItem rottenVariant;
     private OverdueFoodItem overdueVariant;
+    private SaltedFoodItem saltedVariant;
 
     /**
      * Internal constructor allowing to use different {@link ItemGroup}'s and {@link FoodComponent}'s (used by food variants)
@@ -104,6 +105,16 @@ public class FoodItem extends Item {
      */
     public FoodItem setOverdueVariant(OverdueFoodItem overdueVariant) {
         this.overdueVariant = overdueVariant;
+        return this;
+    }
+
+    /**
+     * A builder method setting a salted variant of this food item
+     * @param saltedVariant Salted variant
+     * @return Self
+     */
+    public FoodItem setSaltedVariant(SaltedFoodItem saltedVariant) {
+        this.saltedVariant = saltedVariant;
         return this;
     }
 

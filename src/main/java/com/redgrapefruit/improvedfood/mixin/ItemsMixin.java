@@ -5,6 +5,7 @@ import com.redgrapefruit.improvedfood.core.FoodProfile;
 import com.redgrapefruit.improvedfood.core.FoodSystem;
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
+import com.redgrapefruit.improvedfood.item.SaltedFoodItem;
 import com.redgrapefruit.improvedfood.registry.ConfigRegistry;
 import com.redgrapefruit.improvedfood.registry.ItemRegistry;
 import com.redgrapefruit.improvedfood.util.ItemMixinAccess;
@@ -37,7 +38,7 @@ public class ItemsMixin {
 
     @Inject(method = "<clinit>", at = @At("TAIL"))
     private static void clinit(CallbackInfo info) {
-        register(PORKCHOP, ConfigRegistry.PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN);
+        register(PORKCHOP, ConfigRegistry.PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN, ItemRegistry.PORKCHOP_SALTED);
     }
 
     /**
@@ -59,7 +60,7 @@ public class ItemsMixin {
 
     // Register's with rotten and/or overdue variants
 
-    private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant) {
+    private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, SaltedFoodItem saltedVariant) {
         ItemMixinAccess access = register(item, config);
         access.setRottenVariant(rottenVariant);
     }
@@ -69,7 +70,7 @@ public class ItemsMixin {
         access.setOverdueVariant(overdueVariant);
     }
 
-    private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, OverdueFoodItem overdueVariant) {
+    private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, SaltedFoodItem saltedVariant, OverdueFoodItem overdueVariant) {
         ItemMixinAccess access = register(item, config);
         access.setRottenVariant(rottenVariant);
         access.setOverdueVariant(overdueVariant);

@@ -5,6 +5,7 @@ import com.redgrapefruit.improvedfood.core.FoodProfile;
 import com.redgrapefruit.improvedfood.core.FoodSystem;
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
+import com.redgrapefruit.improvedfood.item.SaltedFoodItem;
 import com.redgrapefruit.improvedfood.util.ItemMixinAccess;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
@@ -38,6 +39,7 @@ public class ItemMixin implements ItemMixinAccess {
     private RottenFoodItem rottenVariant = null;
     @Unique
     private OverdueFoodItem overdueVariant = null;
+    @Unique private SaltedFoodItem saltedVariant = null;
 
     @Inject(method = "appendTooltip", at = @At("TAIL"))
     private void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context, CallbackInfo info) {
@@ -77,6 +79,11 @@ public class ItemMixin implements ItemMixinAccess {
     @Override
     public void setOverdueVariant(OverdueFoodItem overdueVariant) {
         this.overdueVariant = overdueVariant;
+    }
+
+    @Override
+    public void setSaltedVariant(SaltedFoodItem saltedVariant) {
+        this.saltedVariant = saltedVariant;
     }
 
     @Override

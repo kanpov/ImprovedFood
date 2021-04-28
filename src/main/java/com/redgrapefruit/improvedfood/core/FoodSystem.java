@@ -114,12 +114,6 @@ public class FoodSystem {
             tooltip.add(new LiteralText(Formatting.BLUE + "Is in a fridge: " + profile.isInFridge()));
             tooltip.add(new LiteralText(Formatting.DARK_BLUE + "Fridge efficiency: " + config.getFridgeEfficiency()));
         }
-        // Salt
-        if (config.getCategory().canBeSalted()) {
-            newLine(tooltip);
-            tooltip.add(new LiteralText(Formatting.WHITE + "Is salted: " + profile.isSalted()));
-            tooltip.add(new LiteralText(Formatting.GRAY + "Salt efficiency: " + config.getSaltEfficiency()));
-        }
     }
 
     private static void newLine(List<Text> tooltip) {

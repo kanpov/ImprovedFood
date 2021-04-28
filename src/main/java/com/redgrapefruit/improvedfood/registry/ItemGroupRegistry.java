@@ -15,6 +15,7 @@ public class ItemGroupRegistry {
     public static ItemGroup FRESH_FOOD;
     public static ItemGroup OVERDUE_FOOD;
     public static ItemGroup ROTTEN_FOOD;
+    public static ItemGroup SALTED_FOOD;
     public static ItemGroup SEEDS;
     public static ItemGroup CROPS;
     public static ItemGroup STORAGE;
@@ -25,6 +26,7 @@ public class ItemGroupRegistry {
         FRESH_FOOD = register("fresh_food", Items.WHITE_BED);
         OVERDUE_FOOD = register("overdue_food", Items.GRAY_BED);
         ROTTEN_FOOD = register("rotten_food", Items.BLACK_BED);
+        SALTED_FOOD = register("salted_food", Items.PURPLE_BED);
         SEEDS = register("seeds", Items.ORANGE_BED);
         CROPS = register("crops", Items.YELLOW_BED);
         STORAGE = register("storage", Items.GREEN_BED);
