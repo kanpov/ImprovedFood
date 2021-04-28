@@ -112,6 +112,7 @@ public class FoodItem extends Item {
 
     /**
      * A builder method setting a salted variant of this food item
+     *
      * @param saltedVariant Salted variant
      * @return Self
      */

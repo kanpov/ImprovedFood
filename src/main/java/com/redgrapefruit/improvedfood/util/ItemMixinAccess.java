@@ -24,6 +24,7 @@ public interface ItemMixinAccess {
     void setRottenVariant(RottenFoodItem rottenVariant);
 
     void setOverdueVariant(OverdueFoodItem overdueVariant);
+
     void setSaltedVariant(SaltedFoodItem saltedVariant);
 
     // Getters
