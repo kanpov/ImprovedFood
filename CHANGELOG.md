@@ -13,6 +13,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Effect override-ability so rotten and overdue variants disable the effects
 - Separate salted variants instead of a boolean
 
+### Changed
+
+- Fabric API dependency update: 0.33.0 => 0.33.1
+
 ### Fixed
 
 - Unregistered variants leading to a complete mess
@@ -30,7 +34,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
-- Dependency versions have been updated
+- Fabric API dependency update: 0.32.9 => 0.33.0
 
 ### Fixed
 
