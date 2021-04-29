@@ -29,6 +29,8 @@ public class FoodItem extends Item {
     private String state;
     // Will the food item override effects. Used by variants
     private boolean overrideEffects = false;
+    // Is the food salted
+    private boolean isSalted = false;
 
     // Variants
     private RottenFoodItem rottenVariant;
@@ -134,6 +136,10 @@ public class FoodItem extends Item {
         this.overrideEffects = true;
     }
 
+    public void salted() {
+        this.isSalted = true;
+    }
+
     public FoodProfile getProfile() {
         return profile;
     }
@@ -151,6 +157,6 @@ public class FoodItem extends Item {
 
         if (!(entity instanceof PlayerEntity) || overrideEffects) return;
 
-        FoodSystem.inventoryTick(config, profile, (PlayerEntity) entity, slot, world, rottenVariant, overdueVariant);
+        FoodSystem.inventoryTick(config, profile, (PlayerEntity) entity, slot, world, rottenVariant, overdueVariant, isSalted);
     }
 }

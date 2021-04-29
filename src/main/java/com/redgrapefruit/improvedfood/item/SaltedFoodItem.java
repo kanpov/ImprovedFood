@@ -30,5 +30,6 @@ public class SaltedFoodItem extends FoodItem {
         });
 
         setState("Salted");
+        salted();
     }
 }

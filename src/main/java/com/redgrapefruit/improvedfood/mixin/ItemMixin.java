@@ -53,7 +53,7 @@ public class ItemMixin implements ItemMixinAccess {
     private void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected, CallbackInfo callbackInfo) {
         if (!isActivated || !(entity instanceof PlayerEntity)) return;
 
-        FoodSystem.inventoryTick(config, profile, (PlayerEntity) entity, slot, world, rottenVariant, overdueVariant);
+        FoodSystem.inventoryTick(config, profile, (PlayerEntity) entity, slot, world, rottenVariant, overdueVariant, false);
     }
 
     // Duck interface implementations

@@ -26,8 +26,9 @@ public class FoodSystem {
      * @param world          World instance
      * @param rottenVariant  Rotten food variant
      * @param overdueVariant Overdue food variant
+     * @param isSalt         Is salted
      */
-    public static void inventoryTick(FoodConfig config, FoodProfile profile, PlayerEntity player, int slot, World world, RottenFoodItem rottenVariant, OverdueFoodItem overdueVariant) {
+    public static void inventoryTick(FoodConfig config, FoodProfile profile, PlayerEntity player, int slot, World world, RottenFoodItem rottenVariant, OverdueFoodItem overdueVariant, boolean isSalt) {
         // Dirty initialization logic (it's really bad by the way)
         if (!profile.isInitialized()) {
             profile.setPreviousTick(world.getTime());
@@ -57,6 +58,10 @@ public class FoodSystem {
         }
         if (config.getCategory().canOverdue()) {
             profile.incrementOverdueProgress(FoodMath.overdue(profile, config));
+        }
+        // Salt logic
+        if (isSalt) {
+            profile.decrementRotProgress(config.getSaltEfficiency());
         }
 
         // Bound checking of rot and overdue to see if they exceeded the limit

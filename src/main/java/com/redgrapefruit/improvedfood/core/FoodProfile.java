@@ -65,6 +65,15 @@ public class FoodProfile {
     }
 
     /**
+     * Decrements rot progress by given value
+     *
+     * @param decrement Decremented value
+     */
+    public void decrementRotProgress(int decrement) {
+        rotProgress -= decrement;
+    }
+
+    /**
      * Resets the overdue progress to 0
      */
     public void resetOverdueProgress() {
