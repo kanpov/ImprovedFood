@@ -15,6 +15,8 @@ public abstract class ExtendedContainerBlockEntity extends ContainerBlockEntity 
 
     protected ExtendedContainerBlockEntity(BlockEntityType<?> type) {
         super(type);
+        // Construct property delegate
+        propertyDelegate = constructDelegate();
     }
 
     /**
