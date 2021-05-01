@@ -93,6 +93,11 @@ public class ItemMixin implements ItemMixinAccess {
     }
 
     @Override
+    public SaltedFoodItem getSaltedVariant() {
+        return saltedVariant;
+    }
+
+    @Override
     public boolean isActivated() {
         return isActivated;
     }

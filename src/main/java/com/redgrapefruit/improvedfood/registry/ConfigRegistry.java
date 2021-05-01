@@ -12,7 +12,7 @@ public class ConfigRegistry {
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
             .rotState(20000)
-            .rotSpeed(5)
+            .rotSpeed(10)
             .fridgeEfficiency(2)
             .saltEfficiency(1)
             .build();

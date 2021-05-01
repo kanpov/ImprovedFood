@@ -30,5 +30,7 @@ public interface ItemMixinAccess {
     // Getters
     FoodProfile getFoodProfile();
 
+    SaltedFoodItem getSaltedVariant();
+
     boolean isActivated();
 }

@@ -58,11 +58,10 @@ public class ItemsMixin {
         return access;
     }
 
-    // Register's with rotten and/or overdue variants
-
     private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, SaltedFoodItem saltedVariant) {
         ItemMixinAccess access = register(item, config);
         access.setRottenVariant(rottenVariant);
+        access.setSaltedVariant(saltedVariant);
     }
 
     private static void register(Item item, FoodConfig config, OverdueFoodItem overdueVariant) {
@@ -73,6 +72,7 @@ public class ItemsMixin {
     private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, SaltedFoodItem saltedVariant, OverdueFoodItem overdueVariant) {
         ItemMixinAccess access = register(item, config);
         access.setRottenVariant(rottenVariant);
+        access.setSaltedVariant(saltedVariant);
         access.setOverdueVariant(overdueVariant);
     }
 }
