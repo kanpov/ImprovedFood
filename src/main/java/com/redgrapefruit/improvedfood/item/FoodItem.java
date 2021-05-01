@@ -132,16 +132,26 @@ public class FoodItem extends Item {
         this.state = state;
     }
 
+    /**
+     * Enables effect overrides
+     */
     public void overrideEffects() {
         this.overrideEffects = true;
     }
 
+    /**
+     * Marks the food item as salted
+     */
     public void salted() {
         this.isSalted = true;
     }
 
     public FoodProfile getProfile() {
         return profile;
+    }
+
+    public SaltedFoodItem getSaltedVariant() {
+        return saltedVariant;
     }
 
     @Override

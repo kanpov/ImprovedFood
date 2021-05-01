@@ -9,7 +9,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
-- Salt as a separate food variant. 
+- Salt as a separate food variant.
 - Salt implementation
 
 ### Changed
