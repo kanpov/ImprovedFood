@@ -25,12 +25,12 @@ public interface ItemMixinAccess {
 
     void setOverdueVariant(OverdueFoodItem overdueVariant);
 
-    void setSaltedVariant(SaltedFoodItem saltedVariant);
-
     // Getters
     FoodProfile getFoodProfile();
 
     SaltedFoodItem getSaltedVariant();
+
+    void setSaltedVariant(SaltedFoodItem saltedVariant);
 
     boolean isActivated();
 }

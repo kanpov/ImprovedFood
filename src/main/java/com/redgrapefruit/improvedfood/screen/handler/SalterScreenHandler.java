@@ -104,6 +104,7 @@ public class SalterScreenHandler extends ExtendedContainerScreenHandler {
 
         /**
          * Checks the food stack on both implementations for validity
+         *
          * @param stack Food stack
          * @return Is invalid
          */
@@ -113,8 +114,9 @@ public class SalterScreenHandler extends ExtendedContainerScreenHandler {
 
         /**
          * Resets the containment of the output slot to a new item
+         *
          * @param newContainment New containment item
-         * @param count The amount of this new containment item
+         * @param count          The amount of this new containment item
          * @return Created stack
          */
         private ItemStack resetOutputContainment(Item newContainment, int count) {

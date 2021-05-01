@@ -113,17 +113,6 @@ public class FoodItem extends Item {
     }
 
     /**
-     * A builder method setting a salted variant of this food item
-     *
-     * @param saltedVariant Salted variant
-     * @return Self
-     */
-    public FoodItem setSaltedVariant(SaltedFoodItem saltedVariant) {
-        this.saltedVariant = saltedVariant;
-        return this;
-    }
-
-    /**
      * Sets the custom tooltip state of this food item
      *
      * @param state State text
@@ -152,6 +141,17 @@ public class FoodItem extends Item {
 
     public SaltedFoodItem getSaltedVariant() {
         return saltedVariant;
+    }
+
+    /**
+     * A builder method setting a salted variant of this food item
+     *
+     * @param saltedVariant Salted variant
+     * @return Self
+     */
+    public FoodItem setSaltedVariant(SaltedFoodItem saltedVariant) {
+        this.saltedVariant = saltedVariant;
+        return this;
     }
 
     @Override

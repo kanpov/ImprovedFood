@@ -83,11 +83,6 @@ public class ItemMixin implements ItemMixinAccess {
     }
 
     @Override
-    public void setSaltedVariant(SaltedFoodItem saltedVariant) {
-        this.saltedVariant = saltedVariant;
-    }
-
-    @Override
     public FoodProfile getFoodProfile() {
         return profile;
     }
@@ -95,6 +90,11 @@ public class ItemMixin implements ItemMixinAccess {
     @Override
     public SaltedFoodItem getSaltedVariant() {
         return saltedVariant;
+    }
+
+    @Override
+    public void setSaltedVariant(SaltedFoodItem saltedVariant) {
+        this.saltedVariant = saltedVariant;
     }
 
     @Override
