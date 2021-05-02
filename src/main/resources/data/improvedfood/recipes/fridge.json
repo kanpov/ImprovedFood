@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:iron_block"
+        },
+        "B": {
+            "item": "minecraft:ice"
+        },
+        "C": {
+            "item": "minecraft:gold_block"
+        }
+    },
+    "result": {
+        "item": "improvedfood:fridge",
+        "count": 1
+    }
+}
