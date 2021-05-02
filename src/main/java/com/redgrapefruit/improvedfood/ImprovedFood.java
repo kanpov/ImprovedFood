@@ -3,6 +3,7 @@ package com.redgrapefruit.improvedfood;
 import com.redgrapefruit.improvedfood.registry.BlockRegistry;
 import com.redgrapefruit.improvedfood.registry.ItemGroupRegistry;
 import com.redgrapefruit.improvedfood.registry.ItemRegistry;
+import com.redgrapefruit.improvedfood.registry.PatchRegistry;
 import com.redgrapefruit.redcore.util.Logging;
 import net.fabricmc.api.ModInitializer;
 
@@ -23,6 +24,7 @@ public class ImprovedFood implements ModInitializer {
     public void onInitialize() {
         ItemGroupRegistry.run();
         ItemRegistry.run();
+        PatchRegistry.run();
         BlockRegistry.run();
 
         Logging.info("ImprovedFood loaded on common side");

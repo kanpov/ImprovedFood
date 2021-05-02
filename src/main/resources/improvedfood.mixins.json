@@ -4,8 +4,7 @@
     "package": "com.redgrapefruit.improvedfood.mixin",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
-        "ItemMixin",
-        "ItemsMixin"
+        "ItemMixin"
     ],
     "client": [
     ],
