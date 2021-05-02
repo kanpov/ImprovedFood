@@ -1,5 +1,15 @@
 [![build](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml/badge.svg)](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml)
 
+# Congratulations!
+
+On May, 2nd hit <b>three</b> major goals in a single day!
+<ol>
+<li>We reached <b>100</b> commits to 'master' branch after <i>only</i> 20 days since the start of this project</li>
+<li>We broke the record amount of commits in a day: <b>28</b></li>
+<li>We broke the record amount of traffic in a day: <b>837</b> clones and <b>243</b> views <b>and it's still going higher</b></li>
+</ol>
+Congratulations to me, RedGrapefruit09 (karpovanton729@gmail.com on my 2nd computer), and <b>everyone</b> who has viewed this page and given me motivation to continue!
+
 # About
 
 ImprovedFood is a Minecraft mod made with Fabric's toolchain aiming to improve food in the game.  
