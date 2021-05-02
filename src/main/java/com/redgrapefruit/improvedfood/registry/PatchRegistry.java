@@ -15,6 +15,7 @@ import net.minecraft.item.Items;
 public class PatchRegistry {
     public static void run() {
         register(Items.PORKCHOP, ConfigRegistry.PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN, ItemRegistry.PORKCHOP_SALTED);
+        register(Items.COOKED_PORKCHOP, ConfigRegistry.COOKED_PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN, ItemRegistry.PORKCHOP_SALTED);
     }
 
     /**

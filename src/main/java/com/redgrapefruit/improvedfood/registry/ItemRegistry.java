@@ -14,11 +14,13 @@ import net.minecraft.util.registry.Registry;
 public class ItemRegistry {
     // Rotten variants
     public static final RottenFoodItem PORKCHOP_ROTTEN = new RottenFoodItem(ConfigRegistry.PORKCHOP);
+    public static final RottenFoodItem COOKED_PORKCHOP_ROTTEN = new RottenFoodItem(ConfigRegistry.COOKED_PORKCHOP);
 
     // Overdue variants
 
     // Salted variants
     public static final SaltedFoodItem PORKCHOP_SALTED = new SaltedFoodItem(ConfigRegistry.PORKCHOP);
+    public static final SaltedFoodItem COOKED_PORKCHOP_SALTED = new SaltedFoodItem(ConfigRegistry.COOKED_PORKCHOP);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -29,7 +31,9 @@ public class ItemRegistry {
     public static void run() {
         register("salt", SALT);
         register("rotten_porkchop", PORKCHOP_ROTTEN);
+        register("rotten_cooked_porkchop", COOKED_PORKCHOP_ROTTEN);
         register("salted_porkchop", PORKCHOP_SALTED);
+        register("salted_cooked_porkchop", COOKED_PORKCHOP_SALTED);
     }
 
     /**

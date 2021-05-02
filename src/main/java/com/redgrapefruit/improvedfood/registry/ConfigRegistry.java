@@ -11,9 +11,16 @@ public class ConfigRegistry {
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
-            .rotState(20000)
+            .rotState(75000)
             .rotSpeed(10)
-            .fridgeEfficiency(2)
-            .saltEfficiency(1)
+            .fridgeEfficiency(5)
+            .saltEfficiency(3)
+            .build();
+    public static final FoodConfig COOKED_PORKCHOP = new FoodConfig.Builder()
+            .category(FoodCategory.MEAT)
+            .rotState(125000)
+            .rotSpeed(8)
+            .fridgeEfficiency(6)
+            .saltEfficiency(4)
             .build();
 }
