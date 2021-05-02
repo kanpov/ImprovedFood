@@ -54,6 +54,7 @@ Q: Do you support snapshots?
 A: No. I don't support snapshots and only update between stable releases of Minecraft and Fabric's toolchain.
 
 # Credits
+
 <ul>
 <li>To Mojang's developers for creating Minecraft and making my childhood</li>
 <li>To Fabric's team and contributors for creating an astonishing modding toolchain</li>
@@ -63,4 +64,5 @@ A: No. I don't support snapshots and only update between stable releases of Mine
 </ul>
 
 # Contact
+
 You can email me at karpovanton729@gmail.com

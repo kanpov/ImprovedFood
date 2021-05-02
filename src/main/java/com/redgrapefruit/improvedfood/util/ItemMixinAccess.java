@@ -28,8 +28,6 @@ public interface ItemMixinAccess {
     // Getters
     FoodProfile getFoodProfile();
 
-    SaltedFoodItem getSaltedVariant();
-
     void setSaltedVariant(SaltedFoodItem saltedVariant);
 
     boolean isActivated();
