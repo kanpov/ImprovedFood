@@ -30,7 +30,7 @@ Requirements:
 
 To get the mod file, navigate to the releases page [here](https://github.com/RedGrapefruit09/ImprovedFood/releases),
 click on the top release and download the JAR file.  
-Put the JAR file in your mods folder, launch the game and enjoy your modded experience!
+Put the JAR file from the releases page <b>and</b> Fabric API JAR file in your mods folder, launch the game and enjoy your modded experience!
 
 # Compile
 
