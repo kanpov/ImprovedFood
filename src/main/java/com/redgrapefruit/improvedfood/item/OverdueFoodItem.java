@@ -3,6 +3,7 @@ package com.redgrapefruit.improvedfood.item;
 import com.redgrapefruit.improvedfood.ImprovedFood;
 import com.redgrapefruit.improvedfood.core.FoodCategory;
 import com.redgrapefruit.improvedfood.core.FoodConfig;
+import com.redgrapefruit.improvedfood.core.FoodState;
 import com.redgrapefruit.improvedfood.registry.ItemGroupRegistry;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -54,7 +55,7 @@ public class OverdueFoodItem extends FoodItem {
             return builder.build();
         });
 
-        setState("Overdue");
+        setState(FoodState.OVERDUE);
         overrideEffects();
     }
 }

@@ -2,6 +2,7 @@ package com.redgrapefruit.improvedfood.mixin;
 
 import com.redgrapefruit.improvedfood.core.FoodConfig;
 import com.redgrapefruit.improvedfood.core.FoodProfile;
+import com.redgrapefruit.improvedfood.core.FoodState;
 import com.redgrapefruit.improvedfood.core.FoodSystem;
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
@@ -46,7 +47,7 @@ public class ItemMixin implements ItemMixinAccess {
     private void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context, CallbackInfo info) {
         if (!isActivated) return;
 
-        FoodSystem.appendTooltip(tooltip, config, profile, "Fresh");
+        FoodSystem.appendTooltip(tooltip, config, profile, FoodState.FRESH);
     }
 
     @Inject(method = "inventoryTick", at = @At("TAIL"))

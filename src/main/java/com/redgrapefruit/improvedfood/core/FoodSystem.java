@@ -83,17 +83,17 @@ public class FoodSystem {
     /**
      * Appends the item's tooltip to display custom values in detail
      *
-     * @param tooltip Tooltip
+     * @param tooltip Tooltip text list
      * @param config  {@link FoodConfig}
      * @param profile {@link FoodProfile}
-     * @param state   Food state
+     * @param state   {@link FoodState}
      */
-    public static void appendTooltip(List<Text> tooltip, FoodConfig config, FoodProfile profile, String state) {
+    public static void appendTooltip(List<Text> tooltip, FoodConfig config, FoodProfile profile, FoodState state) {
         // TODO: Make labels language-independent using TranslatableText instead of LiteralText
 
         // State
         newLine(tooltip);
-        tooltip.add(new LiteralText(Formatting.AQUA + "State: " + state));
+        tooltip.add(new LiteralText(Formatting.AQUA + "State: " + state.getDisplayName()));
         // Hunger
         newLine(tooltip);
         tooltip.add(new LiteralText(Formatting.GREEN + "Hunger: " + (config.getHunger() + config.getCategory().getBaseHunger())));
@@ -105,17 +105,17 @@ public class FoodSystem {
         tooltip.add(new LiteralText(Formatting.RED + config.getCategory().getDisplayName()));
         tooltip.add(new LiteralText(Formatting.YELLOW + config.getCategory().getDescription()));
         // Rot
-        if (config.getCategory().canRot()) {
+        if (config.getCategory().canRot() && state.doesDisplayRot()) {
             newLine(tooltip);
             tooltip.add(new LiteralText(Formatting.DARK_GREEN + "Rot: " + profile.getRotProgress() + "/" + config.getRotState()));
         }
         // Overdue
-        if (config.getCategory().canOverdue()) {
+        if (config.getCategory().canOverdue() && state.doesDisplayOverdue()) {
             newLine(tooltip);
             tooltip.add(new LiteralText(Formatting.DARK_PURPLE + "Overdue: " + profile.getOverdueProgress() + "/" + config.getOverdueState()));
         }
         // Fridge
-        if (config.getCategory().canBePutInFridge()) {
+        if (config.getCategory().canBePutInFridge() && state.doesDisplayFridgeProperties()) {
             newLine(tooltip);
             tooltip.add(new LiteralText(Formatting.BLUE + "Is in a fridge: " + profile.isInFridge()));
             tooltip.add(new LiteralText(Formatting.DARK_BLUE + "Fridge efficiency: " + config.getFridgeEfficiency()));

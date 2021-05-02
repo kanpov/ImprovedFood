@@ -26,9 +26,9 @@ public class FoodItem extends Item {
     private final FoodProfile profile;
 
     /**
-     * A custom state displayed in tooltips. Overridden by variants
+     * A custom state for managing tooltips. Overridden by variants
      */
-    private String state;
+    private FoodState state;
     /**
      * Will the food item override effects. Overridden by variants
      */
@@ -55,7 +55,7 @@ public class FoodItem extends Item {
 
         this.config = config;
         this.profile = new FoodProfile(config); // TODO: Replace with deserialized profile instead of creating a new profile every launch of the game
-        this.state = "Fresh";
+        this.state = FoodState.FRESH;
     }
 
     /**
@@ -97,7 +97,7 @@ public class FoodItem extends Item {
     }
 
     /**
-     * A builder method setting a rotten variant of this food item
+     * A builder method setting a rotten variant of this {@link FoodItem}
      *
      * @param rottenVariant Rotten variant
      * @return Self
@@ -108,7 +108,7 @@ public class FoodItem extends Item {
     }
 
     /**
-     * A builder method setting an overdue variant of this food item
+     * A builder method setting an overdue variant of this {@link FoodItem}
      *
      * @param overdueVariant Overdue variant
      * @return Self
@@ -119,7 +119,7 @@ public class FoodItem extends Item {
     }
 
     /**
-     * A builder method setting a salted variant of this food item
+     * A builder method setting a salted variant of this {@link FoodItem}
      *
      * @param saltedVariant Salted variant
      * @return Self
@@ -130,11 +130,11 @@ public class FoodItem extends Item {
     }
 
     /**
-     * Sets the custom tooltip state of this food item
+     * Sets the custom {@link FoodState} of this food item
      *
-     * @param state State text
+     * @param state {@link FoodState}
      */
-    protected void setState(String state) {
+    protected void setState(FoodState state) {
         this.state = state;
     }
 

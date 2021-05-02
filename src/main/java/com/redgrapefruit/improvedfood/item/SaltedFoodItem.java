@@ -2,6 +2,7 @@ package com.redgrapefruit.improvedfood.item;
 
 import com.redgrapefruit.improvedfood.core.FoodCategory;
 import com.redgrapefruit.improvedfood.core.FoodConfig;
+import com.redgrapefruit.improvedfood.core.FoodState;
 import com.redgrapefruit.improvedfood.registry.ItemGroupRegistry;
 import net.minecraft.item.FoodComponent;
 
@@ -29,7 +30,7 @@ public class SaltedFoodItem extends FoodItem {
             return builder.build();
         });
 
-        setState("Salted");
+        setState(FoodState.SALTED);
         salted();
     }
 }
