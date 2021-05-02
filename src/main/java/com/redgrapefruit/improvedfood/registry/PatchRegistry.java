@@ -36,8 +36,9 @@ public class PatchRegistry {
 
     /**
      * Registers the base properties with meat's variants to the mixin access
-     * @param item Item
-     * @param config {@link FoodConfig}
+     *
+     * @param item          Item
+     * @param config        {@link FoodConfig}
      * @param rottenVariant Rotten variant
      * @param saltedVariant Salted variant
      */
@@ -49,8 +50,9 @@ public class PatchRegistry {
 
     /**
      * Registers the base properties with non-meat's variants to the mixin access
-     * @param item Item
-     * @param config {@link FoodConfig}
+     *
+     * @param item           Item
+     * @param config         {@link FoodConfig}
      * @param overdueVariant Overdue variant
      */
     private static void register(Item item, FoodConfig config, OverdueFoodItem overdueVariant) {
@@ -60,10 +62,11 @@ public class PatchRegistry {
 
     /**
      * Registers the base properties with all variants to the mixin access
-     * @param item Item
-     * @param config {@link FoodConfig}
-     * @param rottenVariant Rotten variant
-     * @param saltedVariant Salted variant
+     *
+     * @param item           Item
+     * @param config         {@link FoodConfig}
+     * @param rottenVariant  Rotten variant
+     * @param saltedVariant  Salted variant
      * @param overdueVariant Overdue variant
      */
     private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, SaltedFoodItem saltedVariant, OverdueFoodItem overdueVariant) {
