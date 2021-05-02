@@ -52,3 +52,12 @@ Q: Will there be a CurseForge page?
 A: Yes. After the mod is released I will send my request to upload the mod to CurseForge.  
 Q: Do you support snapshots?  
 A: No. I don't support snapshots and only update between stable releases of Minecraft and Fabric's toolchain.
+
+# Credits
+<ul>
+<li>To Mojang's developers for creating Minecraft and making my childhood</li>
+<li>To Fabric's team and contributors for creating an astonishing modding toolchain</li>
+<li>To JetBrains's team and contributors for creating an amazing JVM IDE and skyrocketing my productivity</li>
+<li>To Aseprite's team and contributors for creating a lovely sprite editor</li>
+<li>And to everyone who sees this for giving me motivation to continue</li>
+</ul>
