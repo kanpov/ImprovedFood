@@ -1,15 +1,5 @@
 [![build](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml/badge.svg)](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml)
 
-I will take a break from working on the project for one or two more days because:
-<ul>
-<li>I am burned out and exhausted after making so much commitment to the project along with my tight schedule</li>
-<li>My sleep has shortened from 9-8 to 6-7 hours per day and my brain is exploding</li>
-<li>My productivity has dropped significantly</li>
-<li>My birthday and Easter are incoming and I mustn't ignore them</li>
-<li>Personal problems which I cannot share on the Internet for obvious reasons</li>
-</ul>
-I'll be back in a day or two. Farewell for now!
-
 # About
 
 ImprovedFood is a Minecraft mod in early development.  
