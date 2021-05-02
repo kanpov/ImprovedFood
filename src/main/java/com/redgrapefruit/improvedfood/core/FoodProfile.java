@@ -1,9 +1,10 @@
 package com.redgrapefruit.improvedfood.core;
 
+import com.redgrapefruit.improvedfood.item.FoodItem;
 import net.minecraft.world.World;
 
 /**
- * A profile with temporary data about a food item.<br>
+ * A profile with temporary data about a {@link FoodItem}.<br>
  * TODO: Serialize profiles using CardinalComponentsAPI
  */
 public class FoodProfile {

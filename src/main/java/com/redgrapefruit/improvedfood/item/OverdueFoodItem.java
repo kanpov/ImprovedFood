@@ -9,14 +9,9 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 
 /**
- * An overdue variant of a food item
+ * An overdue variant of a {@link FoodItem}
  */
 public class OverdueFoodItem extends FoodItem {
-    /**
-     * Creates an overdue variant of a food item
-     *
-     * @param config Food config
-     */
     public OverdueFoodItem(FoodConfig config) {
         super(config, ItemGroupRegistry.OVERDUE_FOOD, () -> {
             FoodComponent.Builder builder = new FoodComponent.Builder();

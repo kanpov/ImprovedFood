@@ -43,12 +43,13 @@ public interface ImplementedInventory extends Inventory {
     /**
      * Checks if the inventory is empty.<br>
      *
-     * @return true if this inventory has only empty stacks, false otherwise.
+     * @return True if this inventory has only empty stacks, false otherwise.
      */
     @Override
     default boolean isEmpty() {
         for (int i = 0; i < size(); i++) {
             ItemStack stack = getStack(i);
+
             if (!stack.isEmpty()) {
                 return false;
             }
@@ -75,9 +76,11 @@ public interface ImplementedInventory extends Inventory {
     @Override
     default ItemStack removeStack(int slot, int count) {
         ItemStack result = Inventories.splitStack(getItems(), slot, count);
+
         if (!result.isEmpty()) {
             markDirty();
         }
+
         return result;
     }
 

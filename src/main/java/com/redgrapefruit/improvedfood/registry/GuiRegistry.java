@@ -5,11 +5,13 @@ import com.redgrapefruit.improvedfood.screen.FridgeScreen;
 import com.redgrapefruit.improvedfood.screen.handler.FridgeScreenHandler;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 
 /**
- * A registry for screens and screen handlers
+ * A registry for {@link Screen}s and {@link ScreenHandler}s
  */
 public class GuiRegistry {
     public static final ScreenHandlerType<FridgeScreenHandler> FRIDGE_SCREEN_HANDLER;

@@ -18,7 +18,7 @@ public class PatchRegistry {
     }
 
     /**
-     * "Registers" the base properties of an item (no variants) as explained in the class javadoc above (from point number 2 to 4)
+     * Registers the base properties of an item (no variants) to the mixin access
      *
      * @param item   Source item
      * @param config {@link FoodConfig}
@@ -34,17 +34,38 @@ public class PatchRegistry {
         return access;
     }
 
+    /**
+     * Registers the base properties with meat's variants to the mixin access
+     * @param item Item
+     * @param config {@link FoodConfig}
+     * @param rottenVariant Rotten variant
+     * @param saltedVariant Salted variant
+     */
     private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, SaltedFoodItem saltedVariant) {
         ItemMixinAccess access = register(item, config);
         access.setRottenVariant(rottenVariant);
         access.setSaltedVariant(saltedVariant);
     }
 
+    /**
+     * Registers the base properties with non-meat's variants to the mixin access
+     * @param item Item
+     * @param config {@link FoodConfig}
+     * @param overdueVariant Overdue variant
+     */
     private static void register(Item item, FoodConfig config, OverdueFoodItem overdueVariant) {
         ItemMixinAccess access = register(item, config);
         access.setOverdueVariant(overdueVariant);
     }
 
+    /**
+     * Registers the base properties with all variants to the mixin access
+     * @param item Item
+     * @param config {@link FoodConfig}
+     * @param rottenVariant Rotten variant
+     * @param saltedVariant Salted variant
+     * @param overdueVariant Overdue variant
+     */
     private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, SaltedFoodItem saltedVariant, OverdueFoodItem overdueVariant) {
         ItemMixinAccess access = register(item, config);
         access.setRottenVariant(rottenVariant);

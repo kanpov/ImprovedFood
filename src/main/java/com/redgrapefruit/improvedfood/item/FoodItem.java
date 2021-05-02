@@ -25,11 +25,17 @@ public class FoodItem extends Item {
     private final FoodConfig config;
     private final FoodProfile profile;
 
-    // A custom state displayed in tooltips. Overridden by variants
+    /**
+     * A custom state displayed in tooltips. Overridden by variants
+     */
     private String state;
-    // Will the food item override effects. Used by variants
+    /**
+     * Will the food item override effects. Overridden by variants
+     */
     private boolean overrideEffects = false;
-    // Is the food salted
+    /**
+     * Is the food salted
+     */
     private boolean isSalted = false;
 
     // Variants
@@ -40,8 +46,8 @@ public class FoodItem extends Item {
     /**
      * Internal constructor allowing to use different {@link ItemGroup}'s and {@link FoodComponent}'s (used by food variants)
      *
-     * @param config            Food config
-     * @param group             Item group from {@link ItemGroupRegistry}
+     * @param config            {@link FoodConfig}
+     * @param group             {@link ItemGroup} from {@link ItemGroupRegistry}
      * @param componentSupplier A {@link FoodComponent} supplier because a supplier can be constructed using a lambda method which is useful in this case
      */
     protected FoodItem(FoodConfig config, ItemGroup group, Supplier<FoodComponent> componentSupplier) {
@@ -55,7 +61,7 @@ public class FoodItem extends Item {
     /**
      * Public constructor creating a standard non-variant food item
      *
-     * @param config Food config
+     * @param config {@link FoodConfig}
      */
     public FoodItem(FoodConfig config) {
         this(config, ItemGroupRegistry.FRESH_FOOD, () -> {
@@ -113,6 +119,17 @@ public class FoodItem extends Item {
     }
 
     /**
+     * A builder method setting a salted variant of this food item
+     *
+     * @param saltedVariant Salted variant
+     * @return Self
+     */
+    public FoodItem setSaltedVariant(SaltedFoodItem saltedVariant) {
+        this.saltedVariant = saltedVariant;
+        return this;
+    }
+
+    /**
      * Sets the custom tooltip state of this food item
      *
      * @param state State text
@@ -137,21 +154,6 @@ public class FoodItem extends Item {
 
     public FoodProfile getProfile() {
         return profile;
-    }
-
-    public SaltedFoodItem getSaltedVariant() {
-        return saltedVariant;
-    }
-
-    /**
-     * A builder method setting a salted variant of this food item
-     *
-     * @param saltedVariant Salted variant
-     * @return Self
-     */
-    public FoodItem setSaltedVariant(SaltedFoodItem saltedVariant) {
-        this.saltedVariant = saltedVariant;
-        return this;
     }
 
     @Override

@@ -5,11 +5,12 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.ScreenHandlerListener;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.Slot;
 
 /**
- * A container screen handler managing slots and screen handler listeners.<br>
+ * A container {@link ScreenHandler} managing slots and {@link ScreenHandlerListener}s.<br>
  * Also provides a few useful API methods for creating slots.<br><br>
  * A part of RedCore.Container library bundled with this mod.
  */

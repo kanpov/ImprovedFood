@@ -14,7 +14,7 @@ import net.minecraft.screen.ScreenHandlerListener;
 import net.minecraft.util.collection.DefaultedList;
 
 /**
- * A fridge screen handler implemented using RedCore.Container library
+ * A fridge {@link ScreenHandler} implemented using RedCore.Container library
  */
 public class FridgeScreenHandler extends ContainerScreenHandler {
     public FridgeScreenHandler(int syncId, PlayerInventory playerInventory) {

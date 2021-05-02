@@ -6,7 +6,7 @@ import com.redgrapefruit.improvedfood.registry.ItemGroupRegistry;
 import net.minecraft.item.FoodComponent;
 
 /**
- * A salted food item is more resistant
+ * A salted variant of a {@link FoodItem}
  */
 public class SaltedFoodItem extends FoodItem {
     public SaltedFoodItem(FoodConfig config) {

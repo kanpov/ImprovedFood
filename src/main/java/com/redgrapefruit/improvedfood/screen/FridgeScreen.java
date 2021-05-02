@@ -2,6 +2,7 @@ package com.redgrapefruit.improvedfood.screen;
 
 import com.redgrapefruit.improvedfood.ImprovedFood;
 import com.redgrapefruit.redcore.container.ContainerScreen;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.screen.ScreenHandler;
@@ -9,7 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 /**
- * A fridge screen implemented using RedCore.Container library
+ * A fridge {@link Screen} implemented using RedCore.Container library
  */
 public class FridgeScreen extends ContainerScreen {
     public FridgeScreen(ScreenHandler handler, PlayerInventory inventory, Text title) {

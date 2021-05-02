@@ -9,6 +9,9 @@ import net.fabricmc.api.ModInitializer;
 
 import java.util.Random;
 
+/**
+ * A common initializer registering client + server content
+ */
 public class ImprovedFood implements ModInitializer {
     /**
      * Mod identifier for resources

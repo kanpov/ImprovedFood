@@ -1,5 +1,6 @@
 package com.redgrapefruit.improvedfood.core;
 
+import com.redgrapefruit.improvedfood.item.FoodItem;
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
 import com.redgrapefruit.redcore.util.Formatting;
@@ -17,7 +18,7 @@ import java.util.List;
  */
 public class FoodSystem {
     /**
-     * Main update event. Called every tick when the food item is contained in the player's inventory
+     * Main update event. Called every tick when the {@link FoodItem} is contained in the player's inventory
      *
      * @param config         {@link FoodConfig}
      * @param profile        {@link FoodProfile}

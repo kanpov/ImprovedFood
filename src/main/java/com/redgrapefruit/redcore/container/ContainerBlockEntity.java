@@ -8,24 +8,20 @@ import net.minecraft.inventory.Inventories;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.screen.NamedScreenHandlerFactory;
+import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.collection.DefaultedList;
 
 /**
- * A container block entity storing, serializing & deserializing an embedded inventory.<br>
- * Also manages the creation of current screen handler.<br><br>
+ * A container {@link BlockEntity} storing, serializing & deserializing an embedded inventory.<br>
+ * Also manages the creation of connected {@link ScreenHandler}.<br><br>
  * A part of RedCore.Container library bundled with this mod.
  */
 public abstract class ContainerBlockEntity extends BlockEntity implements ImplementedInventory, NamedScreenHandlerFactory {
     // Embedded inventory represented through a DefaultedList
     protected final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(getContainerSize(), ItemStack.EMPTY);
 
-    /**
-     * Child constructor creating a container block entity
-     *
-     * @param type Registered block entity type
-     */
     protected ContainerBlockEntity(BlockEntityType<?> type) {
         super(type);
     }

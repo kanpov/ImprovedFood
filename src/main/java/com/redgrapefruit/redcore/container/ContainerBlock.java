@@ -5,6 +5,7 @@ import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.BlockWithEntity;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemPlacementContext;
@@ -21,19 +22,14 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * A container block synced with a container block entity.<br>
- * Opens a screen & a screen handler when right-clicked.<br>
+ * A container block synced with a {@link ContainerBlockEntity}.<br>
+ * Opens a {@link Screen} & a {@link ScreenHandler} when right-clicked.<br>
  * Also acts as a directional block.<br><br>
  * A part of RedCore.Container library bundled with this mod.
  */
 public abstract class ContainerBlock extends BlockWithEntity {
     protected DirectionProperty FACING; // Facing property
 
-    /**
-     * Child constructor initializing the container block
-     *
-     * @param settings Block settings
-     */
     protected ContainerBlock(Settings settings) {
         super(settings);
         // Defaults facing property
@@ -41,15 +37,15 @@ public abstract class ContainerBlock extends BlockWithEntity {
     }
 
     /**
-     * Checks if given block entity is instanceof current block entity
+     * Checks if given {@link BlockEntity} is instanceof current {@link BlockEntity}
      *
-     * @param blockEntity Given block entity
+     * @param blockEntity Given {@link BlockEntity}
      * @return Yes/No
      */
     protected abstract boolean checkBlockEntity(BlockEntity blockEntity);
 
     /**
-     * Casts current block entity to an inventory
+     * Casts current {@link BlockEntity} to an inventory
      *
      * @param blockEntity Current block entity
      * @return Casted to inventory

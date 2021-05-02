@@ -30,11 +30,11 @@ public class BlockRegistry {
     }
 
     /**
-     * Registers a block and a block item
+     * Registers a block and a {@link BlockItem}
      *
      * @param id    Resource identifier
      * @param block Block
-     * @param group Item group for the block item
+     * @param group {@link ItemGroup} for the {@link BlockItem}
      */
     private static void register(String id, Block block, ItemGroup group) {
         Registry.register(Registry.BLOCK, new Identifier(ImprovedFood.MOD_ID, id), block);
@@ -42,12 +42,12 @@ public class BlockRegistry {
     }
 
     /**
-     * Registers a block, a block item and a block entity
+     * Registers a block, a {@link BlockItem} and a {@link BlockEntity}
      *
      * @param id    Resource identifier
      * @param block Block
      * @param type  {@link BlockEntityType<T>}
-     * @param group Block item group
+     * @param group {@link ItemGroup} for the {@link BlockItem}
      * @param <T>   Block entity
      */
     private static <T extends BlockEntity> void register(String id, Block block, BlockEntityType<T> type, ItemGroup group) {

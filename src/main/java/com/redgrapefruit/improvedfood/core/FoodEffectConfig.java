@@ -7,7 +7,7 @@ import net.minecraft.entity.effect.StatusEffect;
  */
 public class FoodEffectConfig {
     /**
-     * The status effect itself
+     * The {@link StatusEffect} itself
      */
     private final StatusEffect statusEffect;
 
@@ -71,7 +71,7 @@ public class FoodEffectConfig {
     }
 
     /**
-     * A builder for food effect configs
+     * A builder for {@link FoodEffectConfig}s
      */
     public static class Builder {
         private StatusEffect statusEffect;

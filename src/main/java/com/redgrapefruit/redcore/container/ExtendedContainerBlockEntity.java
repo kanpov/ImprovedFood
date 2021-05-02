@@ -7,7 +7,7 @@ import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.util.Tickable;
 
 /**
- * A container block entity with property delegate support and out-of-the-box tick() event attached.<br><br>
+ * A {@link ContainerBlockEntity} with {@link PropertyDelegate} support and out-of-the-box {@link Tickable#tick()} event attached.<br><br>
  * A part of RedCore.Container library bundled with this mod.
  */
 public abstract class ExtendedContainerBlockEntity extends ContainerBlockEntity implements Tickable {
@@ -20,23 +20,23 @@ public abstract class ExtendedContainerBlockEntity extends ContainerBlockEntity 
     }
 
     /**
-     * Constructs the property delegate
+     * Constructs the {@link PropertyDelegate}
      *
-     * @return Created property delegate
+     * @return Created {@link PropertyDelegate}
      */
     protected abstract PropertyDelegate constructDelegate();
 
     /**
-     * Deserialize property delegate vars from tag
+     * Deserialize {@link PropertyDelegate} properties from a {@link CompoundTag}
      *
-     * @param tag Input tag
+     * @param tag Input {@link CompoundTag}
      */
     protected abstract void deserialize(CompoundTag tag);
 
     /**
-     * Serializes property delegate vars into tag
+     * Serializes {@link PropertyDelegate} properties into a {@link CompoundTag}
      *
-     * @param tag Output tag
+     * @param tag Output {@link CompoundTag}
      */
     protected abstract void serialize(CompoundTag tag);
 

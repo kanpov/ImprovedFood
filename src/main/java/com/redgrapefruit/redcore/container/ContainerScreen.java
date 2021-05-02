@@ -2,6 +2,7 @@ package com.redgrapefruit.redcore.container;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.redgrapefruit.redcore.util.Logging;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
@@ -10,26 +11,19 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 /**
- * A container screen displaying the GUI.<br>
- * Can be overridden using built-in events to add custom GUI elements using vanilla HandledScreen features.<br><br>
+ * A container {@link Screen} displaying the GUI.<br>
+ * Can be overridden using built-in events to add custom GUI elements using vanilla {@link Screen} and {@link HandledScreen} features.<br><br>
  * A part of RedCore.Container library bundled with this mod.
  */
 public abstract class ContainerScreen extends HandledScreen<ScreenHandler> {
     private final Identifier texture = getTexture();
 
-    /**
-     * Child constructor creating a container screen
-     *
-     * @param handler   Linked screen handler
-     * @param inventory Player's inventory
-     * @param title     Screen title defined by the block entity in this case
-     */
     protected ContainerScreen(ScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }
 
     /**
-     * Returns the screen GUI texture
+     * Returns the {@link Screen} GUI texture
      *
      * @return GUI texture resource ID
      */

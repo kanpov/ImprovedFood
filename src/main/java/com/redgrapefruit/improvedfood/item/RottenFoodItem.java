@@ -9,14 +9,9 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 
 /**
- * A rotten variant of a food item
+ * A rotten variant of a {@link FoodItem}
  */
 public class RottenFoodItem extends FoodItem {
-    /**
-     * Creates a rotten variant of a food item
-     *
-     * @param config Food config
-     */
     public RottenFoodItem(FoodConfig config) {
         super(config, ItemGroupRegistry.ROTTEN_FOOD, () -> {
             FoodComponent.Builder builder = new FoodComponent.Builder();

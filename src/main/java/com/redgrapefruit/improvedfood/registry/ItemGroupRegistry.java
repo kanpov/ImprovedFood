@@ -9,7 +9,7 @@ import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 
 /**
- * Registers item groups into Minecraft.
+ * Registers {@link ItemGroup} into Minecraft.
  */
 public class ItemGroupRegistry {
     public static ItemGroup FRESH_FOOD;
@@ -34,11 +34,11 @@ public class ItemGroupRegistry {
     }
 
     /**
-     * Creates (registers?) a new item group (creative tab)
+     * Creates (registers?) a new {@link ItemGroup} (creative tab)
      *
      * @param id   Resource identifier
      * @param icon Icon item
-     * @return Built item group
+     * @return Built {@link ItemGroup}
      */
     private static ItemGroup register(String id, Item icon) {
         return FabricItemGroupBuilder

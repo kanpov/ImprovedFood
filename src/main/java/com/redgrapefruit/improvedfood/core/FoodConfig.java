@@ -1,5 +1,7 @@
 package com.redgrapefruit.improvedfood.core;
 
+import com.redgrapefruit.improvedfood.item.FoodItem;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -50,7 +52,7 @@ public class FoodConfig {
      */
     private final FoodCategory category;
     /**
-     * A {@link HashSet} containing all possible effects for this food item
+     * A {@link HashSet} containing all possible effects for this {@link FoodItem}
      */
     private final Set<FoodEffectConfig> effects;
 
@@ -108,7 +110,7 @@ public class FoodConfig {
     }
 
     /**
-     * A builder for food configs
+     * A builder for {@link FoodConfig}s
      */
     public static class Builder {
         private final Set<FoodEffectConfig> effects;

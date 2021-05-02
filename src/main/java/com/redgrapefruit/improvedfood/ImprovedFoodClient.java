@@ -6,6 +6,9 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 
+/**
+ * A client initializer registering client-only content
+ */
 @Environment(EnvType.CLIENT)
 public class ImprovedFoodClient implements ClientModInitializer {
     @Override
