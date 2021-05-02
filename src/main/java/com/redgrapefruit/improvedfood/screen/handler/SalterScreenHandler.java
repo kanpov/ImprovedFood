@@ -43,18 +43,12 @@ public class SalterScreenHandler extends ExtendedContainerScreenHandler {
 
     @Override
     protected void onListenerInit() {
-
+        addListener(new Listener());
     }
 
     private static class Listener implements ScreenHandlerListener {
-        // Property delegate inherited from parent class
-        private final PropertyDelegate propertyDelegate;
         // Tracked inventory
         private DefaultedList<ItemStack> stacks;
-
-        public Listener(PropertyDelegate propertyDelegate) {
-            this.propertyDelegate = propertyDelegate;
-        }
 
         @Override
         public void onHandlerRegistered(ScreenHandler handler, DefaultedList<ItemStack> stacks) {
@@ -117,16 +111,13 @@ public class SalterScreenHandler extends ExtendedContainerScreenHandler {
          *
          * @param newContainment New containment item
          * @param count          The amount of this new containment item
-         * @return Created stack
          */
-        private ItemStack resetOutputContainment(Item newContainment, int count) {
+        private void resetOutputContainment(Item newContainment, int count) {
             // Create stack and increment it to given count
             ItemStack stack = new ItemStack(newContainment);
             stack.increment(count - 1);
             // Update it in the tracked inventory
             stacks.set(2, stack);
-
-            return stack;
         }
     }
 }
