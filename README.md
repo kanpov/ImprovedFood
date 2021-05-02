@@ -7,7 +7,7 @@ Here's a list of features:
 <ol>
 <li>Food can now rot and overdue</li>
 <li>You can put your food into a fridge or salt it to reduce the speed of the process</li>
-<li>Colorful and very detailed tooltips describing _everything_ about your food item</li>
+<li>Colorful and very detailed tooltips describing <i>everything</i> about your food item</li>
 <li>Food storage: boxes, lockers etc.</li>
 <li>You can grow your food and make an astonishing farm</li>
 <li>You can find your food on trees in jungles and forests</li>

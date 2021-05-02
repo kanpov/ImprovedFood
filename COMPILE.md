@@ -27,7 +27,8 @@ I recommend 'master' branch for most cases.
 
 Download the ZIP file of your chosen branch by choosing it, clicking Code and then clicking Download ZIP.  
 Unzip the file somewhere on your computer.  
-Open cmd.exe and run ```cd $PATH_TO_THE_UNZIPPED_FOLDER$```. In cmd.exe also run ```gradlew build```.
+Open cmd.exe and run ```cd $PATH_TO_THE_UNZIPPED_FOLDER$```.  
+Then run ```gradlew build```.
 
 # Where's the JAR
 
