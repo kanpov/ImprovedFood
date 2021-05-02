@@ -6,7 +6,7 @@ On May, 2nd we hit <b>three</b> major goals in a single day!
 <ol>
 <li>We reached <b>100</b> commits to 'master' branch after <i>only</i> 20 days since the start of this project</li>
 <li>We broke the record amount of commits in a day: <b>33</b></li>
-<li>We broke the record amount of traffic in a day: <b>837</b> clones and <b>243</b> views <b>and it's still going higher</b></li>
+<li>We broke the record amount of traffic in a day: <b>1217</b> clones and <b>312</b> views <b>and it's still going higher</b></li>
 </ol>
 Congratulations to me, RedGrapefruit09 (karpovanton729@gmail.com on my 2nd computer), and <b>everyone</b> who has viewed this page or cloned the repository and given me motivation to continue!
 
