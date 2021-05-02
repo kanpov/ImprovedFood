@@ -19,11 +19,17 @@ Current release date: June 15th, 2021.
 
 # Install
 
+Requirements:
+<ul>
+<li>AdoptOpenJDK 1.8 HotSpot VM from <a href="https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot">here</a></li>
+<li>Licensed Minecraft 1.16.5 Java Edition from <a href="https://www.minecraft.net/en-us/">here</a></li>
+<li>Fabric Loader 0.11.3 from <a href="https://fabricmc.net/use/">here</a> (there's the installer tool)</li>
+<li>A fully set up modded Minecraft instance running on Fabric Loader</li>
+<li>Fabric API 0.34.0 from <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files">here</a></li>
+</ul>
+
 To get the mod file, navigate to the releases page [here](https://github.com/RedGrapefruit09/ImprovedFood/releases),
-click on the top release and download the JAR file.  
-Now set up a modded Fabric Minecraft instance and put the JAR in your mods folder.  
-Having trouble? Follow [this guide](https://youtube.com/watch?v=nt3mIUUuH64) or other guides on how to install Fabric
-mods. Make sure to use the mod's JAR!
+click on the top release and download the JAR file.
 
 # Compile
 

@@ -18,7 +18,7 @@ I recommend 'master' branch for most cases.
 
 # Prerequisites
 
-1. Download AdoptOpenJDK 1.8 (other OpenJDK distributions aren't supported)
+1. Download AdoptOpenJDK 1.8 HotSpot VM (other OpenJDK distributions aren't supported)
    from [here](https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot)
 2. Add Java to your path
 3. Test it by running cmd.exe (Windows's default CLI tool) and typing ```java -version```
