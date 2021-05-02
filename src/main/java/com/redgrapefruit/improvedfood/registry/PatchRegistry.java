@@ -4,7 +4,6 @@ import com.redgrapefruit.improvedfood.core.FoodConfig;
 import com.redgrapefruit.improvedfood.core.FoodProfile;
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
-import com.redgrapefruit.improvedfood.item.SaltedFoodItem;
 import com.redgrapefruit.improvedfood.util.ItemMixinAccess;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -14,8 +13,8 @@ import net.minecraft.item.Items;
  */
 public class PatchRegistry {
     public static void run() {
-        register(Items.PORKCHOP, ConfigRegistry.PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN, ItemRegistry.PORKCHOP_SALTED);
-        register(Items.COOKED_PORKCHOP, ConfigRegistry.COOKED_PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN, ItemRegistry.PORKCHOP_SALTED);
+        register(Items.PORKCHOP, ConfigRegistry.PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN);
+        register(Items.COOKED_PORKCHOP, ConfigRegistry.COOKED_PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN);
     }
 
     /**
@@ -41,12 +40,10 @@ public class PatchRegistry {
      * @param item          Item
      * @param config        {@link FoodConfig}
      * @param rottenVariant Rotten variant
-     * @param saltedVariant Salted variant
      */
-    private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, SaltedFoodItem saltedVariant) {
+    private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant) {
         ItemMixinAccess access = register(item, config);
         access.setRottenVariant(rottenVariant);
-        access.setSaltedVariant(saltedVariant);
     }
 
     /**
@@ -67,13 +64,11 @@ public class PatchRegistry {
      * @param item           Item
      * @param config         {@link FoodConfig}
      * @param rottenVariant  Rotten variant
-     * @param saltedVariant  Salted variant
      * @param overdueVariant Overdue variant
      */
-    private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, SaltedFoodItem saltedVariant, OverdueFoodItem overdueVariant) {
+    private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, OverdueFoodItem overdueVariant) {
         ItemMixinAccess access = register(item, config);
         access.setRottenVariant(rottenVariant);
-        access.setSaltedVariant(saltedVariant);
         access.setOverdueVariant(overdueVariant);
     }
 }
