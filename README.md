@@ -61,3 +61,6 @@ A: No. I don't support snapshots and only update between stable releases of Mine
 <li>To Aseprite's team and contributors for creating a lovely sprite editor</li>
 <li>And to everyone who sees this for giving me motivation to continue</li>
 </ul>
+
+# Contact
+You can email me at karpovanton729@gmail.com
