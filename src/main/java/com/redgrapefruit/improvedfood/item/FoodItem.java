@@ -119,17 +119,6 @@ public class FoodItem extends Item {
     }
 
     /**
-     * A builder method setting a salted variant of this {@link FoodItem}
-     *
-     * @param saltedVariant Salted variant
-     * @return Self
-     */
-    public FoodItem setSaltedVariant(SaltedFoodItem saltedVariant) {
-        this.saltedVariant = saltedVariant;
-        return this;
-    }
-
-    /**
      * Sets the custom {@link FoodState} of this food item
      *
      * @param state {@link FoodState}
