@@ -11,10 +11,10 @@ But the output might potentially be unstable and even crash your world.
 
 When choosing where to compile from you have 2 options:
 <ul>
-<li>'master' branch. It's code is tested and works fine in 70-80% of cases</li>
+<li>'main' branch. It's code is tested and works fine in 70-80% of cases</li>
 <li>'dev' branch. It's code is the latest and newest and can break your world or crash your game</li>
 </ul>
-I recommend 'master' branch for most cases.
+I recommend 'main' branch for most cases.
 
 # Prerequisites
 
