@@ -6,7 +6,6 @@ import com.redgrapefruit.improvedfood.core.FoodState;
 import com.redgrapefruit.improvedfood.core.FoodSystem;
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
-import com.redgrapefruit.improvedfood.item.SaltedFoodItem;
 import com.redgrapefruit.improvedfood.util.ItemMixinAccess;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
