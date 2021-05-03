@@ -40,8 +40,6 @@ public class ItemMixin implements ItemMixinAccess {
     private RottenFoodItem rottenVariant = null;
     @Unique
     private OverdueFoodItem overdueVariant = null;
-    @Unique
-    private SaltedFoodItem saltedVariant = null;
 
     @Inject(method = "appendTooltip", at = @At("TAIL"))
     private void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context, CallbackInfo info) {

@@ -41,7 +41,6 @@ public class FoodItem extends Item {
     // Variants
     private RottenFoodItem rottenVariant;
     private OverdueFoodItem overdueVariant;
-    private SaltedFoodItem saltedVariant;
 
     /**
      * Internal constructor allowing to use different {@link ItemGroup}'s and {@link FoodComponent}'s (used by food variants)
