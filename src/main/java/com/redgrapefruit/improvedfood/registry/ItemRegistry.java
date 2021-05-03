@@ -18,6 +18,7 @@ public class ItemRegistry {
     public static final RottenFoodItem ROTTEN_BEEF = new RottenFoodItem(ConfigRegistry.BEEF);
     public static final RottenFoodItem ROTTEN_COOKED_BEEF = new RottenFoodItem(ConfigRegistry.COOKED_BEEF);
     public static final RottenFoodItem ROTTEN_CHICKEN = new RottenFoodItem(ConfigRegistry.CHICKEN);
+    public static final RottenFoodItem ROTTEN_COOKED_CHICKEN = new RottenFoodItem(ConfigRegistry.COOKED_CHICKEN);
 
     // Overdue variants
 
@@ -27,6 +28,7 @@ public class ItemRegistry {
     public static final SaltedFoodItem SALTED_BEEF = new SaltedFoodItem(ConfigRegistry.BEEF);
     public static final SaltedFoodItem SALTED_COOKED_BEEF = new SaltedFoodItem(ConfigRegistry.COOKED_BEEF);
     public static final SaltedFoodItem SALTED_CHICKEN = new SaltedFoodItem(ConfigRegistry.CHICKEN);
+    public static final SaltedFoodItem SALTED_COOKED_CHICKEN = new SaltedFoodItem(ConfigRegistry.COOKED_CHICKEN);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -41,11 +43,13 @@ public class ItemRegistry {
         register("rotten_beef", ROTTEN_BEEF);
         register("rotten_cooked_beef", ROTTEN_COOKED_BEEF);
         register("rotten_chicken", ROTTEN_CHICKEN);
+        register("rotten_cooked_chicken", ROTTEN_COOKED_CHICKEN);
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
         register("salted_beef", SALTED_BEEF);
         register("salted_cooked_beef", SALTED_COOKED_BEEF);
         register("salted_chicken", SALTED_CHICKEN);
+        register("salted_cooked_chicken", SALTED_COOKED_CHICKEN);
     }
 
     /**

@@ -44,4 +44,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(4)
             .saltEfficiency(3)
             .build();
+    public static final FoodConfig COOKED_CHICKEN = new FoodConfig.Builder()
+            .category(FoodCategory.MEAT)
+            .rotState(115000)
+            .rotSpeed(8)
+            .fridgeEfficiency(6)
+            .saltEfficiency(4)
+            .build();
 }
