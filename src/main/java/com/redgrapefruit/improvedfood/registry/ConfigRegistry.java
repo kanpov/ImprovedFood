@@ -65,4 +65,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(6)
             .saltEfficiency(4)
             .build();
+    public static final FoodConfig RABBIT = new FoodConfig.Builder()
+            .category(FoodCategory.MEAT)
+            .rotState(70000)
+            .rotSpeed(7)
+            .fridgeEfficiency(2)
+            .saltEfficiency(3)
+            .build();
 }
