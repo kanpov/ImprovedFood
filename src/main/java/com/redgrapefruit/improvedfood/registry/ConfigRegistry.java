@@ -37,4 +37,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(8)
             .saltEfficiency(6)
             .build();
+    public static final FoodConfig CHICKEN = new FoodConfig.Builder()
+            .category(FoodCategory.MEAT)
+            .rotState(80000)
+            .rotSpeed(9)
+            .fridgeEfficiency(4)
+            .saltEfficiency(3)
+            .build();
 }

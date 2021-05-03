@@ -20,6 +20,7 @@ public class PatchRegistry {
         register(Items.COOKED_PORKCHOP, ConfigRegistry.COOKED_PORKCHOP, ItemRegistry.ROTTEN_PORKCHOP);
         register(Items.BEEF, ConfigRegistry.BEEF, ItemRegistry.ROTTEN_BEEF);
         register(Items.COOKED_BEEF, ConfigRegistry.COOKED_BEEF, ItemRegistry.ROTTEN_COOKED_BEEF);
+        register(Items.CHICKEN, ConfigRegistry.CHICKEN, ItemRegistry.ROTTEN_CHICKEN);
     }
 
     /**
