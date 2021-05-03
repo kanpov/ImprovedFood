@@ -25,7 +25,7 @@ public class PatchRegistry {
     }
 
     /**
-     * Registers the base properties of an item (no variants) to the mixin access
+     * Patches the base properties of an item (no variants) to the mixin access
      *
      * @param item   Source item
      * @param config {@link FoodConfig}
@@ -42,7 +42,7 @@ public class PatchRegistry {
     }
 
     /**
-     * Registers the base properties with meat's variants to the mixin access
+     * Patches the base properties with meat's variants to the mixin access
      *
      * @param item          Item
      * @param config        {@link FoodConfig}
@@ -54,7 +54,7 @@ public class PatchRegistry {
     }
 
     /**
-     * Registers the base properties with non-meat's variants to the mixin access
+     * Patches the base properties with non-meat's variants to the mixin access
      *
      * @param item           Item
      * @param config         {@link FoodConfig}
@@ -66,7 +66,7 @@ public class PatchRegistry {
     }
 
     /**
-     * Registers the base properties with all variants to the mixin access
+     * Patches the base properties with all variants to the mixin access
      *
      * @param item           Item
      * @param config         {@link FoodConfig}
