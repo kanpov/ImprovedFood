@@ -1,4 +1,5 @@
 [![build](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml/badge.svg)](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml)
+[![CodeQL](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/codeql-analysis.yml)
 
 # About
 
