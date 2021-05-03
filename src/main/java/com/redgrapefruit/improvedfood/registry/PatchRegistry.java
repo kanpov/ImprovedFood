@@ -15,6 +15,7 @@ public class PatchRegistry {
     public static void run() {
         register(Items.PORKCHOP, ConfigRegistry.PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN);
         register(Items.COOKED_PORKCHOP, ConfigRegistry.COOKED_PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN);
+        register(Items.BEEF, ConfigRegistry.BEEF, ItemRegistry.BEEF_ROTTEN);
     }
 
     /**
