@@ -23,6 +23,7 @@ public class PatchRegistry {
         patch(Items.CHICKEN, ConfigRegistry.CHICKEN, ItemRegistry.ROTTEN_CHICKEN);
         patch(Items.COOKED_CHICKEN, ConfigRegistry.COOKED_CHICKEN, ItemRegistry.ROTTEN_COOKED_CHICKEN);
         patch(Items.MUTTON, ConfigRegistry.MUTTON, ItemRegistry.ROTTEN_MUTTON);
+        patch(Items.COOKED_MUTTON, ConfigRegistry.COOKED_MUTTON, ItemRegistry.ROTTEN_COOKED_MUTTON);
     }
 
     /**

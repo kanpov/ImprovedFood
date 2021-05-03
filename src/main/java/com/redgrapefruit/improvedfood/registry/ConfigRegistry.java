@@ -58,4 +58,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(5)
             .saltEfficiency(3)
             .build();
+    public static final FoodConfig COOKED_MUTTON = new FoodConfig.Builder()
+            .category(FoodCategory.MEAT)
+            .rotState(120000)
+            .rotSpeed(8)
+            .fridgeEfficiency(6)
+            .saltEfficiency(4)
+            .build();
 }
