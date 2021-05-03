@@ -12,10 +12,14 @@ import net.minecraft.item.Items;
  * This registry patches vanilla food to apply mod's special food properties to it
  */
 public class PatchRegistry {
+    /**
+     * Runs the registry code
+     */
     public static void run() {
         register(Items.PORKCHOP, ConfigRegistry.PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN);
         register(Items.COOKED_PORKCHOP, ConfigRegistry.COOKED_PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN);
         register(Items.BEEF, ConfigRegistry.BEEF, ItemRegistry.BEEF_ROTTEN);
+        register(Items.COOKED_BEEF, ConfigRegistry.COOKED_BEEF, ItemRegistry.COOKED_BEEF_ROTTEN);
     }
 
     /**

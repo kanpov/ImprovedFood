@@ -30,4 +30,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(7)
             .saltEfficiency(5)
             .build();
+    public static final FoodConfig COOKED_BEEF = new FoodConfig.Builder()
+            .category(FoodCategory.MEAT)
+            .rotState(150000)
+            .rotSpeed(10)
+            .fridgeEfficiency(8)
+            .saltEfficiency(6)
+            .build();
 }
