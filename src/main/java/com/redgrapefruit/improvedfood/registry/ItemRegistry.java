@@ -13,18 +13,18 @@ import net.minecraft.util.registry.Registry;
  */
 public class ItemRegistry {
     // Rotten variants
-    public static final RottenFoodItem PORKCHOP_ROTTEN = new RottenFoodItem(ConfigRegistry.PORKCHOP);
-    public static final RottenFoodItem COOKED_PORKCHOP_ROTTEN = new RottenFoodItem(ConfigRegistry.COOKED_PORKCHOP);
-    public static final RottenFoodItem BEEF_ROTTEN = new RottenFoodItem(ConfigRegistry.BEEF);
-    public static final RottenFoodItem COOKED_BEEF_ROTTEN = new RottenFoodItem(ConfigRegistry.COOKED_BEEF);
+    public static final RottenFoodItem ROTTEN_PORKCHOP = new RottenFoodItem(ConfigRegistry.PORKCHOP);
+    public static final RottenFoodItem ROTTEN_COOKED_PORKCHOP = new RottenFoodItem(ConfigRegistry.COOKED_PORKCHOP);
+    public static final RottenFoodItem ROTTEN_BEEF = new RottenFoodItem(ConfigRegistry.BEEF);
+    public static final RottenFoodItem ROTTEN_COOKED_BEEF = new RottenFoodItem(ConfigRegistry.COOKED_BEEF);
 
     // Overdue variants
 
     // Salted variants
-    public static final SaltedFoodItem PORKCHOP_SALTED = new SaltedFoodItem(ConfigRegistry.PORKCHOP);
-    public static final SaltedFoodItem COOKED_PORKCHOP_SALTED = new SaltedFoodItem(ConfigRegistry.COOKED_PORKCHOP);
-    public static final SaltedFoodItem BEEF_SALTED = new SaltedFoodItem(ConfigRegistry.BEEF);
-    public static final SaltedFoodItem COOKED_BEEF_SALTED = new SaltedFoodItem(ConfigRegistry.COOKED_BEEF);
+    public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP);
+    public static final SaltedFoodItem SALTED_COOKED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.COOKED_PORKCHOP);
+    public static final SaltedFoodItem SALTED_BEEF = new SaltedFoodItem(ConfigRegistry.BEEF);
+    public static final SaltedFoodItem SALTED_COOKED_BEEF = new SaltedFoodItem(ConfigRegistry.COOKED_BEEF);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -34,14 +34,14 @@ public class ItemRegistry {
      */
     public static void run() {
         register("salt", SALT);
-        register("rotten_porkchop", PORKCHOP_ROTTEN);
-        register("rotten_cooked_porkchop", COOKED_PORKCHOP_ROTTEN);
-        register("rotten_beef", BEEF_ROTTEN);
-        register("rotten_cooked_beef", COOKED_BEEF_ROTTEN);
-        register("salted_porkchop", PORKCHOP_SALTED);
-        register("salted_cooked_porkchop", COOKED_PORKCHOP_SALTED);
-        register("salted_beef", BEEF_SALTED);
-        register("salted_cooked_beef", COOKED_BEEF_SALTED);
+        register("rotten_porkchop", ROTTEN_PORKCHOP);
+        register("rotten_cooked_porkchop", ROTTEN_COOKED_PORKCHOP);
+        register("rotten_beef", ROTTEN_BEEF);
+        register("rotten_cooked_beef", ROTTEN_COOKED_BEEF);
+        register("salted_porkchop", SALTED_PORKCHOP);
+        register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
+        register("salted_beef", SALTED_BEEF);
+        register("salted_cooked_beef", SALTED_COOKED_BEEF);
     }
 
     /**

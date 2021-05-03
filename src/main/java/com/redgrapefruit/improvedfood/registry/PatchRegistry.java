@@ -16,10 +16,10 @@ public class PatchRegistry {
      * Runs the registry code
      */
     public static void run() {
-        register(Items.PORKCHOP, ConfigRegistry.PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN);
-        register(Items.COOKED_PORKCHOP, ConfigRegistry.COOKED_PORKCHOP, ItemRegistry.PORKCHOP_ROTTEN);
-        register(Items.BEEF, ConfigRegistry.BEEF, ItemRegistry.BEEF_ROTTEN);
-        register(Items.COOKED_BEEF, ConfigRegistry.COOKED_BEEF, ItemRegistry.COOKED_BEEF_ROTTEN);
+        register(Items.PORKCHOP, ConfigRegistry.PORKCHOP, ItemRegistry.ROTTEN_PORKCHOP);
+        register(Items.COOKED_PORKCHOP, ConfigRegistry.COOKED_PORKCHOP, ItemRegistry.ROTTEN_PORKCHOP);
+        register(Items.BEEF, ConfigRegistry.BEEF, ItemRegistry.ROTTEN_BEEF);
+        register(Items.COOKED_BEEF, ConfigRegistry.COOKED_BEEF, ItemRegistry.ROTTEN_COOKED_BEEF);
     }
 
     /**
