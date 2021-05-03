@@ -16,12 +16,12 @@ public class PatchRegistry {
      * Runs the registry code
      */
     public static void run() {
-        register(Items.PORKCHOP, ConfigRegistry.PORKCHOP, ItemRegistry.ROTTEN_PORKCHOP);
-        register(Items.COOKED_PORKCHOP, ConfigRegistry.COOKED_PORKCHOP, ItemRegistry.ROTTEN_PORKCHOP);
-        register(Items.BEEF, ConfigRegistry.BEEF, ItemRegistry.ROTTEN_BEEF);
-        register(Items.COOKED_BEEF, ConfigRegistry.COOKED_BEEF, ItemRegistry.ROTTEN_COOKED_BEEF);
-        register(Items.CHICKEN, ConfigRegistry.CHICKEN, ItemRegistry.ROTTEN_CHICKEN);
-        register(Items.COOKED_CHICKEN, ConfigRegistry.COOKED_CHICKEN, ItemRegistry.ROTTEN_COOKED_CHICKEN);
+        patch(Items.PORKCHOP, ConfigRegistry.PORKCHOP, ItemRegistry.ROTTEN_PORKCHOP);
+        patch(Items.COOKED_PORKCHOP, ConfigRegistry.COOKED_PORKCHOP, ItemRegistry.ROTTEN_PORKCHOP);
+        patch(Items.BEEF, ConfigRegistry.BEEF, ItemRegistry.ROTTEN_BEEF);
+        patch(Items.COOKED_BEEF, ConfigRegistry.COOKED_BEEF, ItemRegistry.ROTTEN_COOKED_BEEF);
+        patch(Items.CHICKEN, ConfigRegistry.CHICKEN, ItemRegistry.ROTTEN_CHICKEN);
+        patch(Items.COOKED_CHICKEN, ConfigRegistry.COOKED_CHICKEN, ItemRegistry.ROTTEN_COOKED_CHICKEN);
     }
 
     /**
@@ -30,7 +30,7 @@ public class PatchRegistry {
      * @param item   Source item
      * @param config {@link FoodConfig}
      */
-    private static ItemMixinAccess register(Item item, FoodConfig config) {
+    private static ItemMixinAccess patch(Item item, FoodConfig config) {
         // Cast the item to duck interface
         ItemMixinAccess access = (ItemMixinAccess) item;
         // Activate and assign fields
@@ -48,8 +48,8 @@ public class PatchRegistry {
      * @param config        {@link FoodConfig}
      * @param rottenVariant Rotten variant
      */
-    private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant) {
-        ItemMixinAccess access = register(item, config);
+    private static void patch(Item item, FoodConfig config, RottenFoodItem rottenVariant) {
+        ItemMixinAccess access = patch(item, config);
         access.setRottenVariant(rottenVariant);
     }
 
@@ -60,8 +60,8 @@ public class PatchRegistry {
      * @param config         {@link FoodConfig}
      * @param overdueVariant Overdue variant
      */
-    private static void register(Item item, FoodConfig config, OverdueFoodItem overdueVariant) {
-        ItemMixinAccess access = register(item, config);
+    private static void patch(Item item, FoodConfig config, OverdueFoodItem overdueVariant) {
+        ItemMixinAccess access = patch(item, config);
         access.setOverdueVariant(overdueVariant);
     }
 
@@ -73,8 +73,8 @@ public class PatchRegistry {
      * @param rottenVariant  Rotten variant
      * @param overdueVariant Overdue variant
      */
-    private static void register(Item item, FoodConfig config, RottenFoodItem rottenVariant, OverdueFoodItem overdueVariant) {
-        ItemMixinAccess access = register(item, config);
+    private static void patch(Item item, FoodConfig config, RottenFoodItem rottenVariant, OverdueFoodItem overdueVariant) {
+        ItemMixinAccess access = patch(item, config);
         access.setRottenVariant(rottenVariant);
         access.setOverdueVariant(overdueVariant);
     }
