@@ -107,4 +107,10 @@ public class ConfigRegistry {
             .fridgeEfficiency(5)
             .saltEfficiency(3)
             .build();
+    public static final FoodConfig APPLE = new FoodConfig.Builder()
+            .category(FoodCategory.FRUIT)
+            .overdueSpeed(100000)
+            .overdueSpeed(8)
+            .fridgeEfficiency(5)
+            .build();
 }
