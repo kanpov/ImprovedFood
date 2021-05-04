@@ -35,7 +35,15 @@ public enum FoodCategory {
             false,
             true,
             false,
-            "Small and tasty berries. Very cheap but not very nutritious");
+            "Small and tasty berries. Very cheap but not very nutritious"),
+
+    FISH(3,
+            1.25f,
+            "Fish",
+            false,
+            true,
+            true,
+            "Nice and yummy fish. Fish or meat?");
 
     /**
      * Base hunger of this food type.<br>
