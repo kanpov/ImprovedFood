@@ -16,6 +16,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(5)
             .saltEfficiency(3)
             .build();
+
     public static final FoodConfig COOKED_PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
             .rotState(125000)
@@ -23,6 +24,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(6)
             .saltEfficiency(4)
             .build();
+
     public static final FoodConfig BEEF = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
             .rotState(100000)
@@ -30,6 +32,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(7)
             .saltEfficiency(5)
             .build();
+
     public static final FoodConfig COOKED_BEEF = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
             .rotState(150000)
@@ -37,6 +40,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(8)
             .saltEfficiency(6)
             .build();
+
     public static final FoodConfig CHICKEN = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
             .rotState(80000)
@@ -44,6 +48,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(4)
             .saltEfficiency(3)
             .build();
+
     public static final FoodConfig COOKED_CHICKEN = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
             .rotState(115000)
@@ -51,6 +56,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(6)
             .saltEfficiency(4)
             .build();
+
     public static final FoodConfig MUTTON = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
             .rotState(90000)
@@ -58,6 +64,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(5)
             .saltEfficiency(3)
             .build();
+
     public static final FoodConfig COOKED_MUTTON = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
             .rotState(120000)
@@ -65,6 +72,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(6)
             .saltEfficiency(4)
             .build();
+
     public static final FoodConfig RABBIT = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
             .rotState(70000)
@@ -72,6 +80,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(2)
             .saltEfficiency(3)
             .build();
+
     public static final FoodConfig COOKED_RABBIT = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
             .rotSpeed(110000)
@@ -79,6 +88,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(3)
             .saltEfficiency(4)
             .build();
+
     public static final FoodConfig SALMON = new FoodConfig.Builder()
             .category(FoodCategory.FISH)
             .overdueState(120000)
@@ -86,6 +96,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(6)
             .saltEfficiency(5)
             .build();
+
     public static final FoodConfig COOKED_SALMON = new FoodConfig.Builder()
             .category(FoodCategory.FISH)
             .overdueState(170000)
@@ -93,6 +104,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(7)
             .saltEfficiency(6)
             .build();
+
     public static final FoodConfig COD = new FoodConfig.Builder()
             .category(FoodCategory.FISH)
             .overdueState(115000)
@@ -100,6 +112,7 @@ public class ConfigRegistry {
             .fridgeEfficiency(4)
             .saltEfficiency(2)
             .build();
+
     public static final FoodConfig COOKED_COD = new FoodConfig.Builder()
             .category(FoodCategory.FISH)
             .overdueState(160000)
@@ -107,30 +120,35 @@ public class ConfigRegistry {
             .fridgeEfficiency(5)
             .saltEfficiency(3)
             .build();
+
     public static final FoodConfig APPLE = new FoodConfig.Builder()
             .category(FoodCategory.FRUIT)
             .overdueState(100000)
             .overdueSpeed(8)
             .fridgeEfficiency(5)
             .build();
+
     public static final FoodConfig GOLDEN_APPLE = new FoodConfig.Builder()
             .category(FoodCategory.FRUIT)
             .overdueState(300000)
             .overdueSpeed(7)
             .fridgeEfficiency(4)
             .build();
+
     public static final FoodConfig CARROT = new FoodConfig.Builder()
             .category(FoodCategory.VEGETABLE)
             .overdueState(120000)
             .overdueSpeed(9)
             .fridgeEfficiency(6)
             .build();
+
     public static final FoodConfig GOLDEN_CARROT = new FoodConfig.Builder()
             .category(FoodCategory.VEGETABLE)
             .overdueState(360000)
             .overdueSpeed(8)
             .fridgeEfficiency(5)
             .build();
+
     public static final FoodConfig POTATO = new FoodConfig.Builder()
             .category(FoodCategory.VEGETABLE)
             .overdueState(110000)

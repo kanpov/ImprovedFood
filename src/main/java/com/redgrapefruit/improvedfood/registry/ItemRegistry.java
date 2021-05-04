@@ -72,6 +72,7 @@ public class ItemRegistry {
         register("rotten_cooked_mutton", ROTTEN_COOKED_MUTTON);
         register("rotten_rabbit", ROTTEN_RABBIT);
         register("rotten_cooked_rabbit", ROTTEN_COOKED_RABBIT);
+
         register("overdue_salmon", OVERDUE_SALMON);
         register("overdue_cooked_salmon", OVERDUE_COOKED_SALMON);
         register("overdue_cod", OVERDUE_COD);
@@ -81,6 +82,7 @@ public class ItemRegistry {
         register("overdue_carrot", OVERDUE_CARROT);
         register("overdue_golden_carrot", OVERDUE_GOLDEN_CARROT);
         register("overdue_potato", OVERDUE_POTATO);
+
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
         register("salted_beef", SALTED_BEEF);
