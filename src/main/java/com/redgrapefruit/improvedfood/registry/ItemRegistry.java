@@ -4,6 +4,7 @@ import com.redgrapefruit.improvedfood.ImprovedFood;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
 import com.redgrapefruit.improvedfood.item.SaltItem;
 import com.redgrapefruit.improvedfood.item.SaltedFoodItem;
+import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -13,28 +14,28 @@ import net.minecraft.util.registry.Registry;
  */
 public class ItemRegistry {
     // Rotten variants
-    public static final RottenFoodItem ROTTEN_PORKCHOP = new RottenFoodItem(ConfigRegistry.PORKCHOP);
-    public static final RottenFoodItem ROTTEN_COOKED_PORKCHOP = new RottenFoodItem(ConfigRegistry.COOKED_PORKCHOP);
-    public static final RottenFoodItem ROTTEN_BEEF = new RottenFoodItem(ConfigRegistry.BEEF);
-    public static final RottenFoodItem ROTTEN_COOKED_BEEF = new RottenFoodItem(ConfigRegistry.COOKED_BEEF);
-    public static final RottenFoodItem ROTTEN_CHICKEN = new RottenFoodItem(ConfigRegistry.CHICKEN);
-    public static final RottenFoodItem ROTTEN_COOKED_CHICKEN = new RottenFoodItem(ConfigRegistry.COOKED_CHICKEN);
-    public static final RottenFoodItem ROTTEN_MUTTON = new RottenFoodItem(ConfigRegistry.MUTTON);
-    public static final RottenFoodItem ROTTEN_COOKED_MUTTON = new RottenFoodItem(ConfigRegistry.COOKED_MUTTON);
-    public static final RottenFoodItem ROTTEN_RABBIT = new RottenFoodItem(ConfigRegistry.RABBIT);
+    public static final RottenFoodItem ROTTEN_PORKCHOP = new RottenFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
+    public static final RottenFoodItem ROTTEN_COOKED_PORKCHOP = new RottenFoodItem(ConfigRegistry.COOKED_PORKCHOP, FoodComponents.COOKED_PORKCHOP);
+    public static final RottenFoodItem ROTTEN_BEEF = new RottenFoodItem(ConfigRegistry.BEEF, FoodComponents.BEEF);
+    public static final RottenFoodItem ROTTEN_COOKED_BEEF = new RottenFoodItem(ConfigRegistry.COOKED_BEEF, FoodComponents.COOKED_BEEF);
+    public static final RottenFoodItem ROTTEN_CHICKEN = new RottenFoodItem(ConfigRegistry.CHICKEN, FoodComponents.CHICKEN);
+    public static final RottenFoodItem ROTTEN_COOKED_CHICKEN = new RottenFoodItem(ConfigRegistry.COOKED_CHICKEN, FoodComponents.COOKED_CHICKEN);
+    public static final RottenFoodItem ROTTEN_MUTTON = new RottenFoodItem(ConfigRegistry.MUTTON, FoodComponents.MUTTON);
+    public static final RottenFoodItem ROTTEN_COOKED_MUTTON = new RottenFoodItem(ConfigRegistry.COOKED_MUTTON, FoodComponents.COOKED_MUTTON);
+    public static final RottenFoodItem ROTTEN_RABBIT = new RottenFoodItem(ConfigRegistry.RABBIT, FoodComponents.RABBIT);
 
     // Overdue variants
 
     // Salted variants
-    public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP);
-    public static final SaltedFoodItem SALTED_COOKED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.COOKED_PORKCHOP);
-    public static final SaltedFoodItem SALTED_BEEF = new SaltedFoodItem(ConfigRegistry.BEEF);
-    public static final SaltedFoodItem SALTED_COOKED_BEEF = new SaltedFoodItem(ConfigRegistry.COOKED_BEEF);
-    public static final SaltedFoodItem SALTED_CHICKEN = new SaltedFoodItem(ConfigRegistry.CHICKEN);
-    public static final SaltedFoodItem SALTED_COOKED_CHICKEN = new SaltedFoodItem(ConfigRegistry.COOKED_CHICKEN);
-    public static final SaltedFoodItem SALTED_MUTTON = new SaltedFoodItem(ConfigRegistry.MUTTON);
-    public static final SaltedFoodItem SALTED_COOKED_MUTTON = new SaltedFoodItem(ConfigRegistry.COOKED_MUTTON);
-    public static final SaltedFoodItem SALTED_RABBIT = new SaltedFoodItem(ConfigRegistry.RABBIT);
+    public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
+    public static final SaltedFoodItem SALTED_COOKED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.COOKED_PORKCHOP, FoodComponents.COOKED_PORKCHOP);
+    public static final SaltedFoodItem SALTED_BEEF = new SaltedFoodItem(ConfigRegistry.BEEF, FoodComponents.BEEF);
+    public static final SaltedFoodItem SALTED_COOKED_BEEF = new SaltedFoodItem(ConfigRegistry.COOKED_BEEF, FoodComponents.COOKED_BEEF);
+    public static final SaltedFoodItem SALTED_CHICKEN = new SaltedFoodItem(ConfigRegistry.CHICKEN, FoodComponents.CHICKEN);
+    public static final SaltedFoodItem SALTED_COOKED_CHICKEN = new SaltedFoodItem(ConfigRegistry.COOKED_CHICKEN, FoodComponents.COOKED_CHICKEN);
+    public static final SaltedFoodItem SALTED_MUTTON = new SaltedFoodItem(ConfigRegistry.MUTTON, FoodComponents.MUTTON);
+    public static final SaltedFoodItem SALTED_COOKED_MUTTON = new SaltedFoodItem(ConfigRegistry.COOKED_MUTTON, FoodComponents.COOKED_MUTTON);
+    public static final SaltedFoodItem SALTED_RABBIT = new SaltedFoodItem(ConfigRegistry.RABBIT, FoodComponents.RABBIT);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
