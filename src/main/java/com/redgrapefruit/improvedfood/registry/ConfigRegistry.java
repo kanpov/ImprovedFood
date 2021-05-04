@@ -86,4 +86,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(6)
             .saltEfficiency(5)
             .build();
+    public static final FoodConfig COOKED_SALMON = new FoodConfig.Builder()
+            .category(FoodCategory.FISH)
+            .overdueState(170000)
+            .overdueSpeed(9)
+            .fridgeEfficiency(7)
+            .saltEfficiency(6)
+            .build();
 }
