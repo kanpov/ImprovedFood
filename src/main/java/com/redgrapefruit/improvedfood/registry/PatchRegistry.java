@@ -69,18 +69,4 @@ public class PatchRegistry {
         ItemMixinAccess access = patch(item, config);
         access.setOverdueVariant(overdueVariant);
     }
-
-    /**
-     * Patches the base properties with all variants to the mixin access
-     *
-     * @param item           Item
-     * @param config         {@link FoodConfig}
-     * @param rottenVariant  Rotten variant
-     * @param overdueVariant Overdue variant
-     */
-    private static void patch(Item item, FoodConfig config, RottenFoodItem rottenVariant, OverdueFoodItem overdueVariant) {
-        ItemMixinAccess access = patch(item, config);
-        access.setRottenVariant(rottenVariant);
-        access.setOverdueVariant(overdueVariant);
-    }
 }
