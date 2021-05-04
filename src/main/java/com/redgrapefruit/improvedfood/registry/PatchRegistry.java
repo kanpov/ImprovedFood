@@ -33,6 +33,7 @@ public class PatchRegistry {
         patch(Items.APPLE, ConfigRegistry.APPLE, ItemRegistry.OVERDUE_APPLE);
         patch(Items.GOLDEN_APPLE, ConfigRegistry.GOLDEN_APPLE, ItemRegistry.OVERDUE_GOLDEN_APPLE);
         patch(Items.CARROT, ConfigRegistry.CARROT, ItemRegistry.OVERDUE_CARROT);
+        patch(Items.GOLDEN_CARROT, ConfigRegistry.GOLDEN_CARROT, ItemRegistry.OVERDUE_GOLDEN_CARROT);
     }
 
     /**

@@ -125,4 +125,10 @@ public class ConfigRegistry {
             .overdueSpeed(9)
             .fridgeEfficiency(6)
             .build();
+    public static final FoodConfig GOLDEN_CARROT = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .overdueState(360000)
+            .overdueSpeed(8)
+            .fridgeEfficiency(5)
+            .build();
 }
