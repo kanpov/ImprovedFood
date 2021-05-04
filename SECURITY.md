@@ -13,5 +13,6 @@ Security updates hardly ever happen, but I keep a list of support versions just 
 
 ## Reporting a Vulnerability
 
-If you somehow found a vulnerability, ~contact your therapist~, I mean, email me at karpovanton729@gmail.com and I'll try my best at resolving the issue.  
+If you somehow found a vulnerability, ~contact your therapist~, I mean, email me at karpovanton729@gmail.com and I'll
+try my best at resolving the issue.  
 Do keep in mind that I'm **not** a security expert and there's not much I can do.

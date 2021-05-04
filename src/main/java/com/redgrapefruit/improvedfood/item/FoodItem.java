@@ -1,6 +1,6 @@
 package com.redgrapefruit.improvedfood.item;
 
-import com.redgrapefruit.improvedfood.core.*;
+import com.redgrapefruit.improvedfood.core.FoodSystem;
 import com.redgrapefruit.improvedfood.core.data.FoodCategory;
 import com.redgrapefruit.improvedfood.core.data.FoodConfig;
 import com.redgrapefruit.improvedfood.core.data.FoodEffectConfig;

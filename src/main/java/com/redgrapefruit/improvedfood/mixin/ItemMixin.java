@@ -1,9 +1,9 @@
 package com.redgrapefruit.improvedfood.mixin;
 
+import com.redgrapefruit.improvedfood.core.FoodSystem;
 import com.redgrapefruit.improvedfood.core.data.FoodConfig;
 import com.redgrapefruit.improvedfood.core.session.FoodProfile;
 import com.redgrapefruit.improvedfood.core.session.FoodState;
-import com.redgrapefruit.improvedfood.core.FoodSystem;
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
 import com.redgrapefruit.improvedfood.util.ItemMixinAccess;
