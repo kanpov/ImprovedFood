@@ -79,4 +79,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(3)
             .saltEfficiency(4)
             .build();
+    public static final FoodConfig SALMON = new FoodConfig.Builder()
+            .category(FoodCategory.FISH)
+            .overdueState(120000)
+            .overdueSpeed(10)
+            .fridgeEfficiency(6)
+            .saltEfficiency(5)
+            .build();
 }
