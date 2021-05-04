@@ -43,7 +43,23 @@ public enum FoodCategory {
             false,
             true,
             true,
-            "Nice and yummy fish. Fish or meat?");
+            "Nice and yummy fish. Fish or meat?"),
+
+    HARMFUL(1,
+            0.5f,
+            "Harmful",
+            true,
+            true,
+            false,
+            "Just why do you eat these things? This will break your fridge in a millisecond"),
+
+    MISC(2,
+            0.75f,
+            "Miscellaneous",
+            false,
+            true,
+            true,
+            "The food that doesn't fit in regular categories. Still pretty delicious though");
 
     /**
      * Base hunger of this food type.<br>
