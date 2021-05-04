@@ -22,10 +22,6 @@ public class FoodProfile {
      */
     private int overdueProgress;
     /**
-     * Is stored in a fridge
-     */
-    private boolean isInFridge;
-    /**
      * Previous world tick
      */
     private long previousTick;
@@ -33,21 +29,25 @@ public class FoodProfile {
      * Is the profile initialized
      */
     private boolean isInitialized;
+    /**
+     * Current fridge state
+     */
+    private FridgeState fridgeState;
 
     public FoodProfile(FoodConfig config) {
         this.rotProgress = 0;
         this.overdueProgress = 0;
-        this.isInFridge = false;
         this.isInitialized = false;
+        this.fridgeState = FridgeState.NOT_IN_FRIDGE;
     }
 
     /**
-     * Toggles the isInFridge flag on/off
+     * Toggles current {@link FridgeState} to given {@link FridgeState}
      *
-     * @param isInFridge New value
+     * @param fridgeState New {@link FridgeState}
      */
-    public void toggleInFridge(boolean isInFridge) {
-        this.isInFridge = isInFridge;
+    public void toggleFridgeState(FridgeState fridgeState) {
+        this.fridgeState = fridgeState;
     }
 
     /**
@@ -115,10 +115,6 @@ public class FoodProfile {
         return overdueProgress;
     }
 
-    public boolean isInFridge() {
-        return isInFridge;
-    }
-
     public long getPreviousTick() {
         return previousTick;
     }
@@ -129,5 +125,9 @@ public class FoodProfile {
 
     public boolean isInitialized() {
         return isInitialized;
+    }
+
+    public FridgeState getFridgeState() {
+        return fridgeState;
     }
 }

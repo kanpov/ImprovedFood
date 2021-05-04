@@ -1,5 +1,6 @@
 package com.redgrapefruit.improvedfood.screen.handler;
 
+import com.redgrapefruit.improvedfood.core.session.FridgeState;
 import com.redgrapefruit.improvedfood.item.FoodItem;
 import com.redgrapefruit.improvedfood.registry.GuiRegistry;
 import com.redgrapefruit.improvedfood.util.ItemMixinAccess;
@@ -69,24 +70,24 @@ public class FridgeScreenHandler extends ContainerScreenHandler {
             // When processing the mixin implementation, make sure the item is activated
             if (currentItem instanceof FoodItem) {
                 FoodItem item = (FoodItem) currentItem;
-                item.getProfile().toggleInFridge(true);
+                item.getProfile().toggleFridgeState(FridgeState.IN_FRIDGE);
             }
             if (previousItem instanceof FoodItem) {
                 FoodItem item = (FoodItem) previousItem;
-                item.getProfile().toggleInFridge(false);
+                item.getProfile().toggleFridgeState(FridgeState.NOT_COMPENSATED);
             }
             if (currentItem instanceof ItemMixinAccess) {
                 ItemMixinAccess access = (ItemMixinAccess) currentItem;
 
                 if (access.isActivated()) {
-                    access.getFoodProfile().toggleInFridge(true);
+                    access.getFoodProfile().toggleFridgeState(FridgeState.IN_FRIDGE);
                 }
             }
             if (previousItem instanceof ItemMixinAccess) {
                 ItemMixinAccess access = (ItemMixinAccess) previousItem;
 
                 if (access.isActivated()) {
-                    access.getFoodProfile().toggleInFridge(false);
+                    access.getFoodProfile().toggleFridgeState(FridgeState.NOT_COMPENSATED);
                 }
             }
 

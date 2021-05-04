@@ -3,6 +3,7 @@ package com.redgrapefruit.improvedfood.core;
 import com.redgrapefruit.improvedfood.core.data.FoodConfig;
 import com.redgrapefruit.improvedfood.core.session.FoodProfile;
 import com.redgrapefruit.improvedfood.core.session.FoodState;
+import com.redgrapefruit.improvedfood.core.session.FridgeState;
 import com.redgrapefruit.improvedfood.item.FoodItem;
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
@@ -121,7 +122,7 @@ public class FoodSystem {
         // Fridge
         if (config.getCategory().canBePutInFridge() && state.doesDisplayFridgeProperties()) {
             newLine(tooltip);
-            tooltip.add(new LiteralText(Formatting.BLUE + "Is in a fridge: " + profile.isInFridge()));
+            tooltip.add(new LiteralText(Formatting.BLUE + "Is in a fridge: " + profile.getFridgeState().getBoolValue()));
             tooltip.add(new LiteralText(Formatting.DARK_BLUE + "Fridge efficiency: " + config.getFridgeEfficiency()));
         }
     }
