@@ -33,6 +33,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_COOKED_COD = new OverdueFoodItem(ConfigRegistry.COOKED_COD, FoodComponents.COOKED_COD);
     public static final OverdueFoodItem OVERDUE_APPLE = new OverdueFoodItem(ConfigRegistry.APPLE, FoodComponents.APPLE);
     public static final OverdueFoodItem OVERDUE_GOLDEN_APPLE = new OverdueFoodItem(ConfigRegistry.GOLDEN_APPLE, FoodComponents.GOLDEN_APPLE);
+    public static final OverdueFoodItem OVERDUE_CARROT = new OverdueFoodItem(ConfigRegistry.CARROT, FoodComponents.CARROT);
 
     // Salted variants
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -74,6 +75,7 @@ public class ItemRegistry {
         register("overdue_cooked_cod", OVERDUE_COOKED_COD);
         register("overdue_apple", OVERDUE_APPLE);
         register("overdue_golden_apple", OVERDUE_GOLDEN_APPLE);
+        register("overdue_carrot", OVERDUE_CARROT);
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
         register("salted_beef", SALTED_BEEF);
