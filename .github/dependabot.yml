@@ -6,6 +6,6 @@
 version: 2
 updates:
   - package-ecosystem: "gradle"
-    directory: "/gradle.build" 
+    directory: "/" 
     schedule:
       interval: "daily"
