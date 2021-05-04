@@ -11,7 +11,7 @@ public class Utilities {
     /**
      * Overrides ALL {@link FoodComponent} values from given {@link FoodComponent} and puts them into a {@link FoodComponent.Builder}
      *
-     * @param origin Original {@link FoodComponent}
+     * @param origin  Original {@link FoodComponent}
      * @param builder {@link FoodComponent.Builder} instance because Mojank decided to make {@link FoodComponent}s immutable
      */
     public static void overrideComponentValues(FoodComponent origin, FoodComponent.Builder builder, float saturationModifierDecrease, int hungerDecrease) {

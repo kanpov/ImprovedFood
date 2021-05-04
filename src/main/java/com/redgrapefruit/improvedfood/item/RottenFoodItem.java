@@ -16,6 +16,7 @@ import net.minecraft.item.FoodComponent;
 public class RottenFoodItem extends FoodItem {
     /**
      * Constructs a non-native instance of a rotten variant
+     *
      * @param config {@link FoodConfig}
      */
     public RottenFoodItem(FoodConfig config) {
@@ -52,6 +53,7 @@ public class RottenFoodItem extends FoodItem {
 
     /**
      * Constructs a native instance of a rotten variant
+     *
      * @param config {@link FoodConfig}
      * @param origin Original {@link FoodComponent}
      */

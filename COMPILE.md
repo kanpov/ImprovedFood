@@ -32,7 +32,8 @@ Then run ```gradlew build```. Without Gradle cache the process will take a while
 
 # Where's the JAR
 
-First, you want to open [gradle.properties](https://github.com/RedGrapefruit09/ImprovedFood/blob/master/gradle.properties).  
+First, you want to
+open [gradle.properties](https://github.com/RedGrapefruit09/ImprovedFood/blob/master/gradle.properties).  
 Remember the value of the variable ```mod_version``` and ```minecraft_version```.  
 Now open $PATH_TO_THE_UNZIPPED_FOLDER in Explorer.  
 Then copy ```build/libs/improvedfood-$minecraft_version-$mod_version.jar``` and paste it into your mods folder.

@@ -13,6 +13,7 @@ import net.minecraft.item.FoodComponent;
 public class SaltedFoodItem extends FoodItem {
     /**
      * Constructs a non-native instance of a salted variant
+     *
      * @param config {@link FoodConfig}
      */
     public SaltedFoodItem(FoodConfig config) {
@@ -41,6 +42,7 @@ public class SaltedFoodItem extends FoodItem {
 
     /**
      * Constructs a native instance of a salted variant
+     *
      * @param config {@link FoodConfig}
      * @param origin Original {@link FoodComponent}
      */

@@ -16,6 +16,7 @@ import net.minecraft.item.FoodComponent;
 public class OverdueFoodItem extends FoodItem {
     /**
      * Constructs a non-native instance of an overdue variant
+     *
      * @param config {@link FoodConfig}
      */
     public OverdueFoodItem(FoodConfig config) {
@@ -66,6 +67,7 @@ public class OverdueFoodItem extends FoodItem {
 
     /**
      * Constructs a native instance of an overdue variant
+     *
      * @param config {@link FoodConfig}
      * @param origin Original {@link FoodComponent}
      */
