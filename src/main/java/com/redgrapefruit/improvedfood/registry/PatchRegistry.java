@@ -29,6 +29,7 @@ public class PatchRegistry {
         patch(Items.SALMON, ConfigRegistry.SALMON, ItemRegistry.OVERDUE_SALMON);
         patch(Items.COOKED_SALMON, ConfigRegistry.COOKED_SALMON, ItemRegistry.OVERDUE_COOKED_SALMON);
         patch(Items.COD, ConfigRegistry.COD, ItemRegistry.OVERDUE_COD);
+        patch(Items.COOKED_COD, ConfigRegistry.COOKED_COD, ItemRegistry.OVERDUE_COOKED_COD);
     }
 
     /**

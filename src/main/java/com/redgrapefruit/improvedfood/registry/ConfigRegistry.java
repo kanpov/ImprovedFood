@@ -100,4 +100,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(4)
             .saltEfficiency(2)
             .build();
+    public static final FoodConfig COOKED_COD = new FoodConfig.Builder()
+            .category(FoodCategory.FISH)
+            .overdueState(160000)
+            .overdueSpeed(8)
+            .fridgeEfficiency(5)
+            .saltEfficiency(3)
+            .build();
 }
