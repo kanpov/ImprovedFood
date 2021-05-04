@@ -131,4 +131,11 @@ public class ConfigRegistry {
             .overdueSpeed(8)
             .fridgeEfficiency(5)
             .build();
+    public static final FoodConfig POTATO = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .overdueState(110000)
+            .overdueSpeed(7)
+            .fridgeEfficiency(4)
+            .saltEfficiency(5)
+            .build();
 }
