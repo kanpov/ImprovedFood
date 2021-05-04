@@ -1,7 +1,9 @@
 # Security Policy
 
 This is a Minecraft mod and not much attention is needed to security.  
-I promise that my mods aren't malware and won't damage your system in any way.
+I know that my mods aren't malware and won't damage your system in any way.
+
+**I do not** take any responsibility over the security of my products as described in the LICENSE.
 
 ## Supported Versions
 
