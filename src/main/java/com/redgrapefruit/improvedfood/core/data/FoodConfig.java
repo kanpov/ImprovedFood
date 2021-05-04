@@ -1,4 +1,4 @@
-package com.redgrapefruit.improvedfood.core;
+package com.redgrapefruit.improvedfood.core.data;
 
 import com.redgrapefruit.improvedfood.item.FoodItem;
 

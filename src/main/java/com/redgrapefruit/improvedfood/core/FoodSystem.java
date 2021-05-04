@@ -1,8 +1,12 @@
 package com.redgrapefruit.improvedfood.core;
 
+import com.redgrapefruit.improvedfood.core.data.FoodConfig;
+import com.redgrapefruit.improvedfood.core.session.FoodProfile;
+import com.redgrapefruit.improvedfood.core.session.FoodState;
 import com.redgrapefruit.improvedfood.item.FoodItem;
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
+import com.redgrapefruit.improvedfood.util.FoodMath;
 import com.redgrapefruit.redcore.util.Formatting;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;

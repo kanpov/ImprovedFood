@@ -1,7 +1,7 @@
 package com.redgrapefruit.improvedfood.registry;
 
-import com.redgrapefruit.improvedfood.core.FoodConfig;
-import com.redgrapefruit.improvedfood.core.FoodProfile;
+import com.redgrapefruit.improvedfood.core.data.FoodConfig;
+import com.redgrapefruit.improvedfood.core.session.FoodProfile;
 import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.item.RottenFoodItem;
 import com.redgrapefruit.improvedfood.util.ItemMixinAccess;

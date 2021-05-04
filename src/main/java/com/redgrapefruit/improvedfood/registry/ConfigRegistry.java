@@ -1,7 +1,7 @@
 package com.redgrapefruit.improvedfood.registry;
 
-import com.redgrapefruit.improvedfood.core.FoodCategory;
-import com.redgrapefruit.improvedfood.core.FoodConfig;
+import com.redgrapefruit.improvedfood.core.data.FoodCategory;
+import com.redgrapefruit.improvedfood.core.data.FoodConfig;
 
 /**
  * A registry for {@link FoodConfig}'s.<br>

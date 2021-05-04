@@ -1,9 +1,9 @@
 package com.redgrapefruit.improvedfood.item;
 
 import com.redgrapefruit.improvedfood.ImprovedFood;
-import com.redgrapefruit.improvedfood.core.FoodCategory;
-import com.redgrapefruit.improvedfood.core.FoodConfig;
-import com.redgrapefruit.improvedfood.core.FoodState;
+import com.redgrapefruit.improvedfood.core.data.FoodCategory;
+import com.redgrapefruit.improvedfood.core.data.FoodConfig;
+import com.redgrapefruit.improvedfood.core.session.FoodState;
 import com.redgrapefruit.improvedfood.registry.ItemGroupRegistry;
 import com.redgrapefruit.redcore.util.Utilities;
 import net.minecraft.entity.effect.StatusEffectInstance;

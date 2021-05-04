@@ -1,6 +1,11 @@
 package com.redgrapefruit.improvedfood.item;
 
 import com.redgrapefruit.improvedfood.core.*;
+import com.redgrapefruit.improvedfood.core.data.FoodCategory;
+import com.redgrapefruit.improvedfood.core.data.FoodConfig;
+import com.redgrapefruit.improvedfood.core.data.FoodEffectConfig;
+import com.redgrapefruit.improvedfood.core.session.FoodProfile;
+import com.redgrapefruit.improvedfood.core.session.FoodState;
 import com.redgrapefruit.improvedfood.registry.ItemGroupRegistry;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;

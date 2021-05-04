@@ -1,4 +1,4 @@
-package com.redgrapefruit.improvedfood.core;
+package com.redgrapefruit.improvedfood.core.data;
 
 /**
  * A category of a type of food.<br>

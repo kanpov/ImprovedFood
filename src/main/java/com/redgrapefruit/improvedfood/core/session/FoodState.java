@@ -1,5 +1,6 @@
-package com.redgrapefruit.improvedfood.core;
+package com.redgrapefruit.improvedfood.core.session;
 
+import com.redgrapefruit.improvedfood.core.data.FoodConfig;
 import com.redgrapefruit.improvedfood.item.FoodItem;
 
 /**
