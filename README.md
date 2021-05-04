@@ -36,7 +36,8 @@ your modded experience!
 
 # Compile
 
-See [COMPILE.md](https://github.com/RedGrapefruit09/ImprovedFood/blob/master/COMPILE.md)
+See [COMPILE.md](https://github.com/RedGrapefruit09/ImprovedFood/blob/master/COMPILE.md) for a guide on how to use GitHub Actions compiled builds.  
+(_Not recommended_) If you want to compile manually, you can see the deprecated manual compilation guide [here](https://github.com/RedGrapefruit09/ImprovedFood/blob/master/COMPILE_DEPRECATED.md)
 
 # Contribute
 
