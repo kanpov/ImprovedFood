@@ -5,6 +5,37 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.1-preview.3]
+
+### Added
+
+- Coverage for:
+    - Raw salmon
+    - Cooked salmon
+    - Raw cod
+    - Cooked cod
+    - Apple
+    - Golden apple
+    - Carrot
+    - Golden carrot
+- A new fish category
+- _Internal:_ Dependabot integration
+- _Internal:_ Security policy
+
+### Changed
+
+- _Internal:_ Reorganized com.redgrapefruit.improvedfood.core package
+
+### Fixed
+
+- _Repository_: Fixed compile guide having the wrong version of the mod
+- _Internal_: Minor cleanup and issues
+- Fixed a major bug disabling fridge logic
+
+### Removed
+
+- _Internal:_ Removed unused ```patch(Item, FoodConfig, RottenFoodItem, OverdueFoodItem)``` method in ```PatchRegistry```
+
 ## [v0.1-preview.2]
 
 ### Added
