@@ -34,7 +34,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Removed
 
-- _Internal:_ Removed unused ```patch(Item, FoodConfig, RottenFoodItem, OverdueFoodItem)``` method in ```PatchRegistry```
+- _Internal:_ Removed unused ```patch(Item, FoodConfig, RottenFoodItem, OverdueFoodItem)``` method
+  in ```PatchRegistry```
 
 ## [v0.1-preview.2]
 
