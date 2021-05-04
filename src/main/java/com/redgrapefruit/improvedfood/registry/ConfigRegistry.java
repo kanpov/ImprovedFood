@@ -156,4 +156,12 @@ public class ConfigRegistry {
             .fridgeEfficiency(4)
             .saltEfficiency(5)
             .build();
+
+    public static final FoodConfig BAKED_POTATO = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .overdueState(225000)
+            .overdueSpeed(6)
+            .fridgeEfficiency(4)
+            .saltEfficiency(3)
+            .build();
 }
