@@ -49,7 +49,7 @@ public class SaltedFoodItem extends FoodItem {
             FoodComponent.Builder builder = new FoodComponent.Builder();
 
             // Copy all values from origin
-            Utilities.overrideComponentValues(origin, builder);
+            Utilities.overrideComponentValues(origin, builder, 0, 0);
 
             return builder.build();
         });

@@ -14,10 +14,10 @@ public class Utilities {
      * @param origin Original {@link FoodComponent}
      * @param builder {@link FoodComponent.Builder} instance because Mojank decided to make {@link FoodComponent}s immutable
      */
-    public static void overrideComponentValues(FoodComponent origin, FoodComponent.Builder builder) {
+    public static void overrideComponentValues(FoodComponent origin, FoodComponent.Builder builder, float saturationModifierDecrease, int hungerDecrease) {
         // Standard values
-        builder.hunger(origin.getHunger());
-        builder.saturationModifier(origin.getSaturationModifier());
+        builder.hunger(origin.getHunger() - hungerDecrease);
+        builder.saturationModifier(origin.getSaturationModifier() - saturationModifierDecrease);
         // Effects
         for (Pair<StatusEffectInstance, Float> effectPair : origin.getStatusEffects()) {
             builder.statusEffect(effectPair.getFirst(), effectPair.getSecond());

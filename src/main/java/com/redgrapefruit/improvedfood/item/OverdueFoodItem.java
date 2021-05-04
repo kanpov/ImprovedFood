@@ -74,7 +74,7 @@ public class OverdueFoodItem extends FoodItem {
             FoodComponent.Builder builder = new FoodComponent.Builder();
 
             // Copy everything from origin first
-            Utilities.overrideComponentValues(origin, builder);
+            Utilities.overrideComponentValues(origin, builder, 0.25f, 1);
             // Effects
             builder.statusEffect(
                     new StatusEffectInstance(

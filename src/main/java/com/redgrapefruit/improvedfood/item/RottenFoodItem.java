@@ -60,7 +60,7 @@ public class RottenFoodItem extends FoodItem {
             FoodComponent.Builder builder = new FoodComponent.Builder();
 
             // Copy everything from origin first
-            Utilities.overrideComponentValues(origin, builder);
+            Utilities.overrideComponentValues(origin, builder, 0.3f, 1);
             // Poison effect
             builder.statusEffect(
                     new StatusEffectInstance(
