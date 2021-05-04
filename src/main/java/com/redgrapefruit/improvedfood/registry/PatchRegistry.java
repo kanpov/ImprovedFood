@@ -31,6 +31,7 @@ public class PatchRegistry {
         patch(Items.COD, ConfigRegistry.COD, ItemRegistry.OVERDUE_COD);
         patch(Items.COOKED_COD, ConfigRegistry.COOKED_COD, ItemRegistry.OVERDUE_COOKED_COD);
         patch(Items.APPLE, ConfigRegistry.APPLE, ItemRegistry.OVERDUE_APPLE);
+        patch(Items.GOLDEN_APPLE, ConfigRegistry.GOLDEN_APPLE, ItemRegistry.OVERDUE_GOLDEN_APPLE);
     }
 
     /**
