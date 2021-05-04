@@ -25,6 +25,7 @@ public class PatchRegistry {
         patch(Items.MUTTON, ConfigRegistry.MUTTON, ItemRegistry.ROTTEN_MUTTON);
         patch(Items.COOKED_MUTTON, ConfigRegistry.COOKED_MUTTON, ItemRegistry.ROTTEN_COOKED_MUTTON);
         patch(Items.RABBIT, ConfigRegistry.RABBIT, ItemRegistry.ROTTEN_RABBIT);
+        patch(Items.COOKED_RABBIT, ConfigRegistry.COOKED_RABBIT, ItemRegistry.ROTTEN_COOKED_RABBIT);
     }
 
     /**

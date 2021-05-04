@@ -72,4 +72,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(2)
             .saltEfficiency(3)
             .build();
+    public static final FoodConfig COOKED_RABBIT = new FoodConfig.Builder()
+            .category(FoodCategory.MEAT)
+            .rotSpeed(110000)
+            .rotSpeed(6)
+            .fridgeEfficiency(3)
+            .saltEfficiency(4)
+            .build();
 }
