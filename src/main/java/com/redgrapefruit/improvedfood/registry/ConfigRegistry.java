@@ -224,4 +224,12 @@ public class ConfigRegistry {
             .fridgeEfficiency(6)
             .saltEfficiency(3)
             .build();
+
+    public static final FoodConfig PUMPKIN_PIE = new FoodConfig.Builder()
+            .category(FoodCategory.COOKED)
+            .overdueState(160000)
+            .overdueSpeed(7)
+            .fridgeEfficiency(4)
+            .saltEfficiency(2)
+            .build();
 }

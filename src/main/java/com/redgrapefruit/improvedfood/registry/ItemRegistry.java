@@ -45,6 +45,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_HONEY_BOTTLE = new OverdueFoodItem(ConfigRegistry.HONEY_BOTTLE, FoodComponents.HONEY_BOTTLE);
     public static final OverdueFoodItem OVERDUE_MELON_SLICE = new OverdueFoodItem(ConfigRegistry.MELON_SLICE, FoodComponents.MELON_SLICE);
     public static final OverdueFoodItem OVERDUE_MUSHROOM_STEW = new OverdueFoodItem(ConfigRegistry.MUSHROOM_STEW, FoodComponents.MUSHROOM_STEW);
+    public static final OverdueFoodItem OVERDUE_PUMPKIN_PIE = new OverdueFoodItem(ConfigRegistry.PUMPKIN_PIE, FoodComponents.PUMPKIN_PIE);
 
     // Salted variants
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -68,6 +69,7 @@ public class ItemRegistry {
     public static final SaltedFoodItem SALTED_BREAD = new SaltedFoodItem(ConfigRegistry.BREAD, FoodComponents.BREAD);
     public static final SaltedFoodItem SALTED_MELON_SLICE = new SaltedFoodItem(ConfigRegistry.MELON_SLICE, FoodComponents.MELON_SLICE);
     public static final SaltedFoodItem SALTED_MUSHROOM_STEW = new SaltedFoodItem(ConfigRegistry.MUSHROOM_STEW, FoodComponents.MUSHROOM_STEW);
+    public static final SaltedFoodItem SALTED_PUMPKIN_PIE = new SaltedFoodItem(ConfigRegistry.PUMPKIN_PIE, FoodComponents.PUMPKIN_PIE);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -106,6 +108,7 @@ public class ItemRegistry {
         register("overdue_honey_bottle", OVERDUE_HONEY_BOTTLE);
         register("overdue_melon_slice", OVERDUE_MELON_SLICE);
         register("overdue_mushroom_stew", OVERDUE_MUSHROOM_STEW);
+        register("overdue_pumpkin_pie", OVERDUE_PUMPKIN_PIE);
 
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
@@ -128,6 +131,7 @@ public class ItemRegistry {
         register("salted_bread", SALTED_BREAD);
         register("salted_melon_slice", SALTED_MELON_SLICE);
         register("salted_mushroom_stew", SALTED_MUSHROOM_STEW);
+        register("salted_pumpkin_pie", SALTED_PUMPKIN_PIE);
     }
 
     /**
