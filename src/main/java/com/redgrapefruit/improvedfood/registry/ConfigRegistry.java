@@ -208,4 +208,12 @@ public class ConfigRegistry {
             .overdueSpeed(7)
             .fridgeEfficiency(2)
             .build();
+
+    public static final FoodConfig MELON_SLICE = new FoodConfig.Builder()
+            .category(FoodCategory.FRUIT)
+            .overdueState(240000)
+            .overdueSpeed(9)
+            .fridgeEfficiency(7)
+            .saltEfficiency(5)
+            .build();
 }

@@ -43,6 +43,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_CHORUS_FRUIT = new OverdueFoodItem(ConfigRegistry.CHORUS_FRUIT, FoodComponents.CHORUS_FRUIT);
     public static final OverdueFoodItem OVERDUE_COOKIE = new OverdueFoodItem(ConfigRegistry.COOKIE, FoodComponents.COOKIE);
     public static final OverdueFoodItem OVERDUE_HONEY_BOTTLE = new OverdueFoodItem(ConfigRegistry.HONEY_BOTTLE, FoodComponents.HONEY_BOTTLE);
+    public static final OverdueFoodItem OVERDUE_MELON_SLICE = new OverdueFoodItem(ConfigRegistry.MELON_SLICE, FoodComponents.MELON_SLICE);
 
     // Salted variants
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -64,6 +65,7 @@ public class ItemRegistry {
     public static final SaltedFoodItem SALTED_BEETROOT = new SaltedFoodItem(ConfigRegistry.BEETROOT, FoodComponents.BEETROOT);
     public static final SaltedFoodItem SALTED_BEETROOT_SOUP = new SaltedFoodItem(ConfigRegistry.BEETROOT_SOUP, FoodComponents.BEETROOT_SOUP);
     public static final SaltedFoodItem SALTED_BREAD = new SaltedFoodItem(ConfigRegistry.BREAD, FoodComponents.BREAD);
+    public static final SaltedFoodItem SALTED_MELON_SLICE = new SaltedFoodItem(ConfigRegistry.MELON_SLICE, FoodComponents.MELON_SLICE);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -100,6 +102,7 @@ public class ItemRegistry {
         register("overdue_chorus_fruit", OVERDUE_CHORUS_FRUIT);
         register("overdue_cookie", OVERDUE_COOKIE);
         register("overdue_honey_bottle", OVERDUE_HONEY_BOTTLE);
+        register("overdue_melon_slice", OVERDUE_MELON_SLICE);
 
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
@@ -120,6 +123,7 @@ public class ItemRegistry {
         register("salted_beetroot", SALTED_BEETROOT);
         register("salted_beetroot_soup", SALTED_BEETROOT_SOUP);
         register("salted_bread", SALTED_BREAD);
+        register("salted_melon_slice", SALTED_MELON_SLICE);
     }
 
     /**

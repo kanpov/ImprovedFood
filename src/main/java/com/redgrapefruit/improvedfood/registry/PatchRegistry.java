@@ -41,6 +41,7 @@ public class PatchRegistry {
         patch(Items.CHORUS_FRUIT, ConfigRegistry.CHORUS_FRUIT, ItemRegistry.OVERDUE_CHORUS_FRUIT);
         patch(Items.COOKIE, ConfigRegistry.COOKIE, ItemRegistry.OVERDUE_COOKIE);
         patch(Items.HONEY_BOTTLE, ConfigRegistry.HONEY_BOTTLE, ItemRegistry.OVERDUE_HONEY_BOTTLE);
+        patch(Items.MELON_SLICE, ConfigRegistry.MELON_SLICE, ItemRegistry.OVERDUE_MELON_SLICE);
     }
 
     /**
