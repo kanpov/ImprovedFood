@@ -12,7 +12,7 @@ artifacts.
 Why would you compile the mod?  
 Because compiled versions of the mod have the newest features of all the releases.  
 But the output might potentially be unstable and even crash your world.  
-<b>Backup your world</b> before using a compiled version of the mod.
+**Backup your world** before using a compiled version of the mod.
 
 # Where from
 

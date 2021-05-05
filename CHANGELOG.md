@@ -10,17 +10,17 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - Coverage for:
-    - Potato
-    - Baked potato
-    - Beetroot
-    - Beetroot soup
-    - Bread
-    - Chorus fruit
-    - Cookie
-    - Honey bottle
-    - Melon slice
-    - Mushroom stew
-    - Pumpkin pie
+  - Potato
+  - Baked potato
+  - Beetroot
+  - Beetroot soup
+  - Bread
+  - Chorus fruit
+  - Cookie
+  - Honey bottle
+  - Melon slice
+  - Mushroom stew
+  - Pumpkin pie
 - _Repository:_ added an artifact compile guide and deprecated the old one
 - _Security:_ added an important note to the Security Policy
 - HARMFUL, MISC and COOKED categories
@@ -39,14 +39,14 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - Coverage for:
-    - Raw salmon
-    - Cooked salmon
-    - Raw cod
-    - Cooked cod
-    - Apple
-    - Golden apple
-    - Carrot
-    - Golden carrot
+  - Raw salmon
+  - Cooked salmon
+  - Raw cod
+  - Cooked cod
+  - Apple
+  - Golden apple
+  - Carrot
+  - Golden carrot
 - A new fish category
 - _Internal:_ Dependabot integration
 - _Internal:_ Security policy
@@ -71,10 +71,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - Coverage for:
-    - Raw mutton
-    - Cooked mutton
-    - Raw rabbit
-    - Cooked rabbit
+  - Raw mutton
+  - Cooked mutton
+  - Raw rabbit
+  - Cooked rabbit
 
 ### Changed
 
@@ -95,9 +95,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Food can be salted to slow down rot
 - Food properties are displayed in a dynamic, self-expandable tooltip
 - Vanilla food will also have these changes. List of currently covered food:
-    - Raw porkchop
-    - Cooked porkchop
-    - Raw beef (raw steak)
-    - Cooked beef (cooked steak)
-    - Raw chicken
-    - Cooked chicken
+  - Raw porkchop
+  - Cooked porkchop
+  - Raw beef (raw steak)
+  - Cooked beef (cooked steak)
+  - Raw chicken
+  - Cooked chicken
