@@ -185,7 +185,6 @@ public class ConfigRegistry {
             .category(FoodCategory.COOKED)
             .overdueState(210000)
             .overdueSpeed(9)
-            .fridgeEfficiency(0)
             .saltEfficiency(4)
             .build();
 
@@ -194,6 +193,5 @@ public class ConfigRegistry {
             .overdueState(500000)
             .overdueSpeed(12)
             .fridgeEfficiency(5)
-            .saltEfficiency(0)
             .build();
 }
