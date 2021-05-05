@@ -53,6 +53,14 @@ public enum FoodCategory {
             false,
             "Just why do you eat these things? This will break your fridge in a millisecond"),
 
+    COOKED(3,
+            0.65f,
+            "Cooked Food",
+            false,
+            true,
+            true,
+            "Bakery, soup etc. A good chef worked on this one"),
+
     MISC(2,
             0.75f,
             "Miscellaneous",
