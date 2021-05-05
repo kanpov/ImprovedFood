@@ -216,4 +216,12 @@ public class ConfigRegistry {
             .fridgeEfficiency(7)
             .saltEfficiency(5)
             .build();
+
+    public static final FoodConfig MUSHROOM_STEW = new FoodConfig.Builder()
+            .category(FoodCategory.COOKED)
+            .overdueState(320000)
+            .overdueSpeed(12)
+            .fridgeEfficiency(6)
+            .saltEfficiency(3)
+            .build();
 }

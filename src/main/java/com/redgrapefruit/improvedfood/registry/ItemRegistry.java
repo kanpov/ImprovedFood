@@ -44,6 +44,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_COOKIE = new OverdueFoodItem(ConfigRegistry.COOKIE, FoodComponents.COOKIE);
     public static final OverdueFoodItem OVERDUE_HONEY_BOTTLE = new OverdueFoodItem(ConfigRegistry.HONEY_BOTTLE, FoodComponents.HONEY_BOTTLE);
     public static final OverdueFoodItem OVERDUE_MELON_SLICE = new OverdueFoodItem(ConfigRegistry.MELON_SLICE, FoodComponents.MELON_SLICE);
+    public static final OverdueFoodItem OVERDUE_MUSHROOM_STEW = new OverdueFoodItem(ConfigRegistry.MUSHROOM_STEW, FoodComponents.MUSHROOM_STEW);
 
     // Salted variants
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -66,6 +67,7 @@ public class ItemRegistry {
     public static final SaltedFoodItem SALTED_BEETROOT_SOUP = new SaltedFoodItem(ConfigRegistry.BEETROOT_SOUP, FoodComponents.BEETROOT_SOUP);
     public static final SaltedFoodItem SALTED_BREAD = new SaltedFoodItem(ConfigRegistry.BREAD, FoodComponents.BREAD);
     public static final SaltedFoodItem SALTED_MELON_SLICE = new SaltedFoodItem(ConfigRegistry.MELON_SLICE, FoodComponents.MELON_SLICE);
+    public static final SaltedFoodItem SALTED_MUSHROOM_STEW = new SaltedFoodItem(ConfigRegistry.MUSHROOM_STEW, FoodComponents.MUSHROOM_STEW);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -103,6 +105,7 @@ public class ItemRegistry {
         register("overdue_cookie", OVERDUE_COOKIE);
         register("overdue_honey_bottle", OVERDUE_HONEY_BOTTLE);
         register("overdue_melon_slice", OVERDUE_MELON_SLICE);
+        register("overdue_mushroom_stew", OVERDUE_MUSHROOM_STEW);
 
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
@@ -124,6 +127,7 @@ public class ItemRegistry {
         register("salted_beetroot_soup", SALTED_BEETROOT_SOUP);
         register("salted_bread", SALTED_BREAD);
         register("salted_melon_slice", SALTED_MELON_SLICE);
+        register("salted_mushroom_stew", SALTED_MUSHROOM_STEW);
     }
 
     /**
