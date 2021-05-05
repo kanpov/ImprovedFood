@@ -201,4 +201,11 @@ public class ConfigRegistry {
             .overdueSpeed(5)
             .fridgeEfficiency(1)
             .build();
+
+    public static final FoodConfig HONEY_BOTTLE = new FoodConfig.Builder()
+            .category(FoodCategory.MISC)
+            .overdueState(375000)
+            .overdueSpeed(7)
+            .fridgeEfficiency(2)
+            .build();
 }
