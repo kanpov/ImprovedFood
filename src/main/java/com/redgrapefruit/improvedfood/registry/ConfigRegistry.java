@@ -194,4 +194,11 @@ public class ConfigRegistry {
             .overdueSpeed(12)
             .fridgeEfficiency(5)
             .build();
+
+    public static final FoodConfig COOKIE = new FoodConfig.Builder()
+            .category(FoodCategory.COOKED)
+            .overdueState(80000)
+            .overdueSpeed(5)
+            .fridgeEfficiency(1)
+            .build();
 }
