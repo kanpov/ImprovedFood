@@ -188,4 +188,12 @@ public class ConfigRegistry {
             .fridgeEfficiency(0)
             .saltEfficiency(4)
             .build();
+
+    public static final FoodConfig CHORUS_FRUIT = new FoodConfig.Builder()
+            .category(FoodCategory.MISC)
+            .overdueState(500000)
+            .overdueSpeed(12)
+            .fridgeEfficiency(5)
+            .saltEfficiency(0)
+            .build();
 }
