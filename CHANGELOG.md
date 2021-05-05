@@ -32,7 +32,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 
 - Fixed missing translation on the chorus fruit
-- Another Gradle Wrapper death
+- _CI:_ Another Gradle Wrapper death
 
 ## [v0.1-preview.3]
 
