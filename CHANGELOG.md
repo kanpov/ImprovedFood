@@ -5,6 +5,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.1-preview.4]
+
+### Added
+
+- Coverage for:
+    - Potato
+    - Baked potato
+    - Beetroot
+    - Beetroot soup
+    - Bread
+    - Chorus fruit
+    - Cookie
+    - Honey bottle
+    - Melon slice
+    - Mushroom stew
+    - Pumpkin pie
+- _Repository:_ added an artifact compile guide and deprecated the old one
+- _Security:_ added an important note to the Security Policy
+- HARMFUL, MISC and COOKED categories
+
+### Changed
+
+- _Internal:_ decoration changes and cleanup
+
+### Fixed
+
+- Fixed missing translation on the chorus fruit
+- Another Gradle Wrapper death
+
 ## [v0.1-preview.3]
 
 ### Added
