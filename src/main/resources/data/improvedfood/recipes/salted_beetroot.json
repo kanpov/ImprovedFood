@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "ABA",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "item": "improvedfood:salt"
+        },
+        "B": {
+            "item": "minecraft:beetroot"
+        }
+    },
+    "result": {
+        "item": "improvedfood:salted_beetroot",
+        "count": 1
+    }
+}

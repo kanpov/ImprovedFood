@@ -164,4 +164,12 @@ public class ConfigRegistry {
             .fridgeEfficiency(4)
             .saltEfficiency(3)
             .build();
+
+    public static final FoodConfig BEETROOT = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .overdueState(140000)
+            .overdueSpeed(8)
+            .fridgeEfficiency(5)
+            .saltEfficiency(3)
+            .build();
 }

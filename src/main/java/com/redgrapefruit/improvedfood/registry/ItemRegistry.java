@@ -37,6 +37,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_GOLDEN_CARROT = new OverdueFoodItem(ConfigRegistry.GOLDEN_CARROT, FoodComponents.GOLDEN_CARROT);
     public static final OverdueFoodItem OVERDUE_POTATO = new OverdueFoodItem(ConfigRegistry.POTATO, FoodComponents.POTATO);
     public static final OverdueFoodItem OVERDUE_BAKED_POTATO = new OverdueFoodItem(ConfigRegistry.BAKED_POTATO, FoodComponents.BAKED_POTATO);
+    public static final OverdueFoodItem OVERDUE_BEETROOT = new OverdueFoodItem(ConfigRegistry.BEETROOT, FoodComponents.BEETROOT);
 
     // Salted variants
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -55,6 +56,7 @@ public class ItemRegistry {
     public static final SaltedFoodItem SALTED_COOKED_COD = new SaltedFoodItem(ConfigRegistry.COOKED_COD, FoodComponents.COOKED_COD);
     public static final SaltedFoodItem SALTED_POTATO = new SaltedFoodItem(ConfigRegistry.POTATO, FoodComponents.POTATO);
     public static final SaltedFoodItem SALTED_BAKED_POTATO = new SaltedFoodItem(ConfigRegistry.BAKED_POTATO, FoodComponents.BAKED_POTATO);
+    public static final SaltedFoodItem SALTED_BEETROOT = new SaltedFoodItem(ConfigRegistry.BEETROOT, FoodComponents.BEETROOT);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -85,6 +87,7 @@ public class ItemRegistry {
         register("overdue_golden_carrot", OVERDUE_GOLDEN_CARROT);
         register("overdue_potato", OVERDUE_POTATO);
         register("overdue_baked_potato", OVERDUE_BAKED_POTATO);
+        register("overdue_beetroot", OVERDUE_BEETROOT);
 
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
@@ -102,6 +105,7 @@ public class ItemRegistry {
         register("salted_cooked_cod", SALTED_COOKED_COD);
         register("salted_potato", SALTED_POTATO);
         register("salted_baked_potato", SALTED_BAKED_POTATO);
+        register("salted_beetroot", SALTED_BEETROOT);
     }
 
     /**
