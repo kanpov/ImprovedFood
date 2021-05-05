@@ -180,4 +180,12 @@ public class ConfigRegistry {
             .fridgeEfficiency(2)
             .saltEfficiency(3)
             .build();
+
+    public static final FoodConfig BREAD = new FoodConfig.Builder()
+            .category(FoodCategory.COOKED)
+            .overdueState(210000)
+            .overdueSpeed(9)
+            .fridgeEfficiency(0)
+            .saltEfficiency(4)
+            .build();
 }

@@ -37,6 +37,7 @@ public class PatchRegistry {
         patch(Items.BAKED_POTATO, ConfigRegistry.BAKED_POTATO, ItemRegistry.OVERDUE_BAKED_POTATO);
         patch(Items.BEETROOT, ConfigRegistry.BEETROOT, ItemRegistry.OVERDUE_BEETROOT);
         patch(Items.BEETROOT_SOUP, ConfigRegistry.BEETROOT_SOUP, ItemRegistry.OVERDUE_BEETROOT_SOUP);
+        patch(Items.BREAD, ConfigRegistry.BREAD, ItemRegistry.OVERDUE_BREAD);
     }
 
     /**

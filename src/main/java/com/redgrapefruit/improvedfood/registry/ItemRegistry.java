@@ -39,6 +39,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_BAKED_POTATO = new OverdueFoodItem(ConfigRegistry.BAKED_POTATO, FoodComponents.BAKED_POTATO);
     public static final OverdueFoodItem OVERDUE_BEETROOT = new OverdueFoodItem(ConfigRegistry.BEETROOT, FoodComponents.BEETROOT);
     public static final OverdueFoodItem OVERDUE_BEETROOT_SOUP = new OverdueFoodItem(ConfigRegistry.BEETROOT_SOUP, FoodComponents.BEETROOT_SOUP);
+    public static final OverdueFoodItem OVERDUE_BREAD = new OverdueFoodItem(ConfigRegistry.BREAD, FoodComponents.BREAD);
 
     // Salted variants
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -59,6 +60,7 @@ public class ItemRegistry {
     public static final SaltedFoodItem SALTED_BAKED_POTATO = new SaltedFoodItem(ConfigRegistry.BAKED_POTATO, FoodComponents.BAKED_POTATO);
     public static final SaltedFoodItem SALTED_BEETROOT = new SaltedFoodItem(ConfigRegistry.BEETROOT, FoodComponents.BEETROOT);
     public static final SaltedFoodItem SALTED_BEETROOT_SOUP = new SaltedFoodItem(ConfigRegistry.BEETROOT_SOUP, FoodComponents.BEETROOT_SOUP);
+    public static final SaltedFoodItem SALTED_BREAD = new SaltedFoodItem(ConfigRegistry.BREAD, FoodComponents.BREAD);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -91,6 +93,7 @@ public class ItemRegistry {
         register("overdue_baked_potato", OVERDUE_BAKED_POTATO);
         register("overdue_beetroot", OVERDUE_BEETROOT);
         register("overdue_beetroot_soup", OVERDUE_BEETROOT_SOUP);
+        register("overdue_bread", OVERDUE_BREAD);
 
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
@@ -110,6 +113,7 @@ public class ItemRegistry {
         register("salted_baked_potato", SALTED_BAKED_POTATO);
         register("salted_beetroot", SALTED_BEETROOT);
         register("salted_beetroot_soup", SALTED_BEETROOT_SOUP);
+        register("salted_bread", SALTED_BREAD);
     }
 
     /**
