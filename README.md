@@ -26,7 +26,7 @@ Requirements:
 <li>Licensed Minecraft 1.16.5 Java Edition from <a href="https://www.minecraft.net/en-us/">here</a></li>
 <li>Fabric Loader 0.11.3 from <a href="https://fabricmc.net/use/">here</a> (there's the installer tool)</li>
 <li>A fully set up modded Minecraft instance running on Fabric Loader</li>
-<li>Fabric API 0.34.0 from <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files">here</a></li>
+<li>Fabric API 0.34.1 from <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files">here</a></li>
 </ul>
 
 To get the mod file, navigate to the releases page [here](https://github.com/RedGrapefruit09/ImprovedFood/releases),
