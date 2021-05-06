@@ -1,6 +1,8 @@
 [![build](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml/badge.svg)](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml)
 [![CodeQL](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/codeql-analysis.yml)
 
+200 commits! Yay!
+
 # About
 
 ImprovedFood is a Minecraft mod made with Fabric's toolchain aiming to improve food in the game.  
