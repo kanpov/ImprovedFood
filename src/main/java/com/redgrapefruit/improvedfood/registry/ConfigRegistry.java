@@ -262,4 +262,12 @@ public class ConfigRegistry {
             .overdueSpeed(4)
             .fridgeEfficiency(2)
             .build();
+
+    public static final FoodConfig TROPICAL_FISH = new FoodConfig.Builder()
+            .category(FoodCategory.FISH)
+            .overdueState(150000)
+            .overdueSpeed(7)
+            .fridgeEfficiency(3)
+            .saltEfficiency(5)
+            .build();
 }

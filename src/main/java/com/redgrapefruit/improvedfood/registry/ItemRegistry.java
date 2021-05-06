@@ -50,6 +50,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_SPIDER_EYE = new OverdueFoodItem(ConfigRegistry.SPIDER_EYE, FoodComponents.SPIDER_EYE);
     public static final OverdueFoodItem OVERDUE_SUSPICIOUS_STEW = new OverdueFoodItem(ConfigRegistry.SUSPICIOUS_STEW, FoodComponents.SUSPICIOUS_STEW);
     public static final OverdueFoodItem OVERDUE_SWEET_BERRIES = new OverdueFoodItem(ConfigRegistry.SWEET_BERRIES, FoodComponents.SWEET_BERRIES);
+    public static final OverdueFoodItem OVERDUE_TROPICAL_FISH = new OverdueFoodItem(ConfigRegistry.TROPICAL_FISH, FoodComponents.TROPICAL_FISH);
 
     // Salted variants
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -76,6 +77,7 @@ public class ItemRegistry {
     public static final SaltedFoodItem SALTED_PUMPKIN_PIE = new SaltedFoodItem(ConfigRegistry.PUMPKIN_PIE, FoodComponents.PUMPKIN_PIE);
     public static final SaltedFoodItem SALTED_RABBIT_STEW = new SaltedFoodItem(ConfigRegistry.RABBIT_STEW, FoodComponents.RABBIT_STEW);
     public static final SaltedFoodItem SALTED_SUSPICIOUS_STEW = new SaltedFoodItem(ConfigRegistry.SUSPICIOUS_STEW, FoodComponents.SUSPICIOUS_STEW);
+    public static final SaltedFoodItem SALTED_TROPICAL_FISH = new SaltedFoodItem(ConfigRegistry.TROPICAL_FISH, FoodComponents.TROPICAL_FISH);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -119,6 +121,7 @@ public class ItemRegistry {
         register("overdue_spider_eye", OVERDUE_SPIDER_EYE);
         register("overdue_suspicious_stew", OVERDUE_SUSPICIOUS_STEW);
         register("overdue_sweet_berries", OVERDUE_SWEET_BERRIES);
+        register("overdue_tropical_fish", OVERDUE_TROPICAL_FISH);
 
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
@@ -144,6 +147,7 @@ public class ItemRegistry {
         register("salted_pumpkin_pie", SALTED_PUMPKIN_PIE);
         register("salted_rabbit_stew", SALTED_RABBIT_STEW);
         register("salted_suspicious_stew", SALTED_SUSPICIOUS_STEW);
+        register("salted_tropical_fish", SALTED_TROPICAL_FISH);
     }
 
     /**
