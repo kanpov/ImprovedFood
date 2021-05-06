@@ -48,6 +48,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_PUMPKIN_PIE = new OverdueFoodItem(ConfigRegistry.PUMPKIN_PIE, FoodComponents.PUMPKIN_PIE);
     public static final OverdueFoodItem OVERDUE_RABBIT_STEW = new OverdueFoodItem(ConfigRegistry.RABBIT_STEW, FoodComponents.RABBIT_STEW);
     public static final OverdueFoodItem OVERDUE_SPIDER_EYE = new OverdueFoodItem(ConfigRegistry.SPIDER_EYE, FoodComponents.SPIDER_EYE);
+    public static final OverdueFoodItem OVERDUE_SUSPICIOUS_STEW = new OverdueFoodItem(ConfigRegistry.SUSPICIOUS_STEW, FoodComponents.SUSPICIOUS_STEW);
 
     // Salted variants
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -73,6 +74,7 @@ public class ItemRegistry {
     public static final SaltedFoodItem SALTED_MUSHROOM_STEW = new SaltedFoodItem(ConfigRegistry.MUSHROOM_STEW, FoodComponents.MUSHROOM_STEW);
     public static final SaltedFoodItem SALTED_PUMPKIN_PIE = new SaltedFoodItem(ConfigRegistry.PUMPKIN_PIE, FoodComponents.PUMPKIN_PIE);
     public static final SaltedFoodItem SALTED_RABBIT_STEW = new SaltedFoodItem(ConfigRegistry.RABBIT_STEW, FoodComponents.RABBIT_STEW);
+    public static final SaltedFoodItem SALTED_SUSPICIOUS_STEW = new SaltedFoodItem(ConfigRegistry.SUSPICIOUS_STEW, FoodComponents.SUSPICIOUS_STEW);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -114,6 +116,7 @@ public class ItemRegistry {
         register("overdue_pumpkin_pie", OVERDUE_PUMPKIN_PIE);
         register("overdue_rabbit_stew", OVERDUE_RABBIT_STEW);
         register("overdue_spider_eye", OVERDUE_SPIDER_EYE);
+        register("overdue_suspicious_stew", OVERDUE_SUSPICIOUS_STEW);
 
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
@@ -138,6 +141,7 @@ public class ItemRegistry {
         register("salted_mushroom_stew", SALTED_MUSHROOM_STEW);
         register("salted_pumpkin_pie", SALTED_PUMPKIN_PIE);
         register("salted_rabbit_stew", SALTED_RABBIT_STEW);
+        register("salted_suspicious_stew", SALTED_SUSPICIOUS_STEW);
     }
 
     /**

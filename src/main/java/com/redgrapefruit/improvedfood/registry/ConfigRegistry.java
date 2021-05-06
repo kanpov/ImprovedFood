@@ -247,4 +247,12 @@ public class ConfigRegistry {
             .overdueSpeed(5)
             .fridgeEfficiency(2)
             .build();
+
+    public static final FoodConfig SUSPICIOUS_STEW = new FoodConfig.Builder()
+            .category(FoodCategory.COOKED)
+            .overdueState(400000)
+            .overdueSpeed(12)
+            .fridgeEfficiency(8)
+            .saltEfficiency(10)
+            .build();
 }
