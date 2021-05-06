@@ -49,6 +49,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_RABBIT_STEW = new OverdueFoodItem(ConfigRegistry.RABBIT_STEW, FoodComponents.RABBIT_STEW);
     public static final OverdueFoodItem OVERDUE_SPIDER_EYE = new OverdueFoodItem(ConfigRegistry.SPIDER_EYE, FoodComponents.SPIDER_EYE);
     public static final OverdueFoodItem OVERDUE_SUSPICIOUS_STEW = new OverdueFoodItem(ConfigRegistry.SUSPICIOUS_STEW, FoodComponents.SUSPICIOUS_STEW);
+    public static final OverdueFoodItem OVERDUE_SWEET_BERRIES = new OverdueFoodItem(ConfigRegistry.SWEET_BERRIES, FoodComponents.SWEET_BERRIES);
 
     // Salted variants
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -117,6 +118,7 @@ public class ItemRegistry {
         register("overdue_rabbit_stew", OVERDUE_RABBIT_STEW);
         register("overdue_spider_eye", OVERDUE_SPIDER_EYE);
         register("overdue_suspicious_stew", OVERDUE_SUSPICIOUS_STEW);
+        register("overdue_sweet_berries", OVERDUE_SWEET_BERRIES);
 
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);

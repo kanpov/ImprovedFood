@@ -255,4 +255,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(8)
             .saltEfficiency(10)
             .build();
+
+    public static final FoodConfig SWEET_BERRIES = new FoodConfig.Builder()
+            .category(FoodCategory.BERRIES)
+            .overdueState(80000)
+            .overdueSpeed(4)
+            .fridgeEfficiency(2)
+            .build();
 }
