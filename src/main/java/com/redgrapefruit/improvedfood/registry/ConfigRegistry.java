@@ -269,4 +269,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(3)
             .saltEfficiency(5)
             .build();
+
+    public static final FoodConfig CAKE = new FoodConfig.Builder()
+            .category(FoodCategory.COOKED)
+            .overdueState(250000)
+            .overdueSpeed(8)
+            .fridgeEfficiency(4)
+            .build();
 }
