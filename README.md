@@ -4,30 +4,29 @@
 # About
 
 ImprovedFood is a Minecraft mod made with Fabric's toolchain aiming to improve food in the game.  
+
 Here's a list of features:
-<ol>
-<li>Food can now rot and overdue</li>
-<li>You can put your food into a fridge or salt it to reduce the speed of the process</li>
-<li>Colorful and very detailed tooltips describing <i>everything</i> about your food item</li>
-<li>Food storage: boxes, lockers etc.</li>
-<li>You can grow your food and make an astonishing farm</li>
-<li>You can find your food on trees in jungles and forests</li>
-<li>You can explore the world to find beautiful structures with lots of food and rare items</li>
-<li>More to come later!</li>
-</ol>
+1. Food can now rot and overdue
+2. You can put your food into a fridge or salt it to reduce the speed of the process
+3. Colorful and very detailed tooltips describing _everything_ about your food item
+4. Food storage: boxes, lockers etc.
+5. You can grow your food and make an astonishing farm
+6. You can find your food on trees in jungles and forests
+7. You can explore the world to find beautiful structures with lots of food and rare items
+8. More to come later!
+
 Do keep in mind that the mod is in its middle stages of development and most of these features are yet to come.  
 Current release date: June 15th, 2021.
 
 # Install
 
 Requirements:
-<ul>
-<li>AdoptOpenJDK 1.8 HotSpot VM from <a href="https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot">here</a></li>
-<li>Licensed Minecraft 1.16.5 Java Edition from <a href="https://www.minecraft.net/en-us/">here</a></li>
-<li>Fabric Loader 0.11.3 from <a href="https://fabricmc.net/use/">here</a> (there's the installer tool)</li>
-<li>A fully set up modded Minecraft instance running on Fabric Loader</li>
-<li>Fabric API 0.34.1 from <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files">here</a></li>
-</ul>
+
+- AdoptOpenJDK 1.8 HotSpot VM from [here](https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot)
+- Licensed Minecraft 1.16.5 Java Edition from [here](https://www.minecraft.net/en-us/)
+- Fabric Loader 0.11.3 from [here](https://fabricmc.net/use/) (there's the installer tool)
+- A fully set up modded Minecraft instance running on Fabric Loader
+- Fabric API 0.34.1 from [here](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files)
 
 To get the mod file, navigate to the releases page [here](https://github.com/RedGrapefruit09/ImprovedFood/releases),
 click on the top release and download the JAR file.  
@@ -67,13 +66,11 @@ A: No. I don't support snapshots and only update between stable releases of Mine
 
 # Credits
 
-<ul>
-<li>To Mojang's developers for creating Minecraft and making my childhood</li>
-<li>To Fabric's team and contributors for creating an astonishing modding toolchain</li>
-<li>To JetBrains's team and contributors for creating an amazing JVM IDE and skyrocketing my productivity</li>
-<li>To Aseprite's team and contributors for creating a lovely sprite editor</li>
-<li>And to everyone who sees this for giving me motivation to continue</li>
-</ul>
+- To Mojang's developers for creating Minecraft and making my childhood
+- To Fabric's team and contributors for creating an astonishing modding toolchain
+- To JetBrains's team and contributors for creating an amazing JVM IDE and skyrocketing my productivity
+- To Aseprite's team and contributors for creating a lovely sprite editor
+- And to everyone who sees this for giving me motivation to continue
 
 # Contact
 
