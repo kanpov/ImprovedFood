@@ -2,6 +2,7 @@ package com.redgrapefruit.improvedfood.registry;
 
 import com.redgrapefruit.improvedfood.ImprovedFood;
 import com.redgrapefruit.improvedfood.block.FridgeBlock;
+import com.redgrapefruit.improvedfood.block.SaltOreBlock;
 import com.redgrapefruit.improvedfood.block.entity.FridgeBlockEntity;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -22,11 +23,16 @@ public class BlockRegistry {
     public static final FridgeBlock FRIDGE = new FridgeBlock(FabricBlockSettings.copyOf(Blocks.CHEST));
     public static final BlockEntityType<FridgeBlockEntity> FRIDGE_BLOCK_ENTITY = BlockEntityType.Builder.create(FridgeBlockEntity::new, FRIDGE).build(null);
 
+    // Ore blocks
+    public static final SaltOreBlock SALT_ORE = new SaltOreBlock();
+
     /**
      * Runs the registry code
      */
     public static void run() {
         register("fridge", FRIDGE, FRIDGE_BLOCK_ENTITY, ItemGroupRegistry.STORAGE);
+
+        register("salt_ore", SALT_ORE, ItemGroup.MISC);
     }
 
     /**
