@@ -10,7 +10,7 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 /**
  * A registry for {@link BiomeModification}s
  */
-public class ModificationRegistry {
+public class BiomeModificationRegistry {
     /**
      * Runs the registry code
      */

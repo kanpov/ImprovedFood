@@ -27,7 +27,7 @@ public class ImprovedFood implements ModInitializer {
         PatchRegistry.run();
         BlockRegistry.run();
         FeatureRegistry.run();
-        ModificationRegistry.run();
+        BiomeModificationRegistry.run();
 
         Logging.info("ImprovedFood loaded on common side");
     }
