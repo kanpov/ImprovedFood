@@ -14,9 +14,11 @@ import net.minecraft.util.registry.Registry;
 public class ItemRegistry {
     // Crops
     public static final FoodItem TOMATO = new FoodItem(ConfigRegistry.TOMATO);
+    public static final FoodItem CUCUMBER = new FoodItem(ConfigRegistry.CUCUMBER);
 
     // Seeds
     public static final AliasedBlockItem TOMATO_SEEDS = new AliasedBlockItem(BlockRegistry.TOMATO_CROP, createSeedSettings());
+    public static final AliasedBlockItem CUCUMBER_SEEDS = new AliasedBlockItem(BlockRegistry.CUCUMBER_CROP, createSeedSettings());
 
     // Rotten variants
     public static final RottenFoodItem ROTTEN_PORKCHOP = new RottenFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -32,6 +34,7 @@ public class ItemRegistry {
 
     // Overdue variants
     public static final OverdueFoodItem OVERDUE_TOMATO = new OverdueFoodItem(ConfigRegistry.TOMATO);
+    public static final OverdueFoodItem OVERDUE_CUCUMBER = new OverdueFoodItem(ConfigRegistry.CUCUMBER);
 
     public static final OverdueFoodItem OVERDUE_SALMON = new OverdueFoodItem(ConfigRegistry.SALMON, FoodComponents.SALMON);
     public static final OverdueFoodItem OVERDUE_COOKED_SALMON = new OverdueFoodItem(ConfigRegistry.COOKED_SALMON, FoodComponents.COOKED_SALMON);
@@ -61,6 +64,7 @@ public class ItemRegistry {
 
     // Salted variants
     public static final SaltedFoodItem SALTED_TOMATO = new SaltedFoodItem(ConfigRegistry.TOMATO);
+    public static final SaltedFoodItem SALTED_CUCUMBER = new SaltedFoodItem(ConfigRegistry.CUCUMBER);
 
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
     public static final SaltedFoodItem SALTED_COOKED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.COOKED_PORKCHOP, FoodComponents.COOKED_PORKCHOP);
@@ -96,8 +100,10 @@ public class ItemRegistry {
      */
     public static void run() {
         register("tomato", TOMATO);
+        register("cucumber", CUCUMBER);
 
         register("tomato_seeds", TOMATO_SEEDS);
+        register("cucumber_seeds", CUCUMBER_SEEDS);
 
         register("rotten_porkchop", ROTTEN_PORKCHOP);
         register("rotten_cooked_porkchop", ROTTEN_COOKED_PORKCHOP);
@@ -111,6 +117,7 @@ public class ItemRegistry {
         register("rotten_cooked_rabbit", ROTTEN_COOKED_RABBIT);
 
         register("overdue_tomato", OVERDUE_TOMATO);
+        register("overdue_cucumber", OVERDUE_CUCUMBER);
         register("overdue_salmon", OVERDUE_SALMON);
         register("overdue_cooked_salmon", OVERDUE_COOKED_SALMON);
         register("overdue_cod", OVERDUE_COD);
@@ -138,6 +145,7 @@ public class ItemRegistry {
         register("overdue_cake", OVERDUE_CAKE);
 
         register("salted_tomato", SALTED_TOMATO);
+        register("salted_cucumber", SALTED_CUCUMBER);
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
         register("salted_beef", SALTED_BEEF);

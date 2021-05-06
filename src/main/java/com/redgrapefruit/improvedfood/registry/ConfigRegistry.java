@@ -19,6 +19,16 @@ public class ConfigRegistry {
             .saltEfficiency(2)
             .build();
 
+    public static final FoodConfig CUCUMBER = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .hunger(3)
+            .saturationModifier(1.1f)
+            .overdueState(175000)
+            .overdueSpeed(7)
+            .fridgeEfficiency(4)
+            .saltEfficiency(5)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
