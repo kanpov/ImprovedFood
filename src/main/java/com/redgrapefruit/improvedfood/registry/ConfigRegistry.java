@@ -240,4 +240,11 @@ public class ConfigRegistry {
             .fridgeEfficiency(7)
             .saltEfficiency(4)
             .build();
+
+    public static final FoodConfig SPIDER_EYE = new FoodConfig.Builder()
+            .category(FoodCategory.HARMFUL)
+            .overdueState(120000)
+            .overdueSpeed(5)
+            .fridgeEfficiency(2)
+            .build();
 }
