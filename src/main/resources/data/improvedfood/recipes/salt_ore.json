@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "improvedfood:salt_ore"
+    },
+    "result": "improvedfood:salt",
+    "experience": 25.0,
+    "cookingtime": 175
+}
