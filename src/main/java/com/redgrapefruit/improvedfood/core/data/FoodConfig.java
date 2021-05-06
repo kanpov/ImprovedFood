@@ -56,7 +56,7 @@ public class FoodConfig {
      */
     private final Set<FoodEffectConfig> effects;
 
-    private FoodConfig(int hunger, int saturationModifier, int rotState, int rotSpeed, int overdueState, int overdueSpeed, int saltEfficiency, int fridgeEfficiency, FoodCategory category, Set<FoodEffectConfig> effects) {
+    private FoodConfig(int hunger, float saturationModifier, int rotState, int rotSpeed, int overdueState, int overdueSpeed, int saltEfficiency, int fridgeEfficiency, FoodCategory category, Set<FoodEffectConfig> effects) {
         this.hunger = hunger;
         this.saturationModifier = saturationModifier;
         this.rotState = rotState;
@@ -115,7 +115,7 @@ public class FoodConfig {
     public static class Builder {
         private final Set<FoodEffectConfig> effects;
         private int hunger;
-        private int saturationModifier;
+        private float saturationModifier;
         private int rotState;
         private int rotSpeed;
         private int overdueState;
@@ -133,7 +133,7 @@ public class FoodConfig {
             return this;
         }
 
-        public Builder saturationModifier(int saturationModifier) {
+        public Builder saturationModifier(float saturationModifier) {
             this.saturationModifier = saturationModifier;
             return this;
         }
