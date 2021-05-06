@@ -245,7 +245,6 @@ public class ConfigRegistry {
             .category(FoodCategory.HARMFUL)
             .overdueState(120000)
             .overdueSpeed(5)
-            .fridgeEfficiency(2)
             .build();
 
     public static final FoodConfig SUSPICIOUS_STEW = new FoodConfig.Builder()
