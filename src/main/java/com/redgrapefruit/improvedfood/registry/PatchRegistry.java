@@ -34,6 +34,7 @@ public class PatchRegistry {
         patch(Items.GOLDEN_APPLE, ConfigRegistry.GOLDEN_APPLE, ItemRegistry.OVERDUE_GOLDEN_APPLE);
         patch(Items.CARROT, ConfigRegistry.CARROT, ItemRegistry.OVERDUE_CARROT);
         patch(Items.GOLDEN_CARROT, ConfigRegistry.GOLDEN_CARROT, ItemRegistry.OVERDUE_GOLDEN_CARROT);
+        patch(Items.POTATO, ConfigRegistry.POTATO, ItemRegistry.OVERDUE_POTATO);
         patch(Items.BAKED_POTATO, ConfigRegistry.BAKED_POTATO, ItemRegistry.OVERDUE_BAKED_POTATO);
         patch(Items.BEETROOT, ConfigRegistry.BEETROOT, ItemRegistry.OVERDUE_BEETROOT);
         patch(Items.BEETROOT_SOUP, ConfigRegistry.BEETROOT_SOUP, ItemRegistry.OVERDUE_BEETROOT_SOUP);
