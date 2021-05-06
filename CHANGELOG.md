@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.1f]
+
+### Added
+
+- **Everything** from:
+  - v0.1-preview.1
+  - v0.1-preview.2
+  - v0.1-preview.3
+  - v0.1-preview.4
+  - v0.1-preview.5
+
+### Changed
+
+- _Repository:_ Removed unnecessary HTML from README
+- _Repository:_ Minor formatting and cleanup
+
 ## [v0.1-preview.5]
 
 ### Added
