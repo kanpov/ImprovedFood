@@ -232,4 +232,12 @@ public class ConfigRegistry {
             .fridgeEfficiency(4)
             .saltEfficiency(2)
             .build();
+
+    public static final FoodConfig RABBIT_STEW = new FoodConfig.Builder()
+            .category(FoodCategory.COOKED)
+            .overdueState(270000)
+            .overdueSpeed(11)
+            .fridgeEfficiency(7)
+            .saltEfficiency(4)
+            .build();
 }

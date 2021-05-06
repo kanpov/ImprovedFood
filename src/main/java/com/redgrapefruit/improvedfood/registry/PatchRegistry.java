@@ -44,6 +44,7 @@ public class PatchRegistry {
         patch(Items.MELON_SLICE, ConfigRegistry.MELON_SLICE, ItemRegistry.OVERDUE_MELON_SLICE);
         patch(Items.MUSHROOM_STEW, ConfigRegistry.MUSHROOM_STEW, ItemRegistry.OVERDUE_MUSHROOM_STEW);
         patch(Items.PUMPKIN_PIE, ConfigRegistry.PUMPKIN_PIE, ItemRegistry.OVERDUE_PUMPKIN_PIE);
+        patch(Items.RABBIT_STEW, ConfigRegistry.RABBIT_STEW, ItemRegistry.OVERDUE_RABBIT_STEW);
     }
 
     /**
