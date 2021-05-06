@@ -272,6 +272,8 @@ public class ConfigRegistry {
 
     public static final FoodConfig CAKE = new FoodConfig.Builder()
             .category(FoodCategory.COOKED)
+            .hunger(5)
+            .saturationModifier(1.2f)
             .overdueState(250000)
             .overdueSpeed(8)
             .fridgeEfficiency(4)
