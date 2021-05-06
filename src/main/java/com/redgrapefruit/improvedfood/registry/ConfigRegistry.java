@@ -8,6 +8,17 @@ import com.redgrapefruit.improvedfood.core.data.FoodConfig;
  * Acts as a storage system until configs are written in a custom JSON resource and doesn't actually register anything
  */
 public class ConfigRegistry {
+    // Custom
+    public static final FoodConfig TOMATO = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .hunger(2)
+            .saturationModifier(1.3f)
+            .overdueState(150000)
+            .overdueSpeed(7)
+            .fridgeEfficiency(5)
+            .saltEfficiency(2)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)

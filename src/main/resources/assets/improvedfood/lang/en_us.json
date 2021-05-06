@@ -1,4 +1,6 @@
 {
+    "item.improvedfood.tomato": "Tomato",
+    "item.improvedfood.tomato_seeds": "Tomato Seeds",
     "item.improvedfood.salt": "Salt",
     "item.improvedfood.salted_porkchop": "Salted Porkchop",
     "item.improvedfood.salted_cooked_porkchop": "Salted Cooked Porkchop",
@@ -25,6 +27,7 @@
     "item.improvedfood.salted_rabbit_stew": "Salted Rabbit Stew",
     "item.improvedfood.salted_suspicious_stew": "Salted Suspicious Stew",
     "item.improvedfood.salted_tropical_fish": "Salted Tropical Fish",
+    "item.improvedfood.salted_tomato": "Salted Tomato",
     "item.improvedfood.rotten_porkchop": "Rotten Porkchop",
     "item.improvedfood.rotten_cooked_porkchop": "Rotten Cooked Porkchop",
     "item.improvedfood.rotten_beef": "Rotten Beef",
@@ -59,6 +62,8 @@
     "item.improvedfood.overdue_suspicious_stew": "Overdue Suspicious Stew",
     "item.improvedfood.overdue_tropical_fish": "Overdue Tropical Fish",
     "item.improvedfood.overdue_cake": "Overdue Cake",
+    "item.improvedfood.overdue_tomato": "Overdue Tomato",
+    "block.improvedfood.tomato_crop": "Tomato Crop",
     "block.improvedfood.fridge": "Fridge",
     "block.improvedfood.salt_ore": "Salt Ore",
     "itemGroup.improvedfood.fresh_food": "Fresh Food",

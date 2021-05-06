@@ -1,10 +1,8 @@
 package com.redgrapefruit.improvedfood.registry;
 
 import com.redgrapefruit.improvedfood.ImprovedFood;
-import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
-import com.redgrapefruit.improvedfood.item.RottenFoodItem;
-import com.redgrapefruit.improvedfood.item.SaltItem;
-import com.redgrapefruit.improvedfood.item.SaltedFoodItem;
+import com.redgrapefruit.improvedfood.item.*;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -14,6 +12,12 @@ import net.minecraft.util.registry.Registry;
  * Registers mod items into Minecraft.
  */
 public class ItemRegistry {
+    // Crops
+    public static final FoodItem TOMATO = new FoodItem(ConfigRegistry.TOMATO);
+
+    // Seeds
+    public static final AliasedBlockItem TOMATO_SEEDS = new AliasedBlockItem(BlockRegistry.TOMATO_CROP, createSeedSettings());
+
     // Rotten variants
     public static final RottenFoodItem ROTTEN_PORKCHOP = new RottenFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
     public static final RottenFoodItem ROTTEN_COOKED_PORKCHOP = new RottenFoodItem(ConfigRegistry.COOKED_PORKCHOP, FoodComponents.COOKED_PORKCHOP);
@@ -27,6 +31,8 @@ public class ItemRegistry {
     public static final RottenFoodItem ROTTEN_COOKED_RABBIT = new RottenFoodItem(ConfigRegistry.COOKED_RABBIT, FoodComponents.COOKED_RABBIT);
 
     // Overdue variants
+    public static final OverdueFoodItem OVERDUE_TOMATO = new OverdueFoodItem(ConfigRegistry.TOMATO);
+
     public static final OverdueFoodItem OVERDUE_SALMON = new OverdueFoodItem(ConfigRegistry.SALMON, FoodComponents.SALMON);
     public static final OverdueFoodItem OVERDUE_COOKED_SALMON = new OverdueFoodItem(ConfigRegistry.COOKED_SALMON, FoodComponents.COOKED_SALMON);
     public static final OverdueFoodItem OVERDUE_COD = new OverdueFoodItem(ConfigRegistry.COD, FoodComponents.COD);
@@ -54,6 +60,8 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_CAKE = new OverdueFoodItem(ConfigRegistry.CAKE);
 
     // Salted variants
+    public static final SaltedFoodItem SALTED_TOMATO = new SaltedFoodItem(ConfigRegistry.TOMATO);
+
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
     public static final SaltedFoodItem SALTED_COOKED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.COOKED_PORKCHOP, FoodComponents.COOKED_PORKCHOP);
     public static final SaltedFoodItem SALTED_BEEF = new SaltedFoodItem(ConfigRegistry.BEEF, FoodComponents.BEEF);
@@ -87,7 +95,10 @@ public class ItemRegistry {
      * Runs the registry code
      */
     public static void run() {
-        register("salt", SALT);
+        register("tomato", TOMATO);
+
+        register("tomato_seeds", TOMATO_SEEDS);
+
         register("rotten_porkchop", ROTTEN_PORKCHOP);
         register("rotten_cooked_porkchop", ROTTEN_COOKED_PORKCHOP);
         register("rotten_beef", ROTTEN_BEEF);
@@ -99,6 +110,7 @@ public class ItemRegistry {
         register("rotten_rabbit", ROTTEN_RABBIT);
         register("rotten_cooked_rabbit", ROTTEN_COOKED_RABBIT);
 
+        register("overdue_tomato", OVERDUE_TOMATO);
         register("overdue_salmon", OVERDUE_SALMON);
         register("overdue_cooked_salmon", OVERDUE_COOKED_SALMON);
         register("overdue_cod", OVERDUE_COD);
@@ -125,6 +137,7 @@ public class ItemRegistry {
         register("overdue_tropical_fish", OVERDUE_TROPICAL_FISH);
         register("overdue_cake", OVERDUE_CAKE);
 
+        register("salted_tomato", SALTED_TOMATO);
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
         register("salted_beef", SALTED_BEEF);
@@ -150,6 +163,8 @@ public class ItemRegistry {
         register("salted_rabbit_stew", SALTED_RABBIT_STEW);
         register("salted_suspicious_stew", SALTED_SUSPICIOUS_STEW);
         register("salted_tropical_fish", SALTED_TROPICAL_FISH);
+
+        register("salt", SALT);
     }
 
     /**
@@ -160,5 +175,14 @@ public class ItemRegistry {
      */
     private static void register(String id, Item item) {
         Registry.register(Registry.ITEM, new Identifier(ImprovedFood.MOD_ID, id), item);
+    }
+
+    /**
+     * Returns a new seed {@link Item.Settings}
+     *
+     * @return Constructed {@link Item.Settings}
+     */
+    private static Item.Settings createSeedSettings() {
+        return new Item.Settings().group(ItemGroupRegistry.SEEDS);
     }
 }
