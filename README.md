@@ -15,7 +15,7 @@ Here's a list of features:
 7. You can explore the world to find beautiful structures with lots of food and rare items
 8. More to come later!
 
-Do keep in mind that the mod is in its middle stages of development and most of these features are yet to come.  
+Do keep in mind that the mod is in its middle stages of development, and most of these features are yet to come.  
 Current release date: June 15th, 2021.
 
 # Install
@@ -60,7 +60,7 @@ Q: Will this mod be ported to Forge?
 A: No. I do not develop using Forge and will not spend my time supporting a mod on both  
 platforms instead of actually doing something useful with the mod itself.  
 Q: Will there be a CurseForge page?  
-A: Yes. After the mod is released I will send my request to upload the mod to CurseForge.  
+A: Yes, after the mod is released I will send my request to upload the mod to CurseForge.  
 Q: Do you support snapshots?  
 A: No. I don't support snapshots and only update between stable releases of Minecraft and Fabric's toolchain.
 
@@ -70,7 +70,7 @@ A: No. I don't support snapshots and only update between stable releases of Mine
 - To Fabric's team and contributors for creating an astonishing modding toolchain
 - To JetBrains's team and contributors for creating an amazing JVM IDE and skyrocketing my productivity
 - To Aseprite's team and contributors for creating a lovely sprite editor
-- And to everyone who sees this for giving me motivation to continue
+- To everyone who sees this for giving me motivation to continue
 
 # Contact
 
