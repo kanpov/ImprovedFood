@@ -12,11 +12,6 @@ import net.minecraft.util.registry.Registry;
  * Registers mod items into Minecraft.
  */
 public class ItemRegistry {
-    // Crops
-    public static final FoodItem TOMATO = new FoodItem(ConfigRegistry.TOMATO);
-    public static final FoodItem CUCUMBER = new FoodItem(ConfigRegistry.CUCUMBER);
-    public static final FoodItem KIWI = new FoodItem(ConfigRegistry.KIWI);
-
     // Seeds
     public static final AliasedBlockItem TOMATO_SEEDS = new AliasedBlockItem(BlockRegistry.TOMATO_CROP, createSeedSettings());
     public static final AliasedBlockItem CUCUMBER_SEEDS = new AliasedBlockItem(BlockRegistry.CUCUMBER_CROP, createSeedSettings());
@@ -95,6 +90,11 @@ public class ItemRegistry {
     public static final SaltedFoodItem SALTED_RABBIT_STEW = new SaltedFoodItem(ConfigRegistry.RABBIT_STEW, FoodComponents.RABBIT_STEW);
     public static final SaltedFoodItem SALTED_SUSPICIOUS_STEW = new SaltedFoodItem(ConfigRegistry.SUSPICIOUS_STEW, FoodComponents.SUSPICIOUS_STEW);
     public static final SaltedFoodItem SALTED_TROPICAL_FISH = new SaltedFoodItem(ConfigRegistry.TROPICAL_FISH, FoodComponents.TROPICAL_FISH);
+
+    // Crops
+    public static final FoodItem TOMATO = new FoodItem(ConfigRegistry.TOMATO).setOverdueVariant(OVERDUE_TOMATO);
+    public static final FoodItem CUCUMBER = new FoodItem(ConfigRegistry.CUCUMBER).setOverdueVariant(OVERDUE_CUCUMBER);
+    public static final FoodItem KIWI = new FoodItem(ConfigRegistry.KIWI).setOverdueVariant(OVERDUE_KIWI);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
