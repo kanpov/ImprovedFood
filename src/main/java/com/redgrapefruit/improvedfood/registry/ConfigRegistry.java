@@ -29,6 +29,15 @@ public class ConfigRegistry {
             .saltEfficiency(5)
             .build();
 
+    public static final FoodConfig KIWI = new FoodConfig.Builder()
+            .category(FoodCategory.BERRIES)
+            .hunger(4)
+            .saturationModifier(1.45f)
+            .overdueState(250000)
+            .overdueSpeed(8)
+            .saltEfficiency(5)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
