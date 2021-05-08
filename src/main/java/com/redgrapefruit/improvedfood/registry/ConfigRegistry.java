@@ -380,7 +380,6 @@ public class ConfigRegistry {
             .category(FoodCategory.BERRIES)
             .overdueState(80000)
             .overdueSpeed(4)
-            .fridgeEfficiency(2)
             .build();
 
     public static final FoodConfig TROPICAL_FISH = new FoodConfig.Builder()
