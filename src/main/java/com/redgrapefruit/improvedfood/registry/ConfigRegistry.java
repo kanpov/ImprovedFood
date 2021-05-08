@@ -109,6 +109,26 @@ public class ConfigRegistry {
             .saltEfficiency(2)
             .build();
 
+    public static final FoodConfig BLUEBERRY = new FoodConfig.Builder()
+            .category(FoodCategory.BERRIES)
+            .hunger(2)
+            .saturationModifier(0.95f)
+            .effect(new FoodEffectConfig.Builder()
+                .statusEffect(StatusEffects.SPEED)
+                .duration(550)
+                .amplifier(1)
+                .chance(0.9f)
+                .build())
+            .effect(new FoodEffectConfig.Builder()
+                .statusEffect(StatusEffects.HASTE)
+                .duration(750)
+                .amplifier(2)
+                .chance(0.4f)
+                .build())
+            .overdueState(120000)
+            .overdueSpeed(8)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)

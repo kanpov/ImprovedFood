@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "improvedfood:block/blackberry_crop_stage0"
+    }
+}

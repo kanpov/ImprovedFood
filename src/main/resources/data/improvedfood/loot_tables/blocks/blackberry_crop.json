@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 4,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "improvedfood:blackberry_seeds"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 2,
+                "max": 5
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "improvedfood:blackberry"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "improvedfood:blackberry_crop",
+                    "properties": {
+                        "age": 7
+                    }
+                }
+            ]
+        }
+    ]
+}
