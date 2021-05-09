@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2-preview.2]
+
+### Added
+
+- New crops:
+  - Kiwi
+  - Jackfruit
+  - Blackberry
+- Custom effects to **all** crops
+
+### Changed
+
+- _Internal:_ Minor cleanup
+
+### Fixed
+
+- Overdue variants for crops being unregistered
+
 ## [v0.2-preview.1]
 
 ### Added
