@@ -5,8 +5,6 @@
 ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/RedGrapefruit09/ImprovedFood/latest?color=red&include_prereleases)
 ![Lines of code](https://img.shields.io/tokei/lines/github/RedGrapefruit09/ImprovedFood?color=orange)
 
-200 commits! Yay!
-
 # About
 
 ImprovedFood is a Minecraft mod made with Fabric's toolchain aiming to improve food in the game.
