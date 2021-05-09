@@ -13,7 +13,7 @@ import net.minecraft.world.BlockView;
  */
 public class TallCropBlock extends NormalCropBlock {
     // Overriding the AGE_TO_SHAPE values to make the crop taller
-    protected static final VoxelShape[] AGE_TO_SHAPE = new VoxelShape[] {
+    protected static final VoxelShape[] AGE_TO_SHAPE = new VoxelShape[]{
             Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D),
             Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D),
             Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D),

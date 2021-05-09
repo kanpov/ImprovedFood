@@ -5,9 +5,10 @@
 
 # About
 
-ImprovedFood is a Minecraft mod made with Fabric's toolchain aiming to improve food in the game.  
+ImprovedFood is a Minecraft mod made with Fabric's toolchain aiming to improve food in the game.
 
 Here's a list of features:
+
 1. Food can now rot and overdue
 2. You can put your food into a fridge or salt it to reduce the speed of the process
 3. Colorful and very detailed tooltips describing _everything_ about your food item

@@ -20,6 +20,7 @@ public class BiomeModificationRegistry {
 
     /**
      * Modifies the overworld with given ore's {@link RegistryKey}
+     *
      * @param key Ore's {@link RegistryKey}
      */
     private static void modify(RegistryKey<ConfiguredFeature<?, ?>> key) {

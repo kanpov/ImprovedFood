@@ -13,7 +13,7 @@ import net.minecraft.world.BlockView;
  */
 public class NormalCropBlock extends CropBlock {
     // A list of voxel shapes for each crop age value
-    protected static final VoxelShape[] AGE_TO_SHAPE = new VoxelShape[] {
+    protected static final VoxelShape[] AGE_TO_SHAPE = new VoxelShape[]{
             Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
             Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 3.0D, 16.0D),
             Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D),

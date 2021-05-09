@@ -10,12 +10,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - Core of crop food:
-  - Normal crop blocks
-  - Tall crop blocks
-  - Leaves crop blocks
+    - Normal crop blocks
+    - Tall crop blocks
+    - Leaves crop blocks
 - A few crops, but it's a start:
-  - Tomatoes
-  - Cucumbers
+    - Tomatoes
+    - Cucumbers
 
 ### Fixed
 
@@ -34,11 +34,11 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - **Everything** from:
-  - v0.1-preview.1
-  - v0.1-preview.2
-  - v0.1-preview.3
-  - v0.1-preview.4
-  - v0.1-preview.5
+    - v0.1-preview.1
+    - v0.1-preview.2
+    - v0.1-preview.3
+    - v0.1-preview.4
+    - v0.1-preview.5
 
 ### Changed
 
@@ -50,12 +50,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - Coverage for:
-  - Rabbit stew
-  - Spider eye
-  - Suspicious stew
-  - Sweet berries
-  - Tropical fish
-  - Cake
+    - Rabbit stew
+    - Spider eye
+    - Suspicious stew
+    - Sweet berries
+    - Tropical fish
+    - Cake
 
 ### Fixed
 
@@ -68,17 +68,17 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - Coverage for:
-  - Potato
-  - Baked potato
-  - Beetroot
-  - Beetroot soup
-  - Bread
-  - Chorus fruit
-  - Cookie
-  - Honey bottle
-  - Melon slice
-  - Mushroom stew
-  - Pumpkin pie
+    - Potato
+    - Baked potato
+    - Beetroot
+    - Beetroot soup
+    - Bread
+    - Chorus fruit
+    - Cookie
+    - Honey bottle
+    - Melon slice
+    - Mushroom stew
+    - Pumpkin pie
 - _Repository:_ added an artifact compile guide and deprecated the old one
 - _Security:_ added an important note to the Security Policy
 - HARMFUL, MISC and COOKED categories
@@ -97,14 +97,14 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - Coverage for:
-  - Raw salmon
-  - Cooked salmon
-  - Raw cod
-  - Cooked cod
-  - Apple
-  - Golden apple
-  - Carrot
-  - Golden carrot
+    - Raw salmon
+    - Cooked salmon
+    - Raw cod
+    - Cooked cod
+    - Apple
+    - Golden apple
+    - Carrot
+    - Golden carrot
 - A new fish category
 - _Internal:_ Dependabot integration
 - _Internal:_ Security policy
@@ -129,10 +129,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - Coverage for:
-  - Raw mutton
-  - Cooked mutton
-  - Raw rabbit
-  - Cooked rabbit
+    - Raw mutton
+    - Cooked mutton
+    - Raw rabbit
+    - Cooked rabbit
 
 ### Changed
 
@@ -153,9 +153,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Food can be salted to slow down rot
 - Food properties are displayed in a dynamic, self-expandable tooltip
 - Vanilla food will also have these changes. List of currently covered food:
-  - Raw porkchop
-  - Cooked porkchop
-  - Raw beef (raw steak)
-  - Cooked beef (cooked steak)
-  - Raw chicken
-  - Cooked chicken
+    - Raw porkchop
+    - Cooked porkchop
+    - Raw beef (raw steak)
+    - Cooked beef (cooked steak)
+    - Raw chicken
+    - Cooked chicken

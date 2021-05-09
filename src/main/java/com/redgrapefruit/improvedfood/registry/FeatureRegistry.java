@@ -19,11 +19,6 @@ import java.util.Map;
  * Registry for {@link Feature}s and {@link ConfiguredFeature}s
  */
 public class FeatureRegistry {
-    /**
-     * A map of {@link ConfiguredFeature} {@link RegistryKey}s for use in {@link BiomeModification}s
-     */
-    private static final Map<String, RegistryKey<ConfiguredFeature<?, ?>>> keyMap = new HashMap<>();
-
     public static final ConfiguredFeature<?, ?> SALT_ORE = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
@@ -37,6 +32,10 @@ public class FeatureRegistry {
             )))
             .spreadHorizontally()
             .repeatRandomly(20);
+    /**
+     * A map of {@link ConfiguredFeature} {@link RegistryKey}s for use in {@link BiomeModification}s
+     */
+    private static final Map<String, RegistryKey<ConfiguredFeature<?, ?>>> keyMap = new HashMap<>();
 
     /**
      * Runs the registry code
@@ -47,6 +46,7 @@ public class FeatureRegistry {
 
     /**
      * Returns the {@link RegistryKey} of a {@link ConfiguredFeature} corresponding to given name
+     *
      * @param name {@link ConfiguredFeature}'s name
      * @return Obtained {@link RegistryKey}
      */
@@ -56,7 +56,8 @@ public class FeatureRegistry {
 
     /**
      * Registers a {@link ConfiguredFeature} to Minecraft
-     * @param name Feature name
+     *
+     * @param name    Feature name
      * @param feature {@link ConfiguredFeature}
      */
     private static void register(String name, ConfiguredFeature<?, ?> feature) {
