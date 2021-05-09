@@ -9,6 +9,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+#### General
+
 - New crops:
   - Kiwi
   - Jackfruit
@@ -17,15 +19,21 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
-- _Internal:_ Minor cleanup
+#### Internal
+
+- Minor cleanup
 
 ### Fixed
+
+#### General
 
 - Overdue variants for crops being unregistered
 
 ## [v0.2-preview.1]
 
 ### Added
+
+#### General
 
 - Core of crop food:
     - Normal crop blocks
@@ -37,11 +45,15 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Fixed
 
-- _CI:_ Fixed CI failure because of corrupted Gradle Wrapper JAR
+#### CI
+
+- CI failure because of corrupted Gradle Wrapper JAR
 
 ## [v0.1.1f]
 
 ### Added
+
+#### General
 
 - Salt ore block
 - Salt ore generation
@@ -50,6 +62,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [v0.1f]
 
 ### Added
+
+#### General
 
 - **Everything** from:
     - v0.1-preview.1
@@ -60,12 +74,21 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
-- _Repository:_ Removed unnecessary HTML from README
-- _Repository:_ Minor formatting and cleanup
+#### Repository
+
+- Minor formatting and cleanup
+
+### Removed
+
+#### Repository
+
+- Unnecessary HTML in README in the favor of Markdown formatting
 
 ## [v0.1-preview.5]
 
 ### Added
+
+#### General
 
 - Coverage for:
     - Rabbit stew
@@ -77,13 +100,20 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Fixed
 
-- Fixed missing patch for potatoes
-- Fixed overdue cake being inedible
-- _Internal:_ Fixed saturation modifier being ```int``` instead of ```float```
+#### General
+
+- Missing patch for potatoes
+- Overdue cake being inedible
+
+#### Internal
+
+- Fixed saturation modifier being ```int``` instead of ```float```
 
 ## [v0.1-preview.4]
 
 ### Added
+
+#### General
 
 - Coverage for:
     - Potato
@@ -97,22 +127,37 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
     - Melon slice
     - Mushroom stew
     - Pumpkin pie
-- _Repository:_ added an artifact compile guide and deprecated the old one
-- _Security:_ added an important note to the Security Policy
 - HARMFUL, MISC and COOKED categories
+
+#### Repository
+
+- Artifact compile guide and deprecated the old one 
+
+#### Security
+
+- Important note to the Security Policy
 
 ### Changed
 
-- _Internal:_ decoration changes and cleanup
+#### Internal
+
+- Decoration changes and cleanup
 
 ### Fixed
 
+#### General
+
 - Fixed missing translation on the chorus fruit
-- _CI:_ Another Gradle Wrapper death
+
+#### CI
+
+- Another Gradle Wrapper death
 
 ## [v0.1-preview.3]
 
 ### Added
+
+#### General
 
 - Coverage for:
     - Raw salmon
@@ -124,27 +169,47 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
     - Carrot
     - Golden carrot
 - A new fish category
-- _Internal:_ Dependabot integration
-- _Internal:_ Security policy
+
+#### Repository
+
+- Dependabot integration
+
+#### Security
+
+- Security policy
 
 ### Changed
 
-- _Internal:_ Reorganized com.redgrapefruit.improvedfood.core package
+#### Internal
+
+- Reorganized com.redgrapefruit.improvedfood.core package
 
 ### Fixed
 
-- _Repository_: Fixed compile guide having the wrong version of the mod
-- _Internal_: Minor cleanup and issues
-- Fixed a major bug disabling fridge logic
+#### General
+
+- A major bug disabling fridge logic
+
+#### Repository
+
+- Compile guide having the wrong version of the mod
+
+#### Internal
+
+- Minor cleanup and issues
 
 ### Removed
 
-- _Internal:_ Removed unused ```patch(Item, FoodConfig, RottenFoodItem, OverdueFoodItem)``` method
+#### Internal
+
+- Unused ```patch(Item, FoodConfig, RottenFoodItem, OverdueFoodItem)``` method
   in ```PatchRegistry```
 
 ## [v0.1-preview.2]
 
 ### Added
+
+#### General
 
 - Coverage for:
     - Raw mutton
@@ -154,16 +219,22 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+#### General
+
 - Vanilla food variants now override properties of their parent FoodComponent
 - Vanilla rotten and overdue food variants now decrease hunger and saturation
 
 ### Fixed
 
-- Fixed food variants being inedible (see Changed #1)
+#### General
+
+- Food variants being inedible (see Changed.General #1)
 
 ## [v0.1-preview.1]
 
 ### Added
+
+#### General
 
 - Food can now overdue and rot
 - Food has unique realistic properties
