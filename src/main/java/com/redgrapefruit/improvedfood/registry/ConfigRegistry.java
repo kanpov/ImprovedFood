@@ -109,7 +109,7 @@ public class ConfigRegistry {
             .saltEfficiency(2)
             .build();
 
-    public static final FoodConfig BLUEBERRY = new FoodConfig.Builder()
+    public static final FoodConfig BLACKBERRY = new FoodConfig.Builder()
             .category(FoodCategory.BERRIES)
             .hunger(2)
             .saturationModifier(0.95f)

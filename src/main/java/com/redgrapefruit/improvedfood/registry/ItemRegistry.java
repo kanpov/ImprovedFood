@@ -17,7 +17,7 @@ public class ItemRegistry {
     public static final AliasedBlockItem CUCUMBER_SEEDS = new AliasedBlockItem(BlockRegistry.CUCUMBER_CROP, createSeedSettings());
     public static final AliasedBlockItem KIWI_SEEDS = new AliasedBlockItem(BlockRegistry.KIWI_CROP, createSeedSettings());
     public static final AliasedBlockItem JACKFRUIT_SEEDS = new AliasedBlockItem(BlockRegistry.JACKFRUIT_CROP, createSeedSettings());
-    public static final AliasedBlockItem BLUEBERRY_SEEDS = new AliasedBlockItem(BlockRegistry.BLUEBERRY_CROP, createSeedSettings());
+    public static final AliasedBlockItem BLACKBERRY_SEEDS = new AliasedBlockItem(BlockRegistry.BLACKBERRY_CROP, createSeedSettings());
 
     // Rotten variants
     public static final RottenFoodItem ROTTEN_PORKCHOP = new RottenFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -36,7 +36,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_CUCUMBER = new OverdueFoodItem(ConfigRegistry.CUCUMBER);
     public static final OverdueFoodItem OVERDUE_KIWI = new OverdueFoodItem(ConfigRegistry.KIWI);
     public static final OverdueFoodItem OVERDUE_JACKFRUIT = new OverdueFoodItem(ConfigRegistry.JACKFRUIT);
-    public static final OverdueFoodItem OVERDUE_BLUEBERRY = new OverdueFoodItem(ConfigRegistry.BLUEBERRY);
+    public static final OverdueFoodItem OVERDUE_BLACKBERRY = new OverdueFoodItem(ConfigRegistry.BLACKBERRY);
 
     public static final OverdueFoodItem OVERDUE_SALMON = new OverdueFoodItem(ConfigRegistry.SALMON, FoodComponents.SALMON);
     public static final OverdueFoodItem OVERDUE_COOKED_SALMON = new OverdueFoodItem(ConfigRegistry.COOKED_SALMON, FoodComponents.COOKED_SALMON);
@@ -101,7 +101,7 @@ public class ItemRegistry {
     public static final FoodItem CUCUMBER = new FoodItem(ConfigRegistry.CUCUMBER).setOverdueVariant(OVERDUE_CUCUMBER);
     public static final FoodItem KIWI = new FoodItem(ConfigRegistry.KIWI).setOverdueVariant(OVERDUE_KIWI);
     public static final FoodItem JACKFRUIT = new FoodItem(ConfigRegistry.JACKFRUIT).setOverdueVariant(OVERDUE_JACKFRUIT);
-    public static final FoodItem BLUEBERRY = new FoodItem(ConfigRegistry.BLUEBERRY).setOverdueVariant(OVERDUE_BLUEBERRY);
+    public static final FoodItem BLACKBERRY = new FoodItem(ConfigRegistry.BLACKBERRY).setOverdueVariant(OVERDUE_BLACKBERRY);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -114,13 +114,13 @@ public class ItemRegistry {
         register("cucumber", CUCUMBER);
         register("kiwi", KIWI);
         register("jackfruit", JACKFRUIT);
-        register("blackberry", BLUEBERRY);
+        register("blackberry", BLACKBERRY);
 
         register("tomato_seeds", TOMATO_SEEDS);
         register("cucumber_seeds", CUCUMBER_SEEDS);
         register("kiwi_seeds", KIWI_SEEDS);
         register("jackfruit_seeds", JACKFRUIT_SEEDS);
-        register("blackberry_seeds", BLUEBERRY_SEEDS);
+        register("blackberry_seeds", BLACKBERRY_SEEDS);
 
         register("rotten_porkchop", ROTTEN_PORKCHOP);
         register("rotten_cooked_porkchop", ROTTEN_COOKED_PORKCHOP);
@@ -137,7 +137,7 @@ public class ItemRegistry {
         register("overdue_cucumber", OVERDUE_CUCUMBER);
         register("overdue_kiwi", OVERDUE_KIWI);
         register("overdue_jackfruit", OVERDUE_JACKFRUIT);
-        register("overdue_blackberry", OVERDUE_BLUEBERRY);
+        register("overdue_blackberry", OVERDUE_BLACKBERRY);
         register("overdue_salmon", OVERDUE_SALMON);
         register("overdue_cooked_salmon", OVERDUE_COOKED_SALMON);
         register("overdue_cod", OVERDUE_COD);
