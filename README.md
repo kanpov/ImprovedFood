@@ -33,7 +33,7 @@ Current release date: June 15th, 2021.
 # Install
 
 **This mod is creative-only right now with no way of obtaining its items EXCEPT vanilla food and salt ore**.  
-This is going to change over the next few release cycles (e.g. in a few weeks), but currently it's impossible to get _any_ item from mod.
+This is going to change over the next few release cycles (e.g. in a few weeks), but currently it's impossible to get _most_ items from mod.
 
 Requirements:
 
