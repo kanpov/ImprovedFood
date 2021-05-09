@@ -5,6 +5,13 @@
 ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/RedGrapefruit09/ImprovedFood/latest?color=red&include_prereleases)
 ![Lines of code](https://img.shields.io/tokei/lines/github/RedGrapefruit09/ImprovedFood?color=orange)
 
+# Blog
+
+**The new blog is hosted [here](https://github.com/RedGrapefruit09/ImprovedFood/blob/master/BLOG.md)**
+
+_Clarification:_ I launched a small blog to speak about the news of this project and important activity announcements.  
+**As a viewer/user/contributor/maintainer of this mod, you need to check it out to stay up to date**
+
 # About
 
 ImprovedFood is a Minecraft mod made with Fabric's toolchain aiming to improve food in the game.
