@@ -98,9 +98,6 @@ public class FoodEffectConfig {
 
         public Builder isPermanent(boolean isPermanent) {
             this.isPermanent = isPermanent;
-            // Also set the duration to the absolute maximum to ensure that the effect stays permanent
-            this.duration = Integer.MAX_VALUE;
-
             return this;
         }
 

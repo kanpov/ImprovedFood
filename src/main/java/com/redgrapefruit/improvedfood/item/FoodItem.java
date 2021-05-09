@@ -89,7 +89,7 @@ public class FoodItem extends Item {
                 builder.statusEffect(
                         new StatusEffectInstance(
                                 effectConfig.getStatusEffect(),
-                                effectConfig.getDuration(),
+                                effectConfig.isPermanent() ? Integer.MAX_VALUE : effectConfig.getDuration(),
                                 effectConfig.getAmplifier()
                         ),
                         effectConfig.isAlwaysApplied() ? 1.0f : effectConfig.getChance()
