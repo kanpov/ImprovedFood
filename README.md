@@ -1,9 +1,9 @@
 [![build](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml/badge.svg)](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/build.yml)
 [![CodeQL](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/RedGrapefruit09/ImprovedFood/actions/workflows/codeql-analysis.yml)
-![GitHub](https://img.shields.io/github/license/RedGrapefruit09/ImprovedFood)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/RedGrapefruit09/ImprovedFood?include_prereleases)
-![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/RedGrapefruit09/ImprovedFood/latest?include_prereleases)
-![Lines of code](https://img.shields.io/tokei/lines/github/RedGrapefruit09/ImprovedFood)
+![GitHub](https://img.shields.io/github/license/RedGrapefruit09/ImprovedFood?color=blue)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/RedGrapefruit09/ImprovedFood?color=purple&include_prereleases)
+![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/RedGrapefruit09/ImprovedFood/latest?color=red&include_prereleases)
+![Lines of code](https://img.shields.io/tokei/lines/github/RedGrapefruit09/ImprovedFood?color=orange)
 
 200 commits! Yay!
 
