@@ -16,6 +16,7 @@ public class IntRange {
 
     /**
      * Picks a random number from this range
+     *
      * @return Random number
      */
     public int pick() {

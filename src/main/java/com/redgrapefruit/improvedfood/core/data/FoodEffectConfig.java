@@ -50,7 +50,7 @@ public class FoodEffectConfig {
      */
     private final float chance;
 
-    private FoodEffectConfig(StatusEffect statusEffect, int duration, Optional<IntRange> durationRange, int amplifier, Optional<IntRange> amplifierRange,  boolean isPermanent, boolean isAlwaysApplied, float chance) {
+    private FoodEffectConfig(StatusEffect statusEffect, int duration, Optional<IntRange> durationRange, int amplifier, Optional<IntRange> amplifierRange, boolean isPermanent, boolean isAlwaysApplied, float chance) {
         this.statusEffect = statusEffect;
         this.duration = duration;
         this.durationRange = durationRange;

@@ -6,7 +6,6 @@
     "item.improvedfood.blackberry": "Blackberry",
     "item.improvedfood.blueberry": "Blueberry",
     "item.improvedfood.raspberry": "Raspberry",
-
     "item.improvedfood.tomato_seeds": "Tomato Seeds",
     "item.improvedfood.cucumber_seeds": "Cucumber Seeds",
     "item.improvedfood.kiwi_seeds": "Kiwi Seeds",
@@ -14,10 +13,7 @@
     "item.improvedfood.blackberry_seeds": "Blackberry Seeds",
     "item.improvedfood.blueberry_seeds": "Blueberry Seeds",
     "item.improvedfood.raspberry_seeds": "Raspberry Seeds",
-
     "item.improvedfood.salt": "Salt",
-
-
     "item.improvedfood.salted_porkchop": "Salted Porkchop",
     "item.improvedfood.salted_cooked_porkchop": "Salted Cooked Porkchop",
     "item.improvedfood.salted_beef": "Salted Beef",
@@ -43,13 +39,10 @@
     "item.improvedfood.salted_rabbit_stew": "Salted Rabbit Stew",
     "item.improvedfood.salted_suspicious_stew": "Salted Suspicious Stew",
     "item.improvedfood.salted_tropical_fish": "Salted Tropical Fish",
-
     "item.improvedfood.salted_tomato": "Salted Tomato",
     "item.improvedfood.salted_cucumber": "Salted Cucumber",
     "item.improvedfood.salted_kiwi": "Salted Kiwi",
     "item.improvedfood.salted_jackfruit": "Salted Jackfruit",
-
-
     "item.improvedfood.rotten_porkchop": "Rotten Porkchop",
     "item.improvedfood.rotten_cooked_porkchop": "Rotten Cooked Porkchop",
     "item.improvedfood.rotten_beef": "Rotten Beef",
@@ -60,8 +53,6 @@
     "item.improvedfood.rotten_cooked_mutton": "Rotten Cooked Mutton",
     "item.improvedfood.rotten_rabbit": "Rotten Rabbit",
     "item.improvedfood.rotten_cooked_rabbit": "Rotten Cooked Rabbit",
-
-
     "item.improvedfood.overdue_salmon": "Overdue Salmon",
     "item.improvedfood.overdue_cooked_salmon": "Overdue Cooked Salmon",
     "item.improvedfood.overdue_cod": "Overdue Cod",
@@ -86,7 +77,6 @@
     "item.improvedfood.overdue_suspicious_stew": "Overdue Suspicious Stew",
     "item.improvedfood.overdue_tropical_fish": "Overdue Tropical Fish",
     "item.improvedfood.overdue_cake": "Overdue Cake",
-
     "item.improvedfood.overdue_tomato": "Overdue Tomato",
     "item.improvedfood.overdue_cucumber": "Overdue Cucumber",
     "item.improvedfood.overdue_kiwi": "Overdue Kiwi",
@@ -94,12 +84,8 @@
     "item.improvedfood.overdue_blackberry": "Overdue Blackberry",
     "item.improvedfood.overdue_blueberry": "Overdue Blueberry",
     "item.improvedfood.overdue_raspberry": "Overdue Raspberry",
-
-
     "block.improvedfood.fridge": "Fridge",
     "block.improvedfood.salt_ore": "Salt Ore",
-
-
     "itemGroup.improvedfood.fresh_food": "Fresh Food",
     "itemGroup.improvedfood.overdue_food": "Overdue Food",
     "itemGroup.improvedfood.rotten_food": "Rotten Food",
