@@ -1,6 +1,9 @@
 package com.redgrapefruit.improvedfood.core.data;
 
+import com.redgrapefruit.improvedfood.util.IntRange;
 import net.minecraft.entity.effect.StatusEffect;
+
+import java.util.Optional;
 
 /**
  * A config of a unique effect type
@@ -17,9 +20,19 @@ public class FoodEffectConfig {
     private final int duration;
 
     /**
+     * An {@link IntRange} of durations applicable
+     */
+    private final Optional<IntRange> durationRange;
+
+    /**
      * The amplifier of this effect
      */
     private final int amplifier;
+
+    /**
+     * An {@link IntRange} of amplifiers applicable
+     */
+    private final Optional<IntRange> amplifierRange;
 
     /**
      * Whether or not this effect will be permanently applied to the player
@@ -37,10 +50,12 @@ public class FoodEffectConfig {
      */
     private final float chance;
 
-    private FoodEffectConfig(StatusEffect statusEffect, int duration, int amplifier, boolean isPermanent, boolean isAlwaysApplied, float chance) {
+    private FoodEffectConfig(StatusEffect statusEffect, int duration, Optional<IntRange> durationRange, int amplifier, Optional<IntRange> amplifierRange,  boolean isPermanent, boolean isAlwaysApplied, float chance) {
         this.statusEffect = statusEffect;
         this.duration = duration;
+        this.durationRange = durationRange;
         this.amplifier = amplifier;
+        this.amplifierRange = amplifierRange;
         this.isPermanent = isPermanent;
         this.isAlwaysApplied = isAlwaysApplied;
         this.chance = chance;
@@ -70,13 +85,23 @@ public class FoodEffectConfig {
         return chance;
     }
 
+    public Optional<IntRange> getDurationRange() {
+        return durationRange;
+    }
+
+    public Optional<IntRange> getAmplifierRange() {
+        return amplifierRange;
+    }
+
     /**
      * A builder for {@link FoodEffectConfig}s
      */
     public static class Builder {
         private StatusEffect statusEffect;
         private int duration;
+        private Optional<IntRange> durationRange = Optional.empty();
         private int amplifier;
+        private Optional<IntRange> amplifierRange = Optional.empty();
         private boolean isPermanent;
         private boolean isAlwaysApplied;
         private float chance;
@@ -91,8 +116,18 @@ public class FoodEffectConfig {
             return this;
         }
 
+        public Builder rangedDuration(int min, int max) {
+            this.durationRange = Optional.of(new IntRange(min, max));
+            return this;
+        }
+
         public Builder amplifier(int amplifier) {
             this.amplifier = amplifier;
+            return this;
+        }
+
+        public Builder rangedAmplifier(int min, int max) {
+            this.amplifierRange = Optional.of(new IntRange(min, max));
             return this;
         }
 
@@ -112,7 +147,7 @@ public class FoodEffectConfig {
         }
 
         public FoodEffectConfig build() {
-            return new FoodEffectConfig(statusEffect, duration, amplifier, isPermanent, isAlwaysApplied, chance);
+            return new FoodEffectConfig(statusEffect, duration, durationRange, amplifier, amplifierRange, isPermanent, isAlwaysApplied, chance);
         }
     }
 }

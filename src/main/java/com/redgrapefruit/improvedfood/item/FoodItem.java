@@ -7,6 +7,7 @@ import com.redgrapefruit.improvedfood.core.data.FoodEffectConfig;
 import com.redgrapefruit.improvedfood.core.session.FoodProfile;
 import com.redgrapefruit.improvedfood.core.session.FoodState;
 import com.redgrapefruit.improvedfood.registry.ItemGroupRegistry;
+import com.redgrapefruit.improvedfood.util.IntRange;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -20,6 +21,7 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Supplier;
 
 /**
@@ -86,11 +88,19 @@ public class FoodItem extends Item {
 
             // Effects
             for (FoodEffectConfig effectConfig : config.getEffects()) {
+                int duration = effectConfig.getAmplifierRange()
+                        .map(IntRange::pick)
+                        .orElseGet(effectConfig::getDuration);
+
+                int amplifier = effectConfig.getDurationRange()
+                        .map(IntRange::pick)
+                        .orElseGet(effectConfig::getDuration);
+
                 builder.statusEffect(
                         new StatusEffectInstance(
                                 effectConfig.getStatusEffect(),
-                                effectConfig.isPermanent() ? Integer.MAX_VALUE : effectConfig.getDuration(),
-                                effectConfig.getAmplifier()
+                                effectConfig.isPermanent() ? Integer.MAX_VALUE : duration,
+                                amplifier
                         ),
                         effectConfig.isAlwaysApplied() ? 1.0f : effectConfig.getChance()
                 );
