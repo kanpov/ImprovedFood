@@ -12,9 +12,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 #### General
 
 - New crops:
-  - Kiwi
-  - Jackfruit
-  - Blackberry
+    - Kiwi
+    - Jackfruit
+    - Blackberry
 - Custom effects to **all** crops
 
 ### Changed
@@ -131,7 +131,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Repository
 
-- Artifact compile guide and deprecated the old one 
+- Artifact compile guide and deprecated the old one
 
 #### Security
 
@@ -202,8 +202,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Internal
 
-- Unused ```patch(Item, FoodConfig, RottenFoodItem, OverdueFoodItem)``` method
-  in ```PatchRegistry```
+- Unused ```patch(Item, FoodConfig, RottenFoodItem, OverdueFoodItem)``` method in ```PatchRegistry```
 
 ## [v0.1-preview.2]
 

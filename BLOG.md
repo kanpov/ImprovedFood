@@ -7,7 +7,7 @@ _By the way it's not pretty, but I'm not going to make an entire website, so it'
 
 This section contains some info about the main plan of this project.  
 Current release date is June 15th, 2021, may be delayed later on.  
-There's only a single maintainer - me (RedGrapefruit09).  
+There's only a single maintainer - me (RedGrapefruit09).
 
 #### Release cycles
 
