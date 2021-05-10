@@ -149,6 +149,26 @@ public class ConfigRegistry {
             .overdueSpeed(7)
             .build();
 
+    public static final FoodConfig RASPBERRY = new FoodConfig.Builder()
+            .category(FoodCategory.BERRIES)
+            .hunger(1)
+            .saturationModifier(1.7f)
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.HEALTH_BOOST)
+                    .duration(1500)
+                    .amplifier(2)
+                    .isAlwaysApplied(true)
+                    .build())
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.REGENERATION)
+                    .duration(400)
+                    .amplifier(1)
+                    .chance(0.6f)
+                    .build())
+            .overdueState(110000)
+            .overdueSpeed(7)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)

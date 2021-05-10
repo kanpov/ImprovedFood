@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "improvedfood:raspberry_seeds"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 3,
+                "max": 8
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "improvedfood:raspberry"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "improvedfood:raspberry_crop",
+                    "properties": {
+                        "age": 7
+                    }
+                }
+            ]
+        }
+    ]
+}

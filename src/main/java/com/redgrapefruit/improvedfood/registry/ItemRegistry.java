@@ -19,6 +19,7 @@ public class ItemRegistry {
     public static final AliasedBlockItem JACKFRUIT_SEEDS = new AliasedBlockItem(BlockRegistry.JACKFRUIT_CROP, createSeedSettings());
     public static final AliasedBlockItem BLACKBERRY_SEEDS = new AliasedBlockItem(BlockRegistry.BLACKBERRY_CROP, createSeedSettings());
     public static final AliasedBlockItem BLUEBERRY_SEEDS = new AliasedBlockItem(BlockRegistry.BLUEBERRY_CROP, createSeedSettings());
+    public static final AliasedBlockItem RASPBERRY_SEEDS = new AliasedBlockItem(BlockRegistry.RASPBERRY_CROP, createSeedSettings());
 
     // Rotten variants
     public static final RottenFoodItem ROTTEN_PORKCHOP = new RottenFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -39,6 +40,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_JACKFRUIT = new OverdueFoodItem(ConfigRegistry.JACKFRUIT);
     public static final OverdueFoodItem OVERDUE_BLACKBERRY = new OverdueFoodItem(ConfigRegistry.BLACKBERRY);
     public static final OverdueFoodItem OVERDUE_BLUEBERRY = new OverdueFoodItem(ConfigRegistry.BLUEBERRY);
+    public static final OverdueFoodItem OVERDUE_RASPBERRY = new OverdueFoodItem(ConfigRegistry.RASPBERRY);
 
     public static final OverdueFoodItem OVERDUE_SALMON = new OverdueFoodItem(ConfigRegistry.SALMON, FoodComponents.SALMON);
     public static final OverdueFoodItem OVERDUE_COOKED_SALMON = new OverdueFoodItem(ConfigRegistry.COOKED_SALMON, FoodComponents.COOKED_SALMON);
@@ -105,6 +107,7 @@ public class ItemRegistry {
     public static final FoodItem JACKFRUIT = new FoodItem(ConfigRegistry.JACKFRUIT).setOverdueVariant(OVERDUE_JACKFRUIT);
     public static final FoodItem BLACKBERRY = new FoodItem(ConfigRegistry.BLACKBERRY).setOverdueVariant(OVERDUE_BLACKBERRY);
     public static final FoodItem BLUEBERRY = new FoodItem(ConfigRegistry.BLUEBERRY).setOverdueVariant(OVERDUE_BLUEBERRY);
+    public static final FoodItem RASPBERRY = new FoodItem(ConfigRegistry.RASPBERRY).setOverdueVariant(OVERDUE_RASPBERRY);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -119,6 +122,7 @@ public class ItemRegistry {
         register("jackfruit", JACKFRUIT);
         register("blackberry", BLACKBERRY);
         register("blueberry", BLUEBERRY);
+        register("raspberry", RASPBERRY);
 
         register("tomato_seeds", TOMATO_SEEDS);
         register("cucumber_seeds", CUCUMBER_SEEDS);
@@ -126,6 +130,7 @@ public class ItemRegistry {
         register("jackfruit_seeds", JACKFRUIT_SEEDS);
         register("blackberry_seeds", BLACKBERRY_SEEDS);
         register("blueberry_seeds", BLUEBERRY_SEEDS);
+        register("raspberry_seeds", RASPBERRY_SEEDS);
 
         register("rotten_porkchop", ROTTEN_PORKCHOP);
         register("rotten_cooked_porkchop", ROTTEN_COOKED_PORKCHOP);
@@ -144,6 +149,7 @@ public class ItemRegistry {
         register("overdue_jackfruit", OVERDUE_JACKFRUIT);
         register("overdue_blackberry", OVERDUE_BLACKBERRY);
         register("overdue_blueberry", OVERDUE_BLUEBERRY);
+        register("overdue_raspberry", OVERDUE_RASPBERRY);
         register("overdue_salmon", OVERDUE_SALMON);
         register("overdue_cooked_salmon", OVERDUE_COOKED_SALMON);
         register("overdue_cod", OVERDUE_COD);
