@@ -82,7 +82,7 @@ A: No. I don't support snapshots and only update between stable releases of Mine
 
 # Credits
 
-- Most importantly, to [Croptopia mod](https://github.com/RedGrapefruit09/ImprovedFood) because it was my inspiration for making this mod
+- Most importantly, to [Croptopia mod](https://github.com/ExcessiveAmountsOfZombies/Croptopia) because it was my inspiration for making this mod
 - To Mojang's developers for creating Minecraft and making my childhood
 - To Fabric's team and contributors for creating an astonishing modding toolchain
 - To JetBrains's team and contributors for creating an amazing JVM IDE and skyrocketing my productivity
