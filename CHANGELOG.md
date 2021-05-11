@@ -5,6 +5,62 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2-preview.3]
+
+### Added
+
+#### General
+
+- New crops:
+  - Blueberry
+  - Raspberry
+- Ranged durations and amplifiers to custom food effects (for example, from 300 to 500 ticks instead of 400 ticks)
+
+#### Repository
+
+- More badges from [shields.io](https://shields.io/)
+- A brand-new Markdown blog
+
+#### Security
+
+- 0.2 series as a supported security version in the [policy](https://github.com/RedGrapefruit09/ImprovedFood/blob/master/SECURITY.md)
+
+### Changed
+
+#### General
+
+- Completely redesigned crop textures for (with more coming in the next preview):
+  - Tomato
+  - Cucumber
+
+#### Internal
+
+- Changed Gradle ```duplicatesStrategy``` in the ```processResources``` task to ```EXCLUDE```
+- Made permanent effect implementation cleaner
+
+#### Toolchain
+
+- Migrated mappings from ```1.16.5+build.8``` to ```1.16.5+build.9```
+
+#### Repository
+
+- Completely reformatted this changelog
+- Changed badge colors to look nicer
+- Minor README changes
+- Credited [Croptopia](https://github.com/ExcessiveAmountsOfZombies/Croptopia) in the README
+
+### Fixed
+
+#### Internal
+
+- Blackberry being named blueberry internally, it hadn't affected the gameplay
+
+### Removed
+
+#### Internal
+
+- Unnecessary crop lang entries because crops don't have ```BlockItem```s
+
 ## [v0.2-preview.2]
 
 ### Added
