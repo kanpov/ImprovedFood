@@ -4,6 +4,11 @@ This is a guide on how to get the latest compiled artifacts (builds) of the mod 
 If you want to compile manually (_not recommended_), use the deprecated
 guide [here](https://github.com/RedGrapefruit09/ImprovedFood/blob/master/COMPILE_DEPRECATED.md).
 
+# Important Notice
+
+If you see that the current build is failing, **do not build it** and choose the latest successful build.  
+Failing builds may lead to critical issues, game crashes and world corruptions.
+
 # Why
 
 After looking at the [Releases page](https://github.com/RedGrapefruit09/ImprovedFood/releases) you may wonder why would
