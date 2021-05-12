@@ -170,6 +170,28 @@ public class ConfigRegistry {
             .overdueSpeed(7)
             .build();
 
+    public static final FoodConfig PEANUT = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .hunger(4)
+            .saturationModifier(1.35f)
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.RESISTANCE)
+                    .rangedDuration(300, 600)
+                    .rangedAmplifier(0, 2)
+                    .chance(0.8f)
+                    .build())
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.ABSORPTION)
+                    .rangedDuration(500, 750)
+                    .rangedAmplifier(0, 1)
+                    .chance(0.4f)
+                    .build())
+            .overdueState(95000)
+            .overdueSpeed(9)
+            .fridgeEfficiency(6)
+            .saltEfficiency(2)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)

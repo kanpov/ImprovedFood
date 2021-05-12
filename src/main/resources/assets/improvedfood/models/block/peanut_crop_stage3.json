@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "improvedfood:block/peanut_crop_stage3"
+    }
+}
