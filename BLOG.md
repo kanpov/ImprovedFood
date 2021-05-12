@@ -33,6 +33,13 @@ After that, the future of the mod will be decided in this blog.
 
 # Posts
 
+## May 11th, 2021
+
+Today 0.2 Preview 3 has been released.  
+So far things have been going fine, but from now on previews will
+often be released every 2 or 3 days instead of every day.  
+I'm sorry about the difficulties that the project is currently facing, and I hope for the best product in the end.
+
 ## May 9th, 2021
 
 Today I wanted to warn you about the next two weeks of this project.  
