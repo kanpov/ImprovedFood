@@ -192,6 +192,28 @@ public class ConfigRegistry {
             .saltEfficiency(2)
             .build();
 
+    public static final FoodConfig PINEAPPLE = new FoodConfig.Builder()
+            .category(FoodCategory.FRUIT)
+            .hunger(3)
+            .saturationModifier(1.55f)
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.STRENGTH)
+                    .rangedDuration(400, 800)
+                    .rangedAmplifier(0, 4)
+                    .chance(0.75f)
+                    .build())
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.FIRE_RESISTANCE)
+                    .rangedDuration(500, 900)
+                    .amplifier(0)
+                    .chance(0.25f)
+                    .build())
+            .overdueState(235000)
+            .overdueSpeed(11)
+            .fridgeEfficiency(7)
+            .saltEfficiency(3)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)

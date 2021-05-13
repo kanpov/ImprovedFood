@@ -34,6 +34,7 @@ public class BlockRegistry {
     public static final NormalCropBlock BLUEBERRY_CROP = new NormalCropBlock(ItemRegistry.BLUEBERRY_SEEDS);
     public static final NormalCropBlock RASPBERRY_CROP = new NormalCropBlock(ItemRegistry.RASPBERRY_SEEDS);
     public static final NormalCropBlock PEANUT_CROP = new NormalCropBlock(ItemRegistry.PEANUT_SEEDS);
+    public static final NormalCropBlock PINEAPPLE_CROP = new NormalCropBlock(ItemRegistry.PINEAPPLE_SEEDS);
 
     // Storage blocks
     public static final FridgeBlock FRIDGE = new FridgeBlock(FabricBlockSettings.copyOf(Blocks.CHEST));
@@ -54,6 +55,7 @@ public class BlockRegistry {
         register("blueberry_crop", BLUEBERRY_CROP);
         register("raspberry_crop", RASPBERRY_CROP);
         register("peanut_crop", PEANUT_CROP);
+        register("pineapple_crop", PINEAPPLE_CROP);
 
         register("fridge", FRIDGE, FRIDGE_BLOCK_ENTITY, ItemGroupRegistry.STORAGE);
 
