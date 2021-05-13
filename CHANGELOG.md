@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2-preview.4]
+
+### Added
+
+#### General
+
+- New crops:
+  - Peanut
+  - Pineapple
+
+### Deprecated
+
+#### Internal
+
+- Set durations and amplifiers in FoodEffectConfig as they don't give the same effect as randomized ones
+
+### Fixed
+
+#### General
+
+- Critical bug messing up effect amplifiers
+
 ## [v0.2-preview.3]
 
 ### Added
