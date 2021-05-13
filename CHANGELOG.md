@@ -15,6 +15,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   - Peanut
   - Pineapple
 
+### Changed
+
+#### Internal
+
+- Redesigned kiwi crop textures
+
 ### Deprecated
 
 #### Internal
