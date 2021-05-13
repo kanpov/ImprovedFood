@@ -91,7 +91,7 @@ public class FoodItem extends Item {
 
                 int duration = effectConfig.getAmplifierRange()
                         .map(IntRange::pick)
-                        .orElseGet(effectConfig::getDuration);
+                        .orElseGet(effectConfig::getAmplifier);
 
                 int amplifier = effectConfig.getDurationRange()
                         .map(IntRange::pick)
