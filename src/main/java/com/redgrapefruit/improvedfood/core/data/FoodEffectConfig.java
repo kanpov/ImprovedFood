@@ -16,7 +16,9 @@ public class FoodEffectConfig {
 
     /**
      * The duration of this effect
+     * @deprecated See {@link Builder#duration(int)} for details
      */
+    @Deprecated
     private final int duration;
 
     /**
@@ -26,7 +28,9 @@ public class FoodEffectConfig {
 
     /**
      * The amplifier of this effect
+     * @deprecated See {@link Builder#amplifier(int)} for details
      */
+    @Deprecated
     private final int amplifier;
 
     /**
@@ -65,10 +69,18 @@ public class FoodEffectConfig {
         return statusEffect;
     }
 
+    /**
+     * @deprecated See {@link Builder#duration(int)} for details
+     */
+    @Deprecated
     public int getDuration() {
         return duration;
     }
 
+    /**
+     * @deprecated See {@link Builder#amplifier(int)} for details
+     */
+    @Deprecated
     public int getAmplifier() {
         return amplifier;
     }
@@ -111,6 +123,10 @@ public class FoodEffectConfig {
             return this;
         }
 
+        /**
+         * @deprecated There's no need for set durations since randomness gives much better effect. Will be removed in 0.2f. Use {@link #rangedDuration(int, int)}
+         */
+        @Deprecated
         public Builder duration(int duration) {
             this.duration = duration;
             return this;
@@ -121,6 +137,10 @@ public class FoodEffectConfig {
             return this;
         }
 
+        /**
+         * @deprecated There's no need for set amplifiers since randomness gives much better effect. Will be removed in 0.2f. Use {@link #rangedAmplifier(int, int)}
+         */
+        @Deprecated
         public Builder amplifier(int amplifier) {
             this.amplifier = amplifier;
             return this;

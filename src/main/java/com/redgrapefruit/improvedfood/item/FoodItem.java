@@ -87,6 +87,8 @@ public class FoodItem extends Item {
 
             // Effects
             for (FoodEffectConfig effectConfig : config.getEffects()) {
+                // orElseGet will be removed in 0.2f along with deprecated FoodEffectConfig#duration and FoodEffectConfig#amplifier and Optional usage
+
                 int duration = effectConfig.getAmplifierRange()
                         .map(IntRange::pick)
                         .orElseGet(effectConfig::getDuration);
