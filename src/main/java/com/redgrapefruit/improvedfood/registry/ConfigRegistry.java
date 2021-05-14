@@ -214,6 +214,27 @@ public class ConfigRegistry {
             .saltEfficiency(3)
             .build();
 
+    public static final FoodConfig ONION = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .hunger(1)
+            .saturationModifier(0.9f)
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.LUCK)
+                    .rangedDuration(7500, 12000)
+                    .rangedAmplifier(1, 3)
+                    .isAlwaysApplied(true)
+                    .build())
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.DOLPHINS_GRACE)
+                    .rangedDuration(15000, 20000)
+                    .rangedAmplifier(0, 2)
+                    .chance(0.4f)
+                    .build())
+            .overdueState(125000)
+            .overdueSpeed(7)
+            .fridgeEfficiency(4)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)

@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "improvedfood:block/onion_crop_stage3"
+    }
+}
