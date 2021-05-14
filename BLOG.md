@@ -35,10 +35,9 @@ After that, the future of the mod will be decided in this blog.
 
 ## May 14th, 2021
 
-I have 3 news today.  
+I have 2 news today.  
 First, I decided to make the Preview cycle of 0.2 more frequent, so there'll be more releases from now on.  
-Second, I've been adding technical info into releases. It'll probably take a while.  
-Third, on the next week I have a ton of exams, and it'll be very stressful. Prepare for low contribution rates.
+Second, on the next week I have a ton of exams, and it'll be very stressful. Prepare for low contribution rates.
 
 ## May 11th, 2021
 
