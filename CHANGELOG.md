@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2-preview.5]
+
+### Added
+
+#### General
+
+- New crops:
+  - Onion
+  - Cabbage
+
+### Changed
+
+#### General
+
+- Modernized crop loot tables, so the amount of dropped seeds is now randomized
+
+### Removed
+
+#### General
+
+- Unnecessary crop creative tab because crops don't have ```BlockItem```s
+
 ## [v0.2-preview.4]
 
 ### Added
