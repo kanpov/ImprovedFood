@@ -17,7 +17,6 @@ public class ItemGroupRegistry {
     public static ItemGroup ROTTEN_FOOD;
     public static ItemGroup SALTED_FOOD;
     public static ItemGroup SEEDS;
-    public static ItemGroup CROPS;
     public static ItemGroup STORAGE;
     public static ItemGroup DECORATIONS;
 
@@ -28,7 +27,6 @@ public class ItemGroupRegistry {
         ROTTEN_FOOD = register("rotten_food", Items.BLACK_BED);
         SALTED_FOOD = register("salted_food", Items.PURPLE_BED);
         SEEDS = register("seeds", Items.ORANGE_BED);
-        CROPS = register("crops", Items.YELLOW_BED);
         STORAGE = register("storage", Items.GREEN_BED);
         DECORATIONS = register("decorations", Items.BLUE_BED);
     }
