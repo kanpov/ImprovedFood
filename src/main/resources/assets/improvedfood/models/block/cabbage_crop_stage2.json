@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "improvedfood:block/cabbage_crop_stage2"
+    }
+}

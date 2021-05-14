@@ -23,6 +23,7 @@ public class ItemRegistry {
     public static final AliasedBlockItem PEANUT_SEEDS = new AliasedBlockItem(BlockRegistry.PEANUT_CROP, createSeedSettings());
     public static final AliasedBlockItem PINEAPPLE_SEEDS = new AliasedBlockItem(BlockRegistry.PINEAPPLE_CROP, createSeedSettings());
     public static final AliasedBlockItem ONION_SEEDS = new AliasedBlockItem(BlockRegistry.ONION_CROP, createSeedSettings());
+    public static final AliasedBlockItem CABBAGE_SEEDS = new AliasedBlockItem(BlockRegistry.CABBAGE_CROP, createSeedSettings());
 
     // Rotten variants
     public static final RottenFoodItem ROTTEN_PORKCHOP = new RottenFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -47,6 +48,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_PEANUT = new OverdueFoodItem(ConfigRegistry.PEANUT);
     public static final OverdueFoodItem OVERDUE_PINEAPPLE = new OverdueFoodItem(ConfigRegistry.PINEAPPLE);
     public static final OverdueFoodItem OVERDUE_ONION = new OverdueFoodItem(ConfigRegistry.ONION);
+    public static final OverdueFoodItem OVERDUE_CABBAGE = new OverdueFoodItem(ConfigRegistry.CABBAGE);
 
     public static final OverdueFoodItem OVERDUE_SALMON = new OverdueFoodItem(ConfigRegistry.SALMON, FoodComponents.SALMON);
     public static final OverdueFoodItem OVERDUE_COOKED_SALMON = new OverdueFoodItem(ConfigRegistry.COOKED_SALMON, FoodComponents.COOKED_SALMON);
@@ -119,6 +121,7 @@ public class ItemRegistry {
     public static final FoodItem PEANUT = new FoodItem(ConfigRegistry.PEANUT).setOverdueVariant(OVERDUE_PEANUT);
     public static final FoodItem PINEAPPLE = new FoodItem(ConfigRegistry.PINEAPPLE).setOverdueVariant(OVERDUE_PINEAPPLE);
     public static final FoodItem ONION = new FoodItem(ConfigRegistry.ONION).setOverdueVariant(OVERDUE_ONION);
+    public static final FoodItem CABBAGE = new FoodItem(ConfigRegistry.CABBAGE).setOverdueVariant(OVERDUE_CABBAGE);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -137,6 +140,7 @@ public class ItemRegistry {
         register("peanut", PEANUT);
         register("pineapple", PINEAPPLE);
         register("onion", ONION);
+        register("cabbage", CABBAGE);
 
         register("tomato_seeds", TOMATO_SEEDS);
         register("cucumber_seeds", CUCUMBER_SEEDS);
@@ -148,6 +152,7 @@ public class ItemRegistry {
         register("peanut_seeds", PEANUT_SEEDS);
         register("pineapple_seeds", PINEAPPLE_SEEDS);
         register("onion_seeds", ONION_SEEDS);
+        register("cabbage_seeds", CABBAGE_SEEDS);
 
         register("rotten_porkchop", ROTTEN_PORKCHOP);
         register("rotten_cooked_porkchop", ROTTEN_COOKED_PORKCHOP);
@@ -170,6 +175,7 @@ public class ItemRegistry {
         register("overdue_peanut", OVERDUE_PEANUT);
         register("overdue_pineapple", OVERDUE_PINEAPPLE);
         register("overdue_onion", OVERDUE_ONION);
+        register("overdue_cabbage", OVERDUE_CABBAGE);
         register("overdue_salmon", OVERDUE_SALMON);
         register("overdue_cooked_salmon", OVERDUE_COOKED_SALMON);
         register("overdue_cod", OVERDUE_COD);

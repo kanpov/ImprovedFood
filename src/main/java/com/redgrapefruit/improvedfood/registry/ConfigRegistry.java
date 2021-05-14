@@ -235,6 +235,27 @@ public class ConfigRegistry {
             .fridgeEfficiency(4)
             .build();
 
+    public static final FoodConfig CABBAGE = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .hunger(2)
+            .saturationModifier(1.95f)
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.INSTANT_HEALTH)
+                    .rangedDuration(50, 200)
+                    .rangedAmplifier(1, 2)
+                    .isAlwaysApplied(true)
+                    .build())
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.NIGHT_VISION)
+                    .rangedDuration(500, 750)
+                    .rangedAmplifier(0, 1)
+                    .chance(0.7f)
+                    .build())
+            .overdueState(170000)
+            .overdueSpeed(9)
+            .fridgeEfficiency(5)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)

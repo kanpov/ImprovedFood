@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "age=0": {
+            "model": "improvedfood:block/cabbage_crop_stage0"
+        },
+        "age=1": {
+            "model": "improvedfood:block/cabbage_crop_stage1"
+        },
+        "age=2": {
+            "model": "improvedfood:block/cabbage_crop_stage1"
+        },
+        "age=3": {
+            "model": "improvedfood:block/cabbage_crop_stage1"
+        },
+        "age=4": {
+            "model": "improvedfood:block/cabbage_crop_stage2"
+        },
+        "age=5": {
+            "model": "improvedfood:block/cabbage_crop_stage2"
+        },
+        "age=6": {
+            "model": "improvedfood:block/cabbage_crop_stage2"
+        },
+        "age=7": {
+            "model": "improvedfood:block/cabbage_crop_stage3"
+        }
+    }
+}
