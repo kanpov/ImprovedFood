@@ -1,8 +1,8 @@
 package com.redgrapefruit.improvedfood.util;
 
-import com.redgrapefruit.improvedfood.core.data.FoodConfig;
-import com.redgrapefruit.improvedfood.core.session.FoodProfile;
-import com.redgrapefruit.improvedfood.core.session.FridgeState;
+import com.redgrapefruit.improvedfood.core.FoodConfig;
+import com.redgrapefruit.improvedfood.core.FoodProfile;
+import com.redgrapefruit.improvedfood.core.FridgeState;
 
 /**
  * Calculations regarding food

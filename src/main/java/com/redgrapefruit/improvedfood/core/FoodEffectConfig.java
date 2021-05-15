@@ -1,4 +1,4 @@
-package com.redgrapefruit.improvedfood.core.data;
+package com.redgrapefruit.improvedfood.core;
 
 import com.redgrapefruit.improvedfood.util.IntRange;
 import net.minecraft.entity.effect.StatusEffect;

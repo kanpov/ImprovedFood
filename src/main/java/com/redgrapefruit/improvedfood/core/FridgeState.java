@@ -1,4 +1,4 @@
-package com.redgrapefruit.improvedfood.core.session;
+package com.redgrapefruit.improvedfood.core;
 
 /**
  * Current fridge state.

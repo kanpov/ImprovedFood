@@ -1,6 +1,6 @@
 package com.redgrapefruit.improvedfood.screen.handler;
 
-import com.redgrapefruit.improvedfood.core.session.FridgeState;
+import com.redgrapefruit.improvedfood.core.FridgeState;
 import com.redgrapefruit.improvedfood.item.FoodItem;
 import com.redgrapefruit.improvedfood.registry.GuiRegistry;
 import com.redgrapefruit.improvedfood.util.ItemMixinAccess;

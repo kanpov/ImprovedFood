@@ -1,6 +1,5 @@
-package com.redgrapefruit.improvedfood.core.session;
+package com.redgrapefruit.improvedfood.core;
 
-import com.redgrapefruit.improvedfood.core.data.FoodConfig;
 import com.redgrapefruit.improvedfood.item.FoodItem;
 import net.minecraft.world.World;
 
