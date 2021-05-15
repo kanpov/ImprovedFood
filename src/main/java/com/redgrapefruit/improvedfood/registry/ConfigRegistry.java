@@ -256,6 +256,26 @@ public class ConfigRegistry {
             .fridgeEfficiency(5)
             .build();
 
+    public static final FoodConfig RASPBERRY = new FoodConfig.Builder()
+            .category(FoodCategory.BERRIES)
+            .hunger(2)
+            .saturationModifier(1.1f)
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.HEALTH_BOOST)
+                    .rangedDuration(350, 800)
+                    .rangedAmplifier(1, 5)
+                    .isAlwaysApplied(true)
+                    .build())
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.HASTE)
+                    .rangedDuration(500, 950)
+                    .rangedAmplifier(2, 4)
+                    .chance(0.8f)
+                    .build())
+            .rotState(85000)
+            .rotSpeed(6)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)

@@ -24,6 +24,7 @@ public class ItemRegistry {
     public static final AliasedBlockItem PINEAPPLE_SEEDS = new AliasedBlockItem(BlockRegistry.PINEAPPLE_CROP, createSeedSettings());
     public static final AliasedBlockItem ONION_SEEDS = new AliasedBlockItem(BlockRegistry.ONION_CROP, createSeedSettings());
     public static final AliasedBlockItem CABBAGE_SEEDS = new AliasedBlockItem(BlockRegistry.CABBAGE_CROP, createSeedSettings());
+    public static final AliasedBlockItem RASPBERRY_SEEDS = new AliasedBlockItem(BlockRegistry.RASPBERRY_CROP, createSeedSettings());
 
     // Rotten variants
     public static final RottenFoodItem ROTTEN_PORKCHOP = new RottenFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -49,6 +50,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_PINEAPPLE = new OverdueFoodItem(ConfigRegistry.PINEAPPLE);
     public static final OverdueFoodItem OVERDUE_ONION = new OverdueFoodItem(ConfigRegistry.ONION);
     public static final OverdueFoodItem OVERDUE_CABBAGE = new OverdueFoodItem(ConfigRegistry.CABBAGE);
+    public static final OverdueFoodItem OVERDUE_RASPBERRY = new OverdueFoodItem(ConfigRegistry.RASPBERRY);
 
     public static final OverdueFoodItem OVERDUE_SALMON = new OverdueFoodItem(ConfigRegistry.SALMON, FoodComponents.SALMON);
     public static final OverdueFoodItem OVERDUE_COOKED_SALMON = new OverdueFoodItem(ConfigRegistry.COOKED_SALMON, FoodComponents.COOKED_SALMON);
@@ -122,6 +124,7 @@ public class ItemRegistry {
     public static final FoodItem PINEAPPLE = new FoodItem(ConfigRegistry.PINEAPPLE).setOverdueVariant(OVERDUE_PINEAPPLE);
     public static final FoodItem ONION = new FoodItem(ConfigRegistry.ONION).setOverdueVariant(OVERDUE_ONION);
     public static final FoodItem CABBAGE = new FoodItem(ConfigRegistry.CABBAGE).setOverdueVariant(OVERDUE_CABBAGE);
+    public static final FoodItem RASPBERRY = new FoodItem(ConfigRegistry.RASPBERRY).setOverdueVariant(OVERDUE_RASPBERRY);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -141,6 +144,7 @@ public class ItemRegistry {
         register("pineapple", PINEAPPLE);
         register("onion", ONION);
         register("cabbage", CABBAGE);
+        register("raspberry", RASPBERRY);
 
         register("tomato_seeds", TOMATO_SEEDS);
         register("cucumber_seeds", CUCUMBER_SEEDS);
@@ -153,6 +157,7 @@ public class ItemRegistry {
         register("pineapple_seeds", PINEAPPLE_SEEDS);
         register("onion_seeds", ONION_SEEDS);
         register("cabbage_seeds", CABBAGE_SEEDS);
+        register("raspberry_seeds", RASPBERRY_SEEDS);
 
         register("rotten_porkchop", ROTTEN_PORKCHOP);
         register("rotten_cooked_porkchop", ROTTEN_COOKED_PORKCHOP);
@@ -176,6 +181,7 @@ public class ItemRegistry {
         register("overdue_pineapple", OVERDUE_PINEAPPLE);
         register("overdue_onion", OVERDUE_ONION);
         register("overdue_cabbage", OVERDUE_CABBAGE);
+        register("overdue_raspberry", OVERDUE_RASPBERRY);
         register("overdue_salmon", OVERDUE_SALMON);
         register("overdue_cooked_salmon", OVERDUE_COOKED_SALMON);
         register("overdue_cod", OVERDUE_COD);
