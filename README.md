@@ -82,7 +82,7 @@ A: No. I don't support snapshots and only update between stable releases of Mine
 
 # Credits
 
-- Most importantly, to [Croptopia mod](https://github.com/ExcessiveAmountsOfZombies/Croptopia) because it was my
+- Most importantly, to [Croptopia mod](https://github.com/ExcessiveAmountsOfZombies/Croptopia) because it was my inspiration for making this mod
 - To [FabricMC Team](https://github.com/FabricMC)
 - To [AARP](https://github.com/Devan-Kerman/ARRP)
 
