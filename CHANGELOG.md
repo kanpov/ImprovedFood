@@ -12,8 +12,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 #### General
 
 - New crops:
-  - Onion
-  - Cabbage
+    - Onion
+    - Cabbage
 
 ### Changed
 
@@ -34,8 +34,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 #### General
 
 - New crops:
-  - Peanut
-  - Pineapple
+    - Peanut
+    - Pineapple
 
 ### Changed
 
@@ -62,8 +62,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 #### General
 
 - New crops:
-  - Blueberry
-  - Raspberry
+    - Blueberry
+    - Raspberry
 - Ranged durations and amplifiers to custom food effects (for example, from 300 to 500 ticks instead of 400 ticks)
 
 #### Repository
@@ -73,15 +73,16 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Security
 
-- 0.2 series as a supported security version in the [policy](https://github.com/RedGrapefruit09/ImprovedFood/blob/master/SECURITY.md)
+- 0.2 series as a supported security version in
+  the [policy](https://github.com/RedGrapefruit09/ImprovedFood/blob/master/SECURITY.md)
 
 ### Changed
 
 #### General
 
 - Completely redesigned crop textures for (with more coming in the next preview):
-  - Tomato
-  - Cucumber
+    - Tomato
+    - Cucumber
 
 #### Internal
 

@@ -16,6 +16,7 @@ public class FoodEffectConfig {
 
     /**
      * The duration of this effect
+     *
      * @deprecated See {@link Builder#duration(int)} for details
      */
     @Deprecated
@@ -28,6 +29,7 @@ public class FoodEffectConfig {
 
     /**
      * The amplifier of this effect
+     *
      * @deprecated See {@link Builder#amplifier(int)} for details
      */
     @Deprecated
