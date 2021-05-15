@@ -1,6 +1,0 @@
-{
-    "parent": "block/crop",
-    "textures": {
-        "crop": "improvedfood:block/raspberry_crop_stage1"
-    }
-}

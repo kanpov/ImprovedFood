@@ -9,7 +9,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "improvedfood:raspberry_seeds"
+                    "name": "improvedfood:strawberry_seeds"
                 }
             ]
         },
@@ -21,13 +21,13 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "improvedfood:raspberry"
+                    "name": "improvedfood:strawberry"
                 }
             ],
             "conditions": [
                 {
                     "condition": "minecraft:block_state_property",
-                    "block": "improvedfood:raspberry_crop",
+                    "block": "improvedfood:strawberry_crop",
                     "properties": {
                         "age": 7
                     }

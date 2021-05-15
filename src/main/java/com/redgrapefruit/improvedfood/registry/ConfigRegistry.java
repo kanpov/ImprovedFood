@@ -150,7 +150,7 @@ public class ConfigRegistry {
             .overdueSpeed(7)
             .build();
 
-    public static final FoodConfig RASPBERRY = new FoodConfig.Builder()
+    public static final FoodConfig STRAWBERRY = new FoodConfig.Builder()
             .category(FoodCategory.BERRIES)
             .hunger(1)
             .saturationModifier(1.7f)

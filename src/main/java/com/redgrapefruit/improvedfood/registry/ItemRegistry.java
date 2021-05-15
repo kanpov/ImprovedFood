@@ -19,7 +19,7 @@ public class ItemRegistry {
     public static final AliasedBlockItem JACKFRUIT_SEEDS = new AliasedBlockItem(BlockRegistry.JACKFRUIT_CROP, createSeedSettings());
     public static final AliasedBlockItem BLACKBERRY_SEEDS = new AliasedBlockItem(BlockRegistry.BLACKBERRY_CROP, createSeedSettings());
     public static final AliasedBlockItem BLUEBERRY_SEEDS = new AliasedBlockItem(BlockRegistry.BLUEBERRY_CROP, createSeedSettings());
-    public static final AliasedBlockItem RASPBERRY_SEEDS = new AliasedBlockItem(BlockRegistry.RASPBERRY_CROP, createSeedSettings());
+    public static final AliasedBlockItem STRAWBERRY_SEEDS = new AliasedBlockItem(BlockRegistry.STRAWBERRY_CROP, createSeedSettings());
     public static final AliasedBlockItem PEANUT_SEEDS = new AliasedBlockItem(BlockRegistry.PEANUT_CROP, createSeedSettings());
     public static final AliasedBlockItem PINEAPPLE_SEEDS = new AliasedBlockItem(BlockRegistry.PINEAPPLE_CROP, createSeedSettings());
     public static final AliasedBlockItem ONION_SEEDS = new AliasedBlockItem(BlockRegistry.ONION_CROP, createSeedSettings());
@@ -44,7 +44,7 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_JACKFRUIT = new OverdueFoodItem(ConfigRegistry.JACKFRUIT);
     public static final OverdueFoodItem OVERDUE_BLACKBERRY = new OverdueFoodItem(ConfigRegistry.BLACKBERRY);
     public static final OverdueFoodItem OVERDUE_BLUEBERRY = new OverdueFoodItem(ConfigRegistry.BLUEBERRY);
-    public static final OverdueFoodItem OVERDUE_RASPBERRY = new OverdueFoodItem(ConfigRegistry.RASPBERRY);
+    public static final OverdueFoodItem OVERDUE_STRAWBERRY = new OverdueFoodItem(ConfigRegistry.STRAWBERRY);
     public static final OverdueFoodItem OVERDUE_PEANUT = new OverdueFoodItem(ConfigRegistry.PEANUT);
     public static final OverdueFoodItem OVERDUE_PINEAPPLE = new OverdueFoodItem(ConfigRegistry.PINEAPPLE);
     public static final OverdueFoodItem OVERDUE_ONION = new OverdueFoodItem(ConfigRegistry.ONION);
@@ -117,7 +117,7 @@ public class ItemRegistry {
     public static final FoodItem JACKFRUIT = new FoodItem(ConfigRegistry.JACKFRUIT).setOverdueVariant(OVERDUE_JACKFRUIT);
     public static final FoodItem BLACKBERRY = new FoodItem(ConfigRegistry.BLACKBERRY).setOverdueVariant(OVERDUE_BLACKBERRY);
     public static final FoodItem BLUEBERRY = new FoodItem(ConfigRegistry.BLUEBERRY).setOverdueVariant(OVERDUE_BLUEBERRY);
-    public static final FoodItem RASPBERRY = new FoodItem(ConfigRegistry.RASPBERRY).setOverdueVariant(OVERDUE_RASPBERRY);
+    public static final FoodItem STRAWBERRY = new FoodItem(ConfigRegistry.STRAWBERRY).setOverdueVariant(OVERDUE_STRAWBERRY);
     public static final FoodItem PEANUT = new FoodItem(ConfigRegistry.PEANUT).setOverdueVariant(OVERDUE_PEANUT);
     public static final FoodItem PINEAPPLE = new FoodItem(ConfigRegistry.PINEAPPLE).setOverdueVariant(OVERDUE_PINEAPPLE);
     public static final FoodItem ONION = new FoodItem(ConfigRegistry.ONION).setOverdueVariant(OVERDUE_ONION);
@@ -136,7 +136,7 @@ public class ItemRegistry {
         register("jackfruit", JACKFRUIT);
         register("blackberry", BLACKBERRY);
         register("blueberry", BLUEBERRY);
-        register("raspberry", RASPBERRY);
+        register("strawberry", STRAWBERRY);
         register("peanut", PEANUT);
         register("pineapple", PINEAPPLE);
         register("onion", ONION);
@@ -148,7 +148,7 @@ public class ItemRegistry {
         register("jackfruit_seeds", JACKFRUIT_SEEDS);
         register("blackberry_seeds", BLACKBERRY_SEEDS);
         register("blueberry_seeds", BLUEBERRY_SEEDS);
-        register("raspberry_seeds", RASPBERRY_SEEDS);
+        register("strawberry_seeds", STRAWBERRY_SEEDS);
         register("peanut_seeds", PEANUT_SEEDS);
         register("pineapple_seeds", PINEAPPLE_SEEDS);
         register("onion_seeds", ONION_SEEDS);
@@ -171,7 +171,7 @@ public class ItemRegistry {
         register("overdue_jackfruit", OVERDUE_JACKFRUIT);
         register("overdue_blackberry", OVERDUE_BLACKBERRY);
         register("overdue_blueberry", OVERDUE_BLUEBERRY);
-        register("overdue_raspberry", OVERDUE_RASPBERRY);
+        register("overdue_strawberry", OVERDUE_STRAWBERRY);
         register("overdue_peanut", OVERDUE_PEANUT);
         register("overdue_pineapple", OVERDUE_PINEAPPLE);
         register("overdue_onion", OVERDUE_ONION);

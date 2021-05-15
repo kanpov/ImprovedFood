@@ -32,7 +32,7 @@ public class BlockRegistry {
     public static final NormalCropBlock JACKFRUIT_CROP = new NormalCropBlock(ItemRegistry.JACKFRUIT_SEEDS);
     public static final NormalCropBlock BLACKBERRY_CROP = new NormalCropBlock(ItemRegistry.BLACKBERRY_SEEDS);
     public static final NormalCropBlock BLUEBERRY_CROP = new NormalCropBlock(ItemRegistry.BLUEBERRY_SEEDS);
-    public static final NormalCropBlock RASPBERRY_CROP = new NormalCropBlock(ItemRegistry.RASPBERRY_SEEDS);
+    public static final NormalCropBlock STRAWBERRY_CROP = new NormalCropBlock(ItemRegistry.STRAWBERRY_SEEDS);
     public static final NormalCropBlock PEANUT_CROP = new NormalCropBlock(ItemRegistry.PEANUT_SEEDS);
     public static final NormalCropBlock PINEAPPLE_CROP = new NormalCropBlock(ItemRegistry.PINEAPPLE_SEEDS);
     public static final NormalCropBlock ONION_CROP = new NormalCropBlock(ItemRegistry.ONION_SEEDS);
@@ -55,7 +55,7 @@ public class BlockRegistry {
         register("jackfruit_crop", JACKFRUIT_CROP);
         register("blackberry_crop", BLACKBERRY_CROP);
         register("blueberry_crop", BLUEBERRY_CROP);
-        register("raspberry_crop", RASPBERRY_CROP);
+        register("strawberry_crop", STRAWBERRY_CROP);
         register("peanut_crop", PEANUT_CROP);
         register("pineapple_crop", PINEAPPLE_CROP);
         register("onion_crop", ONION_CROP);
