@@ -33,6 +33,12 @@ After that, the future of the mod will be decided in this blog.
 
 # Posts
 
+## May 15th, 2021
+
+I want to try out AARP which is a tool for automatic resource generation.  
+There are already lots of JSONs and using AARP will reduce dev time drastically.  
+I don't know how it will work out, but you can see the experiment in the ```aarp``` branch.
+
 ## May 14th, 2021
 
 I have 2 news today.  
