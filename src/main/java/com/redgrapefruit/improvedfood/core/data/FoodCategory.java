@@ -11,7 +11,7 @@ public enum FoodCategory {
             true,
             false,
             true,
-            "Trusty old meat. Fills your belly really well"),
+            "Trusty old meat."),
 
     FRUIT(2,
             1.2f,
@@ -19,7 +19,7 @@ public enum FoodCategory {
             false,
             true,
             true,
-            "Sweet, juicy fruit. Important for a good diet"),
+            "Sweet, juicy fruit."),
 
     VEGETABLE(2,
             1.3f,
@@ -27,7 +27,7 @@ public enum FoodCategory {
             false,
             true,
             true,
-            "Extremely healthy vegetable. Who doesn't like cucumbers and tomatoes?"),
+            "Extremely healthy vegetable."),
 
     BERRIES(1,
             0.6f,
@@ -35,7 +35,7 @@ public enum FoodCategory {
             false,
             true,
             false,
-            "Small and tasty berries. Very cheap but not very nutritious"),
+            "Small and tasty berries."),
 
     FISH(3,
             1.25f,
@@ -43,7 +43,7 @@ public enum FoodCategory {
             false,
             true,
             true,
-            "Nice and yummy fish. Fish or meat?"),
+            "Nice and yummy fish."),
 
     HARMFUL(1,
             0.5f,
@@ -51,7 +51,7 @@ public enum FoodCategory {
             true,
             true,
             false,
-            "Just why do you eat these things? This will break your fridge in a millisecond"),
+            "Just why do you eat these things?"),
 
     COOKED(3,
             0.65f,
@@ -59,7 +59,7 @@ public enum FoodCategory {
             false,
             true,
             true,
-            "Bakery, soup etc. A good chef worked on this one"),
+            "Bakery, soup etc."),
 
     MISC(2,
             0.75f,
@@ -67,7 +67,7 @@ public enum FoodCategory {
             false,
             true,
             true,
-            "The food that doesn't fit in regular categories. Still pretty delicious though");
+            "The food that doesn't fit in regular categories.");
 
     /**
      * Base hunger of this food type.<br>
