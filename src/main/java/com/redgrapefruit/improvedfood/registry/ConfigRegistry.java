@@ -276,6 +276,27 @@ public class ConfigRegistry {
             .rotSpeed(6)
             .build();
 
+    public static final FoodConfig LETTUCE = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .hunger(3)
+            .saturationModifier(0.6f)
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.WATER_BREATHING)
+                    .rangedDuration(700, 1500)
+                    .rangedAmplifier(0, 2)
+                    .chance(0.9f)
+                    .build())
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.DOLPHINS_GRACE)
+                    .rangedDuration(1300, 2100)
+                    .rangedAmplifier(1, 2)
+                    .chance(0.6f)
+                    .build())
+            .overdueState(50000)
+            .overdueSpeed(3)
+            .fridgeEfficiency(1)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
