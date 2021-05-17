@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": {
+                "min": 5,
+                "max": 9
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "improvedfood:almond_seeds"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 3,
+                "max": 7
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "improvedfood:almond"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "improvedfood:almond_crop",
+                    "properties": {
+                        "age": 7
+                    }
+                }
+            ]
+        }
+    ]
+}
