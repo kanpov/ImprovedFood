@@ -272,8 +272,8 @@ public class ConfigRegistry {
                     .rangedAmplifier(2, 4)
                     .chance(0.8f)
                     .build())
-            .rotState(85000)
-            .rotSpeed(6)
+            .overdueState(85000)
+            .overdueSpeed(6)
             .build();
 
     public static final FoodConfig LETTUCE = new FoodConfig.Builder()
