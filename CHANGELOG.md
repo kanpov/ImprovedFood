@@ -23,6 +23,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Old raspberry is now strawberry
 - Shortened category descriptions so tooltips don't take up the entire screen
 
+#### Toolchain
+
+- Updated Fabric Loom to 0.6.58; 0.7 is coming very soon
+
 #### Internal
 
 - Reorganized ```com.redgrapefruit.improvedfood.core``` package
