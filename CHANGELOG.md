@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2-preview.6]
+
+### Added
+
+#### General
+
+- New crops:
+    - Raspberry
+    - Lettuce
+    - Almond
+
+### Changed
+
+#### General
+
+- Old raspberry is now strawberry
+- Shortened category descriptions so tooltips don't take up the entire screen
+
+#### Internal
+
+- Reorganized ```com.redgrapefruit.improvedfood.core``` package
+
 ## [v0.2-preview.5]
 
 ### Added
