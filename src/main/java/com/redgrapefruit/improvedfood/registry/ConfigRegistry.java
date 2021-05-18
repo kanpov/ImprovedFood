@@ -297,6 +297,28 @@ public class ConfigRegistry {
             .fridgeEfficiency(1)
             .build();
 
+    public static final FoodConfig GARLIC = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .hunger(2)
+            .saturationModifier(1.8f)
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.LEVITATION)
+                    .rangedDuration(100, 200)
+                    .rangedAmplifier(0, 1)
+                    .isAlwaysApplied(true)
+                    .build())
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.GLOWING)
+                    .rangedDuration(500, 750)
+                    .rangedAmplifier(1, 2)
+                    .chance(0.65f)
+                    .build())
+            .overdueState(160000)
+            .overdueSpeed(9)
+            .fridgeEfficiency(3)
+            .saltEfficiency(6)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
