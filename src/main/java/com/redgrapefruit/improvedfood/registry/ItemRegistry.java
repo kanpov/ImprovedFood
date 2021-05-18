@@ -26,7 +26,6 @@ public class ItemRegistry {
     public static final AliasedBlockItem CABBAGE_SEEDS = new AliasedBlockItem(BlockRegistry.CABBAGE_CROP, createSeedSettings());
     public static final AliasedBlockItem RASPBERRY_SEEDS = new AliasedBlockItem(BlockRegistry.RASPBERRY_CROP, createSeedSettings());
     public static final AliasedBlockItem LETTUCE_SEEDS = new AliasedBlockItem(BlockRegistry.LETTUCE_CROP, createSeedSettings());
-    public static final AliasedBlockItem ALMOND_SEEDS = new AliasedBlockItem(BlockRegistry.ALMOND_CROP, createSeedSettings());
 
     // Rotten variants
     public static final RottenFoodItem ROTTEN_PORKCHOP = new RottenFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
@@ -54,7 +53,6 @@ public class ItemRegistry {
     public static final OverdueFoodItem OVERDUE_CABBAGE = new OverdueFoodItem(ConfigRegistry.CABBAGE);
     public static final OverdueFoodItem OVERDUE_RASPBERRY = new OverdueFoodItem(ConfigRegistry.RASPBERRY);
     public static final OverdueFoodItem OVERDUE_LETTUCE = new OverdueFoodItem(ConfigRegistry.LETTUCE);
-    public static final OverdueFoodItem OVERDUE_ALMOND = new OverdueFoodItem(ConfigRegistry.ALMOND);
 
     public static final OverdueFoodItem OVERDUE_SALMON = new OverdueFoodItem(ConfigRegistry.SALMON, FoodComponents.SALMON);
     public static final OverdueFoodItem OVERDUE_COOKED_SALMON = new OverdueFoodItem(ConfigRegistry.COOKED_SALMON, FoodComponents.COOKED_SALMON);
@@ -90,7 +88,6 @@ public class ItemRegistry {
     public static final SaltedFoodItem SALTED_PEANUT = new SaltedFoodItem(ConfigRegistry.PEANUT);
     public static final SaltedFoodItem SALTED_PINEAPPLE = new SaltedFoodItem(ConfigRegistry.PINEAPPLE);
     public static final SaltedFoodItem SALTED_LETTUCE = new SaltedFoodItem(ConfigRegistry.LETTUCE);
-    public static final SaltedFoodItem SALTED_ALMOND = new SaltedFoodItem(ConfigRegistry.ALMOND);
 
     public static final SaltedFoodItem SALTED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.PORKCHOP, FoodComponents.PORKCHOP);
     public static final SaltedFoodItem SALTED_COOKED_PORKCHOP = new SaltedFoodItem(ConfigRegistry.COOKED_PORKCHOP, FoodComponents.COOKED_PORKCHOP);
@@ -132,7 +129,6 @@ public class ItemRegistry {
     public static final FoodItem CABBAGE = new FoodItem(ConfigRegistry.CABBAGE).setOverdueVariant(OVERDUE_CABBAGE);
     public static final FoodItem RASPBERRY = new FoodItem(ConfigRegistry.RASPBERRY).setOverdueVariant(OVERDUE_RASPBERRY);
     public static final FoodItem LETTUCE = new FoodItem(ConfigRegistry.LETTUCE).setOverdueVariant(OVERDUE_LETTUCE);
-    public static final FoodItem ALMOND = new FoodItem(ConfigRegistry.ALMOND).setOverdueVariant(OVERDUE_ALMOND);
 
     // Miscellaneous
     public static final SaltItem SALT = new SaltItem();
@@ -154,7 +150,6 @@ public class ItemRegistry {
         register("cabbage", CABBAGE);
         register("raspberry", RASPBERRY);
         register("lettuce", LETTUCE);
-        register("almond", ALMOND);
 
         register("tomato_seeds", TOMATO_SEEDS);
         register("cucumber_seeds", CUCUMBER_SEEDS);
@@ -169,7 +164,6 @@ public class ItemRegistry {
         register("cabbage_seeds", CABBAGE_SEEDS);
         register("raspberry_seeds", RASPBERRY_SEEDS);
         register("lettuce_seeds", LETTUCE_SEEDS);
-        register("almond_seeds", ALMOND_SEEDS);
 
         register("rotten_porkchop", ROTTEN_PORKCHOP);
         register("rotten_cooked_porkchop", ROTTEN_COOKED_PORKCHOP);
@@ -195,7 +189,6 @@ public class ItemRegistry {
         register("overdue_cabbage", OVERDUE_CABBAGE);
         register("overdue_raspberry", OVERDUE_RASPBERRY);
         register("overdue_lettuce", OVERDUE_LETTUCE);
-        register("overdue_almond", OVERDUE_ALMOND);
         register("overdue_salmon", OVERDUE_SALMON);
         register("overdue_cooked_salmon", OVERDUE_COOKED_SALMON);
         register("overdue_cod", OVERDUE_COD);
@@ -229,7 +222,6 @@ public class ItemRegistry {
         register("salted_peanut", SALTED_PEANUT);
         register("salted_pineapple", SALTED_PINEAPPLE);
         register("salted_lettuce", SALTED_LETTUCE);
-        register("salted_almond", SALTED_ALMOND);
         register("salted_porkchop", SALTED_PORKCHOP);
         register("salted_cooked_porkchop", SALTED_COOKED_PORKCHOP);
         register("salted_beef", SALTED_BEEF);

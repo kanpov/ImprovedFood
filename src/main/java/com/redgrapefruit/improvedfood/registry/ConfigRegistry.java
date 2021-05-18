@@ -297,27 +297,6 @@ public class ConfigRegistry {
             .fridgeEfficiency(1)
             .build();
 
-    public static final FoodConfig ALMOND = new FoodConfig.Builder()
-            .category(FoodCategory.VEGETABLE)
-            .hunger(1)
-            .saturationModifier(0.5f)
-            .effect(new FoodEffectConfig.Builder()
-                    .statusEffect(StatusEffects.CONDUIT_POWER)
-                    .rangedDuration(300, 900)
-                    .rangedAmplifier(0, 1)
-                    .chance(0.75f)
-                    .build())
-            .effect(new FoodEffectConfig.Builder()
-                    .statusEffect(StatusEffects.FIRE_RESISTANCE)
-                    .rangedDuration(450, 750)
-                    .rangedAmplifier(0, 1)
-                    .chance(0.45f)
-                    .build())
-            .overdueState(80000)
-            .overdueSpeed(4)
-            .fridgeEfficiency(2)
-            .build();
-
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
