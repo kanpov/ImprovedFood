@@ -233,6 +233,7 @@ public class ConfigRegistry {
             .overdueState(125000)
             .overdueSpeed(7)
             .fridgeEfficiency(4)
+            .saltEfficiency(2)
             .build();
 
     public static final FoodConfig CABBAGE = new FoodConfig.Builder()
@@ -254,6 +255,7 @@ public class ConfigRegistry {
             .overdueState(170000)
             .overdueSpeed(9)
             .fridgeEfficiency(5)
+            .saltEfficiency(3)
             .build();
 
     public static final FoodConfig RASPBERRY = new FoodConfig.Builder()
@@ -295,6 +297,7 @@ public class ConfigRegistry {
             .overdueState(50000)
             .overdueSpeed(3)
             .fridgeEfficiency(1)
+            .saltEfficiency(2)
             .build();
 
     public static final FoodConfig GARLIC = new FoodConfig.Builder()
