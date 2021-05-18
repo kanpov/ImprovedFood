@@ -12,12 +12,13 @@ There's only a single maintainer - me (RedGrapefruit09).
 #### Release cycles
 
 - 0.1 alpha. Mod core and vanilla food coverage
-- 0.2 alpha. Crop core and 15-20 custom crops
-- 0.3 alpha. Tree crop core and 10-15 custom tree crops
-- 0.4 beta. Random spawning of chests and plants around the world
-- 0.5 beta. Custom food structures
-- 0.6 beta. More food storage
-- 0.7 beta. General polish and _maybe_ some texture redesigns
+- 0.2 alpha. Crop core and about 15 custom crops
+- 0.3 alpha. 15+ more crops
+- 0.4 alpha. Tree crop core and 10-15 custom tree crops
+- 0.5 beta. Random spawning of chests and plants around the world
+- 0.6 beta. Custom food structures
+- 0.7 beta. More food storage
+- 0.8 beta. General polish and _maybe_ some texture redesigns
 - 1.0 stable. The final milestone! Maybe some bugfixes, mainly content from previous release cycles
 
 #### After 1.0 stable
@@ -32,6 +33,14 @@ I will support the mod **at least** until September 1st, 2021.
 After that, the future of the mod will be decided in this blog.
 
 # Posts
+
+## May 18th, 2021
+
+So far I've been able to contribute fine to the project.  
+The list of crops to add has been expanded, and I decided to split 0.2 into two releases (more info above).  
+I also updated Fabric Loom to 0.7.32.  
+It's not officially stable yet, but I had waited enough time on 0.6 Loom.  
+I forgot to publish 0.2-preview.6; going to do that right after posting this.
 
 ## May 14th, 2021
 
