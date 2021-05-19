@@ -34,6 +34,31 @@ After that, the future of the mod will be decided in this blog.
 
 # Posts
 
+## May 19th, 2021
+
+I'm launching a new project in a few hours that will potentially receive more contributions than this one.
+
+### Why
+- This project inherits a bit _too much_ from Croptopia and at some point it might be just plagiarism 
+- This project is in a phase where I can only add content. _I'm a programmer_, and I **don't** really like art
+- Me not liking art led to copying some assets from Croptopia
+- I want to take a fresh breath from working on this project
+
+### What will happen to this project
+- It **won't** be cancelled
+- It will receive fewer contributions; probably 6-8 commits per week instead of 15-20
+- The new project will be developed along this one
+
+### What could happen to this project (this is pretty unlikely)
+- It may stay in this repository and not be published on CurseForge
+- The support might be shortened to a few months less
+- **Happy news:** I might work on ImprovedFood 2.0 and make it much better than the first revision
+
+### What will happen to the new project
+- It will receive more updates and attention
+- It will have some unique features and content, and I hope you'll like it
+- It will have been released by the middle of July
+
 ## May 18th, 2021
 
 So far I've been able to contribute fine to the project.  
