@@ -34,6 +34,12 @@ After that, the future of the mod will be decided in this blog.
 
 # Posts
 
+## May 20th, 2021
+
+You may have seen the new project announced in the previous blog post - MythicalTowers.  
+I have lots of research and planning to do, so I decided to private the project.  
+When there'll be something to see, it'll go public (estimate - start of June).
+
 ## May 19th, 2021
 
 I'm launching a new project in a few hours that will potentially receive more contributions than this one.
