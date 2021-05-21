@@ -15,10 +15,10 @@
     "environment": "*",
     "entrypoints": {
         "client": [
-            "com.redgrapefruit.improvedfood.ImprovedFoodClient"
+            "com.redgrapefruit.improvedfood.client.ImprovedFoodClient"
         ],
         "main": [
-            "com.redgrapefruit.improvedfood.ImprovedFood"
+            "com.redgrapefruit.improvedfood.common.ImprovedFood"
         ]
     },
     "mixins": [

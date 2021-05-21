@@ -29,7 +29,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Internal
 
-- Reorganized ```com.redgrapefruit.improvedfood.core``` package
+- Reorganized ```com.redgrapefruit.improvedfood.common.core``` package
 
 ## [v0.2-preview.5]
 
@@ -315,7 +315,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Internal
 
-- Reorganized com.redgrapefruit.improvedfood.core package
+- Reorganized com.redgrapefruit.improvedfood.common.core package
 
 ### Fixed
 

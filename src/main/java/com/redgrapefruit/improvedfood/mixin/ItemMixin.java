@@ -1,12 +1,12 @@
 package com.redgrapefruit.improvedfood.mixin;
 
-import com.redgrapefruit.improvedfood.core.FoodSystem;
-import com.redgrapefruit.improvedfood.core.FoodConfig;
-import com.redgrapefruit.improvedfood.core.FoodProfile;
-import com.redgrapefruit.improvedfood.core.FoodState;
-import com.redgrapefruit.improvedfood.item.OverdueFoodItem;
-import com.redgrapefruit.improvedfood.item.RottenFoodItem;
-import com.redgrapefruit.improvedfood.util.ItemMixinAccess;
+import com.redgrapefruit.improvedfood.common.core.FoodSystem;
+import com.redgrapefruit.improvedfood.common.core.FoodConfig;
+import com.redgrapefruit.improvedfood.common.core.FoodProfile;
+import com.redgrapefruit.improvedfood.common.core.FoodState;
+import com.redgrapefruit.improvedfood.common.item.OverdueFoodItem;
+import com.redgrapefruit.improvedfood.common.item.RottenFoodItem;
+import com.redgrapefruit.improvedfood.common.util.ItemMixinAccess;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
