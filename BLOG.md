@@ -34,6 +34,12 @@ After that, the future of the mod will be decided in this blog.
 
 # Posts
 
+## May 21st, 2021
+
+I decided to un-private the new project, MythicalTowers,
+because the code could be used for educational purposes later,
+and I'd like to receive some contributions.
+
 ## May 20th, 2021
 
 You may have seen the new project announced in the previous blog post - MythicalTowers.  
