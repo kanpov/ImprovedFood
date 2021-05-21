@@ -4,7 +4,7 @@ import com.redgrapefruit.improvedfood.common.core.FridgeState;
 import com.redgrapefruit.improvedfood.common.item.FoodItem;
 import com.redgrapefruit.improvedfood.client.registry.GuiRegistry;
 import com.redgrapefruit.improvedfood.common.util.ItemMixinAccess;
-import com.redgrapefruit.redcore.container.ContainerScreenHandler;
+import com.redgrapefruit.improvedfood.api.ContainerScreenHandler;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;

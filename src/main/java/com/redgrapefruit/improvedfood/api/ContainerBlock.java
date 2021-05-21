@@ -1,4 +1,4 @@
-package com.redgrapefruit.redcore.container;
+package com.redgrapefruit.improvedfood.api;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;

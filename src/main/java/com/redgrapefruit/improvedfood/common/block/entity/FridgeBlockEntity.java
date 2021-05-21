@@ -2,7 +2,7 @@ package com.redgrapefruit.improvedfood.common.block.entity;
 
 import com.redgrapefruit.improvedfood.common.registry.BlockRegistry;
 import com.redgrapefruit.improvedfood.common.screen.handler.FridgeScreenHandler;
-import com.redgrapefruit.redcore.container.ContainerBlockEntity;
+import com.redgrapefruit.improvedfood.api.ContainerBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;

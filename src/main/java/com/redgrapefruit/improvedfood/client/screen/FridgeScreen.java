@@ -1,7 +1,7 @@
 package com.redgrapefruit.improvedfood.client.screen;
 
 import com.redgrapefruit.improvedfood.common.ImprovedFood;
-import com.redgrapefruit.redcore.container.ContainerScreen;
+import com.redgrapefruit.improvedfood.api.ContainerScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;

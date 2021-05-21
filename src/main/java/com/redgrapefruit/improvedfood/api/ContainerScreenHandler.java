@@ -1,4 +1,4 @@
-package com.redgrapefruit.redcore.container;
+package com.redgrapefruit.improvedfood.api;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;

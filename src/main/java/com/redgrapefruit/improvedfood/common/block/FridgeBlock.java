@@ -1,7 +1,7 @@
 package com.redgrapefruit.improvedfood.common.block;
 
 import com.redgrapefruit.improvedfood.common.block.entity.FridgeBlockEntity;
-import com.redgrapefruit.redcore.container.ContainerBlock;
+import com.redgrapefruit.improvedfood.api.ContainerBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.world.BlockView;

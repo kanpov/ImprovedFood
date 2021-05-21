@@ -1,4 +1,4 @@
-package com.redgrapefruit.redcore.container;
+package com.redgrapefruit.improvedfood.api;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.redgrapefruit.redcore.util.Logging;

@@ -1,4 +1,4 @@
-package com.redgrapefruit.redcore.container;
+package com.redgrapefruit.improvedfood.api;
 
 import com.redgrapefruit.redcore.util.ImplementedInventory;
 import net.minecraft.block.BlockState;
