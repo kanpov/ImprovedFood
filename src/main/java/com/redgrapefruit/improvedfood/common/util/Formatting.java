@@ -1,4 +1,4 @@
-package com.redgrapefruit.redcore.util;
+package com.redgrapefruit.improvedfood.common.util;
 
 /**
  * Constants for Minecraft color codes and formatting codes.<br><br>

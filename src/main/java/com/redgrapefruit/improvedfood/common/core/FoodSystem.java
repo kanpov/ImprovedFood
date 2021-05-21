@@ -4,7 +4,7 @@ import com.redgrapefruit.improvedfood.common.item.FoodItem;
 import com.redgrapefruit.improvedfood.common.item.OverdueFoodItem;
 import com.redgrapefruit.improvedfood.common.item.RottenFoodItem;
 import com.redgrapefruit.improvedfood.common.util.FoodMath;
-import com.redgrapefruit.redcore.util.Formatting;
+import com.redgrapefruit.improvedfood.common.util.Formatting;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.LiteralText;

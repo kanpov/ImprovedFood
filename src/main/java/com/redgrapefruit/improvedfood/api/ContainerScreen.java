@@ -1,7 +1,7 @@
 package com.redgrapefruit.improvedfood.api;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.redgrapefruit.redcore.util.Logging;
+import com.redgrapefruit.improvedfood.common.util.Logging;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.util.math.MatrixStack;

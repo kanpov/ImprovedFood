@@ -2,7 +2,7 @@ package com.redgrapefruit.improvedfood.client;
 
 import com.redgrapefruit.improvedfood.common.registry.BlockRegistry;
 import com.redgrapefruit.improvedfood.client.registry.GuiRegistry;
-import com.redgrapefruit.redcore.util.Logging;
+import com.redgrapefruit.improvedfood.common.util.Logging;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

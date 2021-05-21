@@ -5,7 +5,7 @@ import com.redgrapefruit.improvedfood.common.core.FoodCategory;
 import com.redgrapefruit.improvedfood.common.core.FoodConfig;
 import com.redgrapefruit.improvedfood.common.core.FoodState;
 import com.redgrapefruit.improvedfood.common.registry.ItemGroupRegistry;
-import com.redgrapefruit.redcore.util.Utilities;
+import com.redgrapefruit.improvedfood.common.util.Utilities;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;

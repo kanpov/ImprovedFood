@@ -1,4 +1,4 @@
-package com.redgrapefruit.redcore.util;
+package com.redgrapefruit.improvedfood.common.util;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventories;

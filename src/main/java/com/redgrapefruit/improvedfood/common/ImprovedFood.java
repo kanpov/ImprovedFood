@@ -1,7 +1,7 @@
 package com.redgrapefruit.improvedfood.common;
 
 import com.redgrapefruit.improvedfood.common.registry.*;
-import com.redgrapefruit.redcore.util.Logging;
+import com.redgrapefruit.improvedfood.common.util.Logging;
 import net.fabricmc.api.ModInitializer;
 
 import java.util.Random;

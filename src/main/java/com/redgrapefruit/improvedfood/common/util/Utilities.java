@@ -1,4 +1,4 @@
-package com.redgrapefruit.redcore.util;
+package com.redgrapefruit.improvedfood.common.util;
 
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.entity.effect.StatusEffectInstance;

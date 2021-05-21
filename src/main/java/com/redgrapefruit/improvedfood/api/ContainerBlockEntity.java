@@ -1,6 +1,6 @@
 package com.redgrapefruit.improvedfood.api;
 
-import com.redgrapefruit.redcore.util.ImplementedInventory;
+import com.redgrapefruit.improvedfood.common.util.ImplementedInventory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
