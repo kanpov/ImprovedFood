@@ -34,6 +34,12 @@ After that, the future of the mod will be decided in this blog.
 
 # Posts
 
+## May 22nd, 2021
+
+Lines of code badge stopped working and shows 'inaccessible', I don't know why.  
+MythicalTowers progress has been going well at the expense of commit activity on this project.  
+It'll make a few commits and possibly a new preview release tomorrow, we'll see how that goes!
+
 ## May 21st, 2021
 
 I decided to un-private the new project, MythicalTowers,
