@@ -34,6 +34,12 @@ After that, the future of the mod will be decided in this blog.
 
 # Posts
 
+## May 26th, 2021
+
+I'm back from the break! YAY!  
+Been off to work on MythicalTowers, now back.  
+I'll try to release Preview 7, Preview 8 and then 0.2 in the next couple of days.
+
 ## May 22nd, 2021
 
 Lines of code badge stopped working and shows 'inaccessible', I don't know why.  
