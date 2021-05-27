@@ -34,6 +34,12 @@ After that, the future of the mod will be decided in this blog.
 
 # Posts
 
+## May 27th, 2021
+
+I've just fully ported MythicalTowers to Kotlin, and so far it's been great!  
+If everything goes fine, on June 1st I'll be porting this mod.  
+Usually Gradle & FLK setup, conversion, cleanup and compile error solving takes a few hours, so it'll take some time.
+
 ## May 26th, 2021
 
 I'm back from the break! YAY!  
