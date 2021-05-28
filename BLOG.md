@@ -34,6 +34,11 @@ After that, the future of the mod will be decided in this blog.
 
 # Posts
 
+## May 28th, 2021
+
+Today I've tried to port this mod to Kotlin and unfortunately failed.  
+There were some critical incompatibilities and this project will stay on legacy Java indefinitely.
+
 ## May 27th, 2021
 
 I've just fully ported MythicalTowers to Kotlin, and so far it's been great!  
