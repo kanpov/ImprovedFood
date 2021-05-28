@@ -322,6 +322,22 @@ public class ConfigRegistry {
             .saltEfficiency(6)
             .build();
 
+    public static final FoodConfig LEEK = new FoodConfig.Builder()
+            .category(FoodCategory.VEGETABLE)
+            .hunger(1)
+            .saturationModifier(2.0f)
+            .effect(new FoodEffectConfig.Builder()
+                    .statusEffect(StatusEffects.HERO_OF_THE_VILLAGE)
+                    .rangedDuration(700, 2400)
+                    .rangedAmplifier(0, 1)
+                    .isAlwaysApplied(true)
+                    .build())
+            .overdueState(60000)
+            .overdueSpeed(4)
+            .fridgeEfficiency(2)
+            .saltEfficiency(1)
+            .build();
+
     // Vanilla
     public static final FoodConfig PORKCHOP = new FoodConfig.Builder()
             .category(FoodCategory.MEAT)
