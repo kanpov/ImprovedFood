@@ -6,7 +6,7 @@ _By the way it's not pretty, but I'm not going to make an entire website, so it'
 ## Current plans
 
 This section contains some info about the main plan of this project.  
-Current release date is June 15th, 2021, may be delayed later on.  
+Current release date is July 1st, 2021, may be delayed later on.  
 There's only a single maintainer - me (RedGrapefruit09).
 
 #### Release cycles
@@ -33,6 +33,22 @@ I will support the mod **at least** until September 1st, 2021.
 After that, the future of the mod will be decided in this blog.
 
 # Posts
+
+## May 30th, 2021
+
+Yesterday we hit 300 commits!  
+Even though MythicalTowers has been receiving most of my attention, this project is still maintained and developed.  
+0.2f will be released in a few days with the 2nd development phase of MythicalTowers finished.  
+After that the plan for the first half of June is as follows:  
+
+| ImprovedFood          | MythicalTowers          |
+| ------------          | -------------           |
+| Finish 0.3f in 3-4d   | Setup entity engine     |
+| Finish 0.4f in 7d     | Develop base entity set |
+| Finish 0.5f in 2-3d   | Complete phase 3        |
+
+Also, the current release date (15th of June) is unachievable, so I delayed it to 1st of July.  
+A more realistic assumption would be 15th of July, but only if I took my time reworking art and systems in 0.7f.
 
 ## May 28th, 2021
 
