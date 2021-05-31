@@ -6,7 +6,7 @@ _By the way it's not pretty, but I'm not going to make an entire website, so it'
 ## Current plans
 
 This section contains some info about the main plan of this project.  
-Current release date is July 1st, 2021, may be delayed later on.  
+Current approximate release date is the end of July 2021, may be delayed later on.  
 There's only a single maintainer - me (RedGrapefruit09).
 
 #### Release cycles
@@ -33,6 +33,15 @@ I will support the mod **at least** until September 1st, 2021.
 After that, the future of the mod will be decided in this blog.
 
 # Posts
+
+## May 31st, 2021
+
+I've just delayed the release date to the end of July (20th-31st July).  
+This is because I've found it very hard to actively develop both projects at once.  
+My current decision is to split up:
+1. 80% time on MythicalTowers development
+2. 20% time on ImprovedFood development
+After MythicalTowers is released I'll try to give ImprovedFood as much time as possible.
 
 ## May 30th, 2021
 
