@@ -67,7 +67,6 @@ I haven't set up code of conduct, pull request and issue templates yet. That wil
 The code is written in Java 8 powered by AdoptOpenJDK 1.8  
 It's carefully documented and commented to ensure readability.  
 If you have refactoring or cleanup suggestions, open a pull request or issue.
-It's planned to port the mod to Kotlin using FLK (fabric-language-kotlin) after release.
 
 # Frequently Asked Questions
 
