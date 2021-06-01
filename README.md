@@ -77,6 +77,8 @@ Q: Will there be a CurseForge page?
 A: Yes, after the mod is released I will send my request to upload the mod to CurseForge.  
 Q: Do you support snapshots?  
 A: No. I don't support snapshots and only update between stable releases of Minecraft and Fabric's toolchain.
+**Q: Why have the commitment levels dropped? Is the project dead?**  
+**A: 1. I've been focusing more on [MythicalTowers](https://github.com/RedGrapefruit09/MythicalTowers) 2. No, the project is still developed, but slowly**
 
 # Credits
 
