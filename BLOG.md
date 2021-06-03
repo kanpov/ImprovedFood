@@ -34,6 +34,17 @@ After that, the future of the mod will be decided in this blog.
 
 # Posts
 
+## June 3rd, 2021
+
+I've completely lost motivation to work on this project, and I don't know what to do...  
+The best idea that I have right now is to convert this project into a Croptopia addon.  
+This project adds a lot of new functionality, and the rest is pretty much copied from Croptopia.  
+I just need to cut the new crop part and list Croptopia as a dependency.  
+Mixins will do the rest.  
+
+I haven't decided yet, and I suggest you check out [MythicalTowers](https://github.com/RedGrapefruit09/MythicalTowers),  
+because that'll be my mainstream project in the future.
+
 ## May 31st, 2021
 
 I've just delayed the release date to the end of July (20th-31st July).  
