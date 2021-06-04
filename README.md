@@ -7,7 +7,7 @@ The repository will be archived on GitHub (no further commits, PRs, issues etc.)
 ## Why did the project get archived?
 
 Many reasons.  
-Here's the biggest ones ordered by priority (from high to low):
+Here are the biggest ones ordered by priority (from high to low):
 
 1. **Huge feature overlap with Croptopia.**  
    Croptopia is [a famous Fabric mod](https://github.com/ExcessiveAmountsOfZombies/Croptopia) that  
