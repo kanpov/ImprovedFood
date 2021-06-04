@@ -1,7 +1,8 @@
 ## What is this?
 
 This is the archive of ImprovedFood project (revision 2).  
-The project contained unique crops, features, food realism, (future) worldgen changes.
+The project contained unique crops, features, food realism, (future) worldgen changes.  
+The repository will be archived on GitHub (no further commits, PRs, issues etc.) on 15th June.
 
 ## Why did the project get archived?
 
