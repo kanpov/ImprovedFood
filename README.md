@@ -8,21 +8,21 @@ The project contained unique crops, features, food realism, (future) worldgen ch
 Many reasons.  
 Here's the biggest ones ordered by priority (from high to low):
 
-1. Huge feature overlap with Croptopia.  
+1. **Huge feature overlap with Croptopia.**  
    Croptopia is [a famous Fabric mod](https://github.com/ExcessiveAmountsOfZombies/Croptopia) that  
    introduces many crops (both on land and on trees) and types of food into the game.  
    This mod had a similar idea, but introduced new worldgen, realism, storage and mechanics.  
    As a result, a major part of development was fully dedicated to copying/altering existing functionality from the mod.
-2. Size.  
+2. **Size.**  
    Because of problem #1, the development was very long and tiring.  
    Only 20-30% of dev time was dedicated to unique features, and 70-80% to reimplementing Croptopia's functionality.
-3. Mentality of Content > Functionality.  
+3. **Mentality of Content > Functionality.**  
    Most, if not all, of my work was towards making textures, content and _not programming_.  
    That may sound weird at first, but, as a programmer, I don't like focusing too much on content and art.
-4. Lack of modularity.  
+4. **Lack of modularity.**  
    Because the "realism" part of the mod added more difficulty, there needed to be options to turn on/off features.  
    Reworking the mod to support modularity would take even more time and effort.
-5. Demotivation.  
+5. **Demotivation.**  
    After focusing on a side project [MythicalTowers](https://github.com/RedGrapefruit09/MythicalTowers), I didn't want to work on the project anymore.  
    Because of problem #3, my attention was driven away and, as a result, there was a severe  
    lack of contributions for an in-active-development project.
