@@ -41,17 +41,4 @@ That resolves many of the issues mentioned above:
 
 ## More info about the new project
 
-Stay tuned as the project will be available on my GitHub account in a few days after it's set up locally!  
-
-### What's confirmed
-
-1. The name will be **Utopia**.  
-2. The project will be split into several modules that can be enabled/disabled using custom commands.  
-Here's the concept:  
-```/uenable utopia_realism```  
-```/udisable utopia_furniture```
-3. The approximate release date (don't rely on it, just a guess): end of July 2021
-4. The mod will have more and better unique features.
-5. The mod will be written in Kotlin 1.5
-6. I will try to update the mod to 1.17 as fast as possible
-7. The mod will run on latest Fabric toolchain versions all the time
+The new project repository is now [available](https://github.com/RedGrapefruit09/Utopia)
